@@ -25,6 +25,9 @@ const config = {
       },
       { test: /\.(png|jpg)$/,
         loader: 'url-loader?limit=8192'
+      },
+      { test: /\.svg$/,
+        loader: 'svg-loader'
       }
     ]
   },
