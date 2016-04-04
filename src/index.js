@@ -1,9 +1,9 @@
-var React = require('react')
-var ReactDOM = require('react-dom')
-require('./stylesheets/main.sass')
+import React from 'react'
+import ReactDOM from 'react-dom'
+import './stylesheets/main.sass'
+import App from './modules/App'
 
-var img = document.createElement('img')
+let img = document.createElement('img')
 img.src = require('./images/pig.jpg')
 
-
-ReactDOM.render(<h1>Hello React!</h1>, document.getElementById('root'))
+ReactDOM.render(<App />, document.getElementById('root'))
