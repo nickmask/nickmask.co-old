@@ -1,0 +1,288 @@
+<html>
+  <head>
+    <title>React Webpack template</title>
+  </head>
+  <body>
+  </body>
+</html>
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+  <!-- Basic Page Needs
+  ––––––––––––––––––––––––––––––––––––––––––––––n–––– -->
+  <meta charset="utf-8">
+  <title>Nick's Blog</title>
+
+  <!-- Mobile Specific Metas
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <!-- FONT
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <link href='https://fonts.googleapis.com/css?family=Oxygen:400,700,300' rel='stylesheet' type='text/css'>
+
+  <!-- CSS
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+  <link rel="stylesheet" href="/main.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+  <script src="/js/main.js" type="text/javascript" charset="utf-8" async defer></script>
+  <!-- Favicon
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <link rel="icon" type="/image/png" href="images/favicon.png">
+
+</head>
+<body>
+
+
+  <div class="wrapper">
+
+    <!--  Sidebar    -->
+    <div class="sidebar-wrapper">
+      <div class="nick-details">
+        <img src="/images/nick.jpg" alt="Picture of Nick Maskell" id="nickProfile">
+        <h1>Nick Maskell</h1>
+        <div class="social">
+          <ul>
+            <a href="https://www.facebook.com/nrmaskell" class="icon facebook">facebook</a>
+            <a href="https://twitter.com/nickmask" class="icon twitter">twitter</a>
+            <a href="https://github.com/nickmask" class="icon github">github</a>
+            <a href="https://www.linkedin.com/in/nickmask" class="icon linkedin">linkedin</a>
+          </ul>
+        </div>
+        <div class="about">
+          <p>/Web Developer<br>/Marketer<br>/Tech Enthusiast</p>
+        </div>
+      </div>
+    <!--   Sidebar Nav -->
+      <div class="mobile-nav">
+         <div class="menu-btn" id="menu-btn">
+           <div class="spanDiv"></div>
+           <span></span>
+           <span></span>
+           <span></span>
+         </div>
+      </div>
+      <nav class ="responsive-menu">
+                  <ul class="sidebar-nav ">
+                      <li class="nav-item current-page"><a href="/index.html">Home</a></li>
+                      <li class="nav-item"><a href="/projects/projects.html">Projects</a></li>
+                      <li class="nav-item"><a href="/blog/blog.html">Blog</a></li>
+                  </ul>
+      </nav>
+    </div>
+      <nav id="sidebar-nav contact">
+          <ul id="contact">
+            <li> <a href="/other/contact.html">Contact</a></li>
+          </ul>
+      </nav>
+    </div>
+    <!-- Page Content -->
+    <div class="page-content-wrapper">
+      <div class="container-fluid">
+        <div class="row">
+          <div class="col-sm-12 page-content">
+            <div class="content-header">
+              <hr class="separator" id="topSep">
+              <h1>Recent work</h1>
+              <h2>Checkout the stuff I have done recently</h2>
+              <hr class="separator" id="botSep">
+            </div>
+            <div class="page-content">
+       <!-- Page Articles -->
+
+               <div id="root">If you see this then something is wrong.</div>
+
+               <article>
+                <a href="/blog/t9-reflection.html">
+                  <img src="/images/reflection2.jpg" alt="" class="img-responsive">
+                  <h1>Reflection</h1>
+                </a>
+                <p>
+                     I have found the reduce() function pretty difficult to understand. I am not 100%...
+                </p>
+                <p id="date">
+                95 January 2016
+                </p>
+               </article>
+               <article>
+                <a href="/blog/c8-empathy.html">
+                  <img src="/images/empathy.jpg" alt="" class="img-responsive">
+                  <h1>Empathy</h1>
+                </a>
+                <p>
+                    I liked the excersise. It reminded me that everyone is just a person like me with problems, times...
+                </p>
+                <p id="date">
+                25 January 2016
+                </p>
+               </article>
+               <article>
+                <a href="/blog/c7-motivation.html">
+                  <img src="/images/c7-motivation.jpg" alt="" class="img-responsive">
+                  <h1>Motivation</h1>
+                </a>
+                <p>
+                   The reason I am doing this course is because althought I liked my last job, and liked the...
+                </p>
+                <p id="date">
+                22 January 2016
+                </p>
+               </article>
+               <article>
+                <a href="/blog/t5-problem-solving.html">
+                  <img src="/images/t5-problem-solving.jpg" alt="" class="img-responsive">
+                  <h1>Problem Solving</h1>
+                </a>
+                <p>
+                  When I was building my website I wanted to use what is called a "sprite" to make...
+                </p>
+                <p id="date">
+                  22 January 2016
+                </p>
+              </article>
+               <article>
+                <a href="/blog/t7-javascript-basics.html">
+                  <img src="/images/t7-javascript-basics.jpg" alt="" class="img-responsive">
+                  <h1>Javascript Basics</h1>
+                </a>
+                  <p>
+                     HTML is the content and most often the base structure of your site. It does not style, or change font...
+                  </p>
+                <p id="date">
+                  20 January 2016
+                </p>
+              </article>
+               <article>
+                <a href="/blog/c6-triggers.html">
+                  <img src="/images/triggers.jpg" alt="" class="img-responsive">
+                  <h1>Self regulation</h1>
+                </a>
+                  <p>
+                     Yeah really well. The tools that we were given, some I actually have used in the past...
+                  </p>
+                <p id="date">
+                  18 December 2015
+                </p>
+              </article>
+               <article>
+                <a href="/blog/t6-design-to-web-blog.html">
+                  <img src="/images/responsive.jpg" alt="" class="img-responsive">
+                  <h1>Responsive web design</h1>
+                </a>
+                  <p>
+                    A responsive website is a site that responds to the size of the screen you are viewing...
+                  </p>
+                <p id="date">
+                  18 December 2015
+                </p>
+              </article>
+               <article>
+                <a href="/projects/the-insulter.html">
+                  <img src="/images/insult.jpg" alt="" class="img-responsive">
+                  <h1>The insulter</h1>
+                </a>
+                  <p>
+                    Want to know what it feels like to go bac to high school and be insulter by a 14yo, now you can!
+                  </p>
+                <p id="date">
+                  11 December 2015
+                </p>
+              </article>
+              <article>
+                <a href="/projects/how-many-words.html">
+                  <img src="/images/count.jpg" alt="" class="img-responsive">
+                  <h1>Word length calculator</h1>
+                </a>
+                  <p>
+                    It may not really be a problem, but this project will help you could how many words are in a paragraph.
+                  </p>
+                <p id="date">
+                  10 December 2015
+                </p>
+              </article>
+               <article>
+                <a href="/blog/c2-emotional-intelligence.html">
+                  <img src="/images/emotional-intelligence.jpg" alt="" class="img-responsive">
+                  <h1>Emotional Intelligence</h1>
+                </a>
+                  <p>
+                    I found the analogy of the fluttering flag in the wind resonated with me. The flag being...
+                  </p>
+                <p id="date">
+                  9 December 2015
+                </p>
+              </article>
+              <article>
+                <a href="/blog/t2-html-css-dom-p2.html">
+                  <img src="/images/html-css-dom.jpg" alt="" class="img-responsive">
+                  <h1>HTML, CSS and Dom - Part 2</h1>
+                </a>
+                  <p>
+                    A grid based design is a reliable way for your website to display information. Using grids...
+                  </p>
+                <p id="date">
+                  9 December 2015
+                </p>
+              </article>
+              <article>
+                <a href="/blog/t2-html-css-dom-p1.html">
+                  <img src="/images/html-css-dom2.jpg" alt="" class="img-responsive">
+                  <h1>HTML, CSS and Dom - Part 1</h1>
+                </a>
+                <p>
+                  HTML is the content on your page. Any text, images blogs etc will all be in your HTML...
+                </p>
+                <p id="date">
+                  8 December 2015
+                </p>
+              </article>
+              <article>
+                <a href="/projects/to-do.html">
+                  <img src="/images/to-do.jpg" alt="" class="img-responsive">
+                  <h1>To do list</h1>
+                </a>
+                <p>
+                  Simple project using Javascript to make an editable to do list.
+                </p>
+                <p id="date">
+                  3 December 2015
+                </p>
+              </article>
+              <article>
+                <a href="/blog/c4-time-and-habits-blog.html">
+                <img src="/images/time.jpg" alt="" class="img-responsive">
+                <h1>Time and habits</h1>
+                </a>
+                <p>
+                 I would like to experiement more with the Pomodoro technique. I like the way it works...
+                </p>
+                <p id="date">
+                  1 December 2015
+                </p>
+              </article>
+              <article>
+                <a href="/blog/c4-reflection-blog.html">
+                  <img src="/images/reflection.jpg" alt="" class="img-responsive">
+                  <h1>EDA Reflection</h1>
+                </a>
+                <p>
+                  What Shereef is talking about is exactly how I am treating this course. Some people...
+                </p>
+                <p id="date">
+                  30 November 2015
+                </p>
+              </article>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <script src="bundle.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
+</body>
+</html>
