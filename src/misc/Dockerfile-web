@@ -1,0 +1,6 @@
+FROM node:wheezy
+EXPOSE 80
+
+COPY web /var/www/
+WORKDIR /var/www/
+RUN npm install

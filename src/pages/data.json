@@ -1,0 +1,37 @@
+{
+  "site": {
+    "logo": "images/logo.svg",
+    "nav": {
+      "navitem1": "/#navitem1",
+      "navitem2": "/#navitem2",
+      "navitem3": "/#navitem3"
+    },
+    "header": {
+
+    },
+    "footer": {
+      "sitemap": {
+
+      },
+      "footerlinks": {
+        "footerlink1": "/#footerlink1",
+        "footerlink2": "/#footerlink2",
+        "footerlink3": "/#footerlink3",
+        "footerlink4": "/#footerlink4"
+      },
+      "copyright": "© Copyright 2015"
+    }
+  },
+  "index": {
+    "title": "Home page",
+    "meta": {
+      "description": "Home page description"
+    }
+  },
+  "about": {
+    "title": "About page",
+    "meta": {
+      "description": "About page description"
+    }
+  }
+}

@@ -1,0 +1,12 @@
+<!-- Site Header -->
+<div class="container">
+  {{#if site.header.toplinks }}
+    {{> header/toplinks this }}
+  {{/if}}
+
+  <div>
+    {{#if site.logo }}
+      {{> header/logo }}
+    {{/if}}
+  </div>
+</div>

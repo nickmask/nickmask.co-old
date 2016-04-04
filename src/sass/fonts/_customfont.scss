@@ -1,0 +1,11 @@
+@include fontface(
+  $family: 'CustomFont',
+  $faces:
+  (
+      (
+          filename: 'CustomFont',
+          style: normal,
+          weight: map-get($font-weight, 'normal')
+      ),
+  )
+);

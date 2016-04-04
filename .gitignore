@@ -1,0 +1,120 @@
+# $ git status --ignored
+# will show you which files have been matched by rules in the .gitignore and
+# .git/info/exclude files
+#
+# $ git ls-files | grep <search term>
+# will show you which files have been added to the repo, thus being tracked
+
+# =============================================================================
+# |                             local.xml                                     |
+# =============================================================================
+# Magento's main configuration file containing database credentials
+app/etc/local.xml
+
+# =============================================================================
+# |                             var folder                                    |
+# =============================================================================
+# var folder except the .htaccess file adding /* because there might be files
+# that have been added with the var folder in their path (e.g. .htaccess)
+var/*
+
+# =============================================================================
+# |                             media folder                                  |
+# =============================================================================
+# Do not include product and category images and cache
+# adding /* (see comment on var)
+media/*
+
+# When you are debugging our application locally, you can copy
+# errors/local.xml-sample to errors/local.xml. This will cause Magento do
+# display the error. We don’t want that in a production environment, so that
+# file is ignored as well.
+errors/local.xml
+
+# Add any other exclusion rules hereafter, BUT before the composer entry
+# ==== EXCLUSION RULES START =====
+.htpasswd
+# =============================================================================
+# |                                 Sitemaps                                  |
+# =============================================================================
+/*.xml
+# =============================================================================
+# |                                 Mac                                       |
+# =============================================================================
+# Do not include system folder files
+.DS_Store
+
+# =============================================================================
+# |                                 Sass                                       |
+# =============================================================================
+# Do not include sass cache files
+.sass-cache
+
+# =============================================================================
+# |                                 CSS                                       |
+# =============================================================================
+# Do not include CSS files
+
+# =============================================================================
+# |                                 Bower                                       |
+# =============================================================================
+bower_components/
+
+# =============================================================================
+# |                                 GRUNT                                       |
+# =============================================================================
+# Do not include grunt modules
+node_modules/
+.project
+# ==== EXCLUSION RULES STOP ======
+
+# =============================================================================
+# |                                 NPM                                       |
+# =============================================================================
+.npm-debug.log
+
+# =============================================================================
+# |                             COMPOSER                                      |
+# =============================================================================
+# Directory added by composer containing all external code which is either
+# symlinked or copied into the ./htdocs dir
+# Whole folder can be ignored
+/vendor
+# Any composer installed module should be add below. Run the followings steps
+# 1) Delete all lines below ========= If you using vim, position the cursor on
+# the first line below ====== and run dG
+# 2) Run the following command $ find . -type l | cut -c 3- >> .gitignore
+# But be warned, only run this if you don't have any untracked files unrelated
+# to composer libraries.
+# ===========================================================================
+# =============================================================================
+# |                                 Wordpress                                 |
+# =============================================================================
+wordpress/wp-config.php
+wordpress/wp-content/uploads
+# =============================================================================
+# |                                 Magento                                   |
+# =============================================================================
+downloader/
+imagecache/
+# =============================================================================
+# |                             		Kentico                                   |
+# =============================================================================
+Web/myadvantage/CMS/obj/
+Web/myadvantage/.vs/
+# =============================================================================
+# |                             Visual Studio Code                        	  |
+# =============================================================================
+.settings/
+.vscode/
+# =============================================================================
+# |                             		Gulp                        	            |
+# =============================================================================
+dist/
+build/
+
+# =============================================================================
+# |                             		ES Lint Files                             |
+# =============================================================================
+.eslintrc
+.eslintrules

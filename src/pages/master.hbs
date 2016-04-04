@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  {{> head}}
+</head>
+
+<body class="{{_page.class}}">
+
+  <header>
+    {{> header}}
+  </header>
+
+  <nav>
+    {{> navigation}}
+  </nav>
+
+  <main>
+    <div class="container">
+      {{{ content }}}
+    </div>
+  </main>
+
+  <footer>
+    {{> footer}}
+  </footer>
+
+  {{> scripts}}
+
+</body>
+
+</html>

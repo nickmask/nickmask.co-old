@@ -1,0 +1,16 @@
+<!-- Site Footer -->
+<div class="container">
+
+  {{#if footer.sitemap }}
+    {{> footer/sitemap this }}
+  {{/if}}
+
+  <div class="bottom-links">
+    {{#if footer.links }}
+      {{> footer/links links=footer.links }}
+    {{/if}}
+    {{#if footer.copyright }}
+      {{> footer/copyright }}
+    {{/if}}
+  </div>
+</div>

@@ -1,0 +1,16 @@
+web:
+  container_name: webserver
+  build: .
+  links:
+    - db
+  environment:
+    - PORT=80
+    - NODE_ENV=production
+  dockerfile: Dockerfile-web
+  ports:
+    - "80:80"
+db:
+  container_name: database
+  image: mongo
+  ports:
+    - "27017:27017"

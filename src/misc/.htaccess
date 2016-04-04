@@ -1,0 +1,15 @@
+DirectoryIndex index.php index.html index.htm
+
+<IfModule mod_rewrite.c>
+RewriteEngine On
+ErrorDocument 404 /errors/404.php
+ErrorDocument 403 /errors/403.php
+ErrorDocument 500 /errors/500.php
+</IfModule>
+
+Options -Indexes
+Options +FollowSymlinks
+
+<Files .htaccess>
+deny from all
+</Files>

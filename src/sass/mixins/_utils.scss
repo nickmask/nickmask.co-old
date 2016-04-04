@@ -1,0 +1,83 @@
+@mixin fontface($family, $faces, $dirpath: $font-path) {
+  @each $face in $faces {
+    $filename: map-get($face, 'filename');
+    $font-style: map-get($face, 'style');
+    $font-weight: map-get($face, 'weight');
+    @font-face {
+      font-family: $family;
+      src: url(#{$dirpath}/#{$filename}.eot);
+      src: url(#{$dirpath}/#{$filename}.eot?#iefix) format('embedded-opentype'), url(#{$dirpath}/#{$filename}.woff2) format('woff2'), url(#{$dirpath}/#{$filename}.woff) format('woff'), url(#{$dirpath}/#{$filename}.ttf) format('truetype');
+      font-style: $font-style;
+      font-weight: $font-weight;
+    }
+  }
+}
+
+@mixin sr-only {
+  border: 0;
+  clip: rect(0,0,0,0);
+  height: 1px;
+  margin: -1px;
+  overflow: hidden;
+  padding: 0;
+  position: absolute;
+  width: 1px;
+}
+
+@mixin icon($fontfamily, $code, $display: inline-block, $transform: translate(0, 0)) {
+  display: $display;
+  font-family: $fontfamily;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  transform: $transform; // ensures no half-pixel rendering in firefox
+  content: $code;
+  font-style: normal;
+}
+
+@mixin vector($width, $left, $top, $svg_width, $svg_height) {
+  left: calc-unit($left);
+  top: calc-unit($top);
+  padding-top: percentage($svg_height/$svg_width);
+  -ms-transform: scale(#{$width/$svg_default_width},#{$width/$svg_default_width});
+  /* IE 9 */
+  -webkit-transform: scale(#{$width/$svg_default_width},#{$width/$svg_default_width});
+  /* Safari */
+  transform: scale(#{$width/$svg_default_width},#{$width/$svg_default_width});
+}
+
+@mixin transition($attribute, $delay, $duration, $effect) {
+  -webkit-transition: $attribute $duration $effect;
+  -moz-transition: $attribute $duration $effect;
+  -o-transition: $attribute $duration $effect;
+  -ms-transition: $attribute $duration $effect;
+  transition: $attribute $duration $effect;
+  transition-delay: $delay;
+}
+
+@mixin flex {
+  display: -webkit-box;
+  /* OLD - iOS 6-, Safari 3.1-6 */
+  display: -moz-box;
+  /* OLD - Firefox 19- (buggy but mostly works) */
+  display: -ms-flexbox;
+  /* TWEENER - IE 10 */
+  display: -webkit-flex;
+  /* NEW - Chrome */
+  display: flex;
+  /* NEW, Spec - Opera 12.1, Firefox 20+ */
+}
+
+@mixin flex-column {
+  -webkit-box-flex: 1;
+  /* OLD - iOS 6-, Safari 3.1-6 */
+  -moz-box-flex: 1;
+  /* OLD - Firefox 19- */
+  width: 100%;
+  /* For old syntax, otherwise collapses. */
+  -webkit-flex: 1;
+  /* Chrome */
+  -ms-flex: 1;
+  /* IE 10 */
+  flex: 1;
+  /* NEW, Spec - Opera 12.1, Firefox 20+ */
+}
