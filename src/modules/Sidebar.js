@@ -1,4 +1,5 @@
 import React, { PropTypes } from 'react'
+require('../stylesheets/side-bar')
 
 const Sidebar = () => {
   return <div>
