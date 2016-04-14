@@ -1,4 +1,2 @@
-*~
 node_modules
-bundle.js
-browser-bundle.js.map
+build

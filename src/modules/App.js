@@ -1,24 +1,19 @@
-import { Grid, Row } from 'react-bootstrap'
-import Sidebar from './Sidebar'
 import React, { Component, PropTypes } from 'react'
-import MainContent from './Main-content'
+import { Row, Grid } from 'react-bootstrap'
+import Navbar from './Navbar'
+require('../www/stylesheets/main')
 
 class App extends Component {
-
   render () {
     return (
-      <Row>
-        <Sidebar />
-        <Grid fluid>
-          <MainContent />
-        </Grid>
+      <Row className='body'>
+        <Navbar/>
+        <div>
+          {this.props.children}
+        </div>
       </Row>
     )
   }
-}
-
-App.propTypes = {
-  children: PropTypes.object
 }
 
 export default App

@@ -1,9 +1,18 @@
 import React from 'react'
-import ReactDOM from 'react-dom'
-import './stylesheets/main.sass'
+import { render } from 'react-dom'
+import { Router, Route, browserHistory } from 'react-router'
+
 import App from './modules/App'
+import Projects from './modules/Projects'
+import About from './modules/About'
+import Contact from './modules/Contact'
 
-let img = document.createElement('img')
-img.src = require('./images/pig.jpg')
-
-ReactDOM.render(<App />, document.getElementById('root'))
+render((
+  <Router history={browserHistory}>
+    <Route path='/' component={App}>
+      <Route path='/projects' component={Projects} />
+      <Route path='/about' component={About} />
+      <Route path='/contact' component={Contact} />
+    </Route>
+  </Router>
+), document.getElementById('app'))
