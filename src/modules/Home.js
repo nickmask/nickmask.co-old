@@ -1,9 +1,17 @@
 import React from 'react'
+import { Col, Row } from 'react-bootstrap'
 
 class Home extends React.Component {
   render () {
     return (
-      <h1>Home</h1>
+      <Row>
+        <Col sm={6}>
+          <img src='http://fillmurray.com/500/200'/>
+        </Col>
+        <Col sm={6}>
+          <img src='http://fillmurray.com/500/200'/>
+        </Col>
+      </Row>
     )
   }
 }

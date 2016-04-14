@@ -1,17 +1,21 @@
 import React, { Component, PropTypes } from 'react'
-import { Row, Grid } from 'react-bootstrap'
+import { Row, Grid, Col } from 'react-bootstrap'
 import Navbar from './Navbar'
 require('../www/stylesheets/main')
+
+import Home from './Home.js'
 
 class App extends Component {
   render () {
     return (
-      <Row className='body'>
+      <div>
         <Navbar/>
-        <div>
-          {this.props.children}
-        </div>
-      </Row>
+          <Grid fluid className='grid'>
+            <Row className='container'>
+              {this.props.children}
+            </Row>
+          </Grid>
+      </div>
     )
   }
 }
