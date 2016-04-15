@@ -6,10 +6,10 @@ class Home extends React.Component {
     return (
       <div>
         <Row className='show-grid'>
-          <Col md={3} fluid>
-            <Image src='http://fillmurray.com/300/200' responsive/>
+          <Col md={6} fluid>
+            <Image src='http://fillmurray.com/600/200' responsive/>
           </Col>
-          <Col md={9} fluid>
+          <Col md={6} fluid>
             <div fluid>
               <h3>Hi, I'm Nick.</h3>
               <p>I am a web developer with a love and passion for UX, design, marketing and tech. I love making beautiful, intuitive products that help people and business become more efficent.</p>

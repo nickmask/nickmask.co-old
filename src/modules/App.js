@@ -1,5 +1,5 @@
 import React, { Component, PropTypes } from 'react'
-import { Grid } from 'react-bootstrap'
+import { Grid, Row, Footer } from 'react-bootstrap'
 import Navbar from './Navbar'
 require('../www/stylesheets/main')
 
@@ -13,6 +13,9 @@ class App extends Component {
         <Grid className='main'>
           {this.props.children}
         </Grid>
+        <footer className='footer' fluid>
+          <p> Copywrite 2016 - Nick Maskell </p>
+        </footer>
       </div>
     )
   }
