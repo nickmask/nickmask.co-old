@@ -1,9 +1,9 @@
 import React, { Component, PropTypes } from 'react'
-import { Grid, Row, Footer } from 'react-bootstrap'
+import { Grid } from 'react-bootstrap'
 import Navbar from './Navbar'
 require('../www/stylesheets/main')
 
-import Home from './Home.js'
+import Home from './Home'
 
 class App extends Component {
   render () {
@@ -11,10 +11,10 @@ class App extends Component {
       <div>
         <Navbar/>
         <Grid className='main'>
-          {this.props.children}
+          {this.props.children || <Home/>}
         </Grid>
         <footer className='footer' fluid>
-          <p> Copywrite 2016 - Nick Maskell </p>
+          <p> Copyright 2016 - Nick Maskell </p>
         </footer>
       </div>
     )
