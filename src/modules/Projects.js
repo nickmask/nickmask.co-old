@@ -1,9 +1,12 @@
 import React from 'react'
+import ProjectList from '../components/Project-list.js'
 
 class Projects extends React.Component {
   render () {
     return (
-      <h1>Projects</h1>
+      <row>
+        <ProjectList />
+      </row>
     )
   }
 }

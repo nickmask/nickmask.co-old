@@ -6,6 +6,7 @@ import App from './modules/App'
 import Home from './modules/Home'
 import Projects from './modules/Projects'
 import About from './modules/About'
+import Blog from './modules/Blog'
 import Contact from './modules/Contact'
 
 render((
@@ -13,6 +14,7 @@ render((
     <Route path='/' component={App}>
       <IndexRoute component={Home}/>
       <Route path='/projects' component={Projects} />
+      <Route path='/blog' component={Blog} />
       <Route path='/about' component={About} />
       <Route path='/contact' component={Contact} />
     </Route>
