@@ -6,7 +6,7 @@ class ProjectList extends React.Component {
     return (
       <div>
         <Col sm={4} className='projectItem'>
-          <a href='/projects/1'>
+          <a href='/project/1'>
             <div className='project'>
               <h2 className='projectTitle'>Tightrope</h2>
               <p className='projectInfo'>Node.js | React | Sass | Express</p>
