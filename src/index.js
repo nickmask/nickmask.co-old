@@ -8,15 +8,14 @@ import Projects from './modules/Projects'
 import About from './modules/About'
 import Blog from './modules/Blog'
 import Contact from './modules/Contact'
-import Project from './modules/Project-page'
+import Project from './modules/Project'
 
 render((
   <Router history={browserHistory}>
     <Route path='/' component={App}>
       <IndexRoute component={Home} />
-      <Route path='/projects' component={Projects}>
-        <Route path='/projects/:projectname' component={Project} />
-      </Route>
+      <Route path='/projects' component={Projects} />
+      <Route path='/project/:project' component={Project} />
       <Route path='/blog' component={Blog} />
       <Route path='/about' component={About} />
       <Route path='/contact' component={Contact} />
