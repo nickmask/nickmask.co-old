@@ -1,4 +1,4 @@
-import React, { Component, PropTypes } from 'react'
+import React, { Component } from 'react'
 import { Grid } from 'react-bootstrap'
 import Navbar from './Navbar'
 require('../www/stylesheets/main')

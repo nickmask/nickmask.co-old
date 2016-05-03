@@ -23,10 +23,10 @@ class ProjectList extends React.Component {
           projectData: childProject.val(),
         })
       })
+      self.setState({ list: arr })
       console.log('setting state', arr)
-      // self.setState = { list: arr }
+      console.log('Deeeeep', self.state)
     })
-    this.setState = { list: arr }
     console.log('this', this.state)
     console.log('done once')
   }
