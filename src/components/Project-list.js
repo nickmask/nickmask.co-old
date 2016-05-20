@@ -1,9 +1,13 @@
 import React from 'react'
+import { Image } from 'react'
+import { Link } from 'react-router'
 import { Col } from 'react-bootstrap'
 import request from 'superagent'
 import Firebase from 'firebase'
 import createFragment from 'react-addons-create-fragment'
 import _ from 'lodash'
+import Project from '../modules/Project'
+require('../www/stylesheets/projects.sass')
 
 class ProjectList extends React.Component {
 
@@ -24,30 +28,36 @@ class ProjectList extends React.Component {
         })
       })
       self.setState({ list: arr })
-      console.log('setting state', arr)
-      console.log('Deeeeep', self.state)
     })
-    console.log('this', this.state)
-    console.log('done once')
   }
 
   render () {
     if (this.state.list.length <= 0) {
-      console.log('State is 0')
-      return (<div />)
-    } else {
-      console.log('State is something')
       return (
         <div>
+          <Col sm={12} className='loading'>
+            <img src='/images/loading.gif'/>
+          </Col>
+        </div>
+      )
+    } else {
+      return (
+
+        <div>
           { _.map(this.state.list, function (project) {
+            let divStyle = { backgroundImage: 'url(' + project.projectData.mainImage + ')' };
+            console.log(project)
             return (
               <Col sm={4} key={project.projectName.replace(' ', '')} className='projectItem'>
-                <a href='/project/1'>
-                  <div className='project'>
+                <Link
+                to={`/project/${project.projectName.replace(' ', '-')}`}
+                projectData={project}
+                >
+                  <div style={divStyle} className='project'>
                     <h2 className='projectTitle'>{project.projectName}</h2>
                     <p className='projectInfo'>{project.projectData.tech}</p>
                   </div>
-                </a>
+                </Link>
               </Col>
             )
           })
