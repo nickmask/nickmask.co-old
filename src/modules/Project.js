@@ -6,12 +6,13 @@ require('../www/stylesheets/project-page')
 
 class Project extends React.Component {
   render () {
+    console.log(this.props)
     return (
       <div className='projectPage'>
         <Row>
           <Col sm={12} className='projectTitleCol'>
             <div className='projectTitle'>
-              <h1>Tightrope</h1>
+              <h1>{this.props.projectName}</h1>
               <i>30th March 2016</i>
               <Button bsSize='xsmall'>github</Button>
               <Button bsSize='xsmall'>live site</Button>
