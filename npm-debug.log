@@ -1,1036 +1,293 @@
 0 info it worked if it ends with ok
-1 verbose cli [ '/usr/local/bin/node',
-1 verbose cli   '/usr/local/bin/npm',
-1 verbose cli   'install',
-1 verbose cli   'reactfire',
-1 verbose cli   '--save' ]
+1 verbose cli [ '/usr/local/bin/node', '/usr/local/bin/npm', 'i' ]
 2 info using npm@2.15.1
 3 info using node@v4.4.4
-4 verbose install initial load of /Users/nick/workspace/projects/nickmask/package.json
-5 verbose installManyTop reading scoped package data from /Users/nick/workspace/projects/nickmask/node_modules/Base64/package.json
-6 verbose installManyTop reading scoped package data from /Users/nick/workspace/projects/nickmask/node_modules/abbrev/package.json
-7 verbose installManyTop reading scoped package data from /Users/nick/workspace/projects/nickmask/node_modules/accepts/package.json
-8 verbose installManyTop reading scoped package data from /Users/nick/workspace/projects/nickmask/node_modules/acorn/package.json
-9 verbose installManyTop reading scoped package data from /Users/nick/workspace/projects/nickmask/node_modules/acorn-jsx/package.json
-10 verbose installManyTop reading scoped package data from /Users/nick/workspace/projects/nickmask/node_modules/align-text/package.json
-11 verbose installManyTop reading scoped package data from /Users/nick/workspace/projects/nickmask/node_modules/alphanum-sort/package.json
-12 verbose installManyTop reading scoped package data from /Users/nick/workspace/projects/nickmask/node_modules/amdefine/package.json
-13 verbose installManyTop reading scoped package data from /Users/nick/workspace/projects/nickmask/node_modules/ansi/package.json
-14 verbose installManyTop reading scoped package data from /Users/nick/workspace/projects/nickmask/node_modules/ansi-escapes/package.json
-15 verbose installManyTop reading scoped package data from /Users/nick/workspace/projects/nickmask/node_modules/ansi-regex/package.json
-16 verbose installManyTop reading scoped package data from /Users/nick/workspace/projects/nickmask/node_modules/ansi-styles/package.json
-17 verbose installManyTop reading scoped package data from /Users/nick/workspace/projects/nickmask/node_modules/anymatch/package.json
-18 verbose installManyTop reading scoped package data from /Users/nick/workspace/projects/nickmask/node_modules/are-we-there-yet/package.json
-19 verbose installManyTop reading scoped package data from /Users/nick/workspace/projects/nickmask/node_modules/argparse/package.json
-20 verbose installManyTop reading scoped package data from /Users/nick/workspace/projects/nickmask/node_modules/arr-diff/package.json
-21 verbose installManyTop reading scoped package data from /Users/nick/workspace/projects/nickmask/node_modules/arr-flatten/package.json
-22 verbose installManyTop reading scoped package data from /Users/nick/workspace/projects/nickmask/node_modules/array-find-index/package.json
-23 verbose installManyTop reading scoped package data from /Users/nick/workspace/projects/nickmask/node_modules/array-flatten/package.json
-24 verbose installManyTop reading scoped package data from /Users/nick/workspace/projects/nickmask/node_modules/array-index/package.json
-25 verbose installManyTop reading scoped package data from /Users/nick/workspace/projects/nickmask/node_modules/array-union/package.json
-26 verbose installManyTop reading scoped package data from /Users/nick/workspace/projects/nickmask/node_modules/array-uniq/package.json
-27 verbose installManyTop reading scoped package data from /Users/nick/workspace/projects/nickmask/node_modules/array-unique/package.json
-28 verbose installManyTop reading scoped package data from /Users/nick/workspace/projects/nickmask/node_modules/arrify/package.json
-29 verbose installManyTop reading scoped package data from /Users/nick/workspace/projects/nickmask/node_modules/asap/package.json
-30 verbose installManyTop reading scoped package data from /Users/nick/workspace/projects/nickmask/node_modules/asn1/package.json
-31 verbose installManyTop reading scoped package data from /Users/nick/workspace/projects/nickmask/node_modules/assert/package.json
-32 verbose installManyTop reading scoped package data from /Users/nick/workspace/projects/nickmask/node_modules/assert-plus/package.json
-33 verbose installManyTop reading scoped package data from /Users/nick/workspace/projects/nickmask/node_modules/async/package.json
-34 verbose installManyTop reading scoped package data from /Users/nick/workspace/projects/nickmask/node_modules/async-each/package.json
-35 verbose installManyTop reading scoped package data from /Users/nick/workspace/projects/nickmask/node_modules/async-foreach/package.json
-36 verbose installManyTop reading scoped package data from /Users/nick/workspace/projects/nickmask/node_modules/autoprefixer/package.json
-37 verbose installManyTop reading scoped package data from /Users/nick/workspace/projects/nickmask/node_modules/aws-sign2/package.json
-38 verbose installManyTop reading scoped package data from /Users/nick/workspace/projects/nickmask/node_modules/aws4/package.json
-39 verbose installManyTop reading scoped package data from /Users/nick/workspace/projects/nickmask/node_modules/babel-cli/package.json
-40 verbose installManyTop reading scoped package data from /Users/nick/workspace/projects/nickmask/node_modules/babel-code-frame/package.json
-41 verbose installManyTop reading scoped package data from /Users/nick/workspace/projects/nickmask/node_modules/babel-core/package.json
-42 verbose installManyTop reading scoped package data from /Users/nick/workspace/projects/nickmask/node_modules/babel-eslint/package.json
-43 verbose installManyTop reading scoped package data from /Users/nick/workspace/projects/nickmask/node_modules/babel-generator/package.json
-44 verbose installManyTop reading scoped package data from /Users/nick/workspace/projects/nickmask/node_modules/babel-helper-bindify-decorators/package.json
-45 verbose installManyTop reading scoped package data from /Users/nick/workspace/projects/nickmask/node_modules/babel-helper-builder-binary-assignment-operator-visitor/package.json
-46 verbose installManyTop reading scoped package data from /Users/nick/workspace/projects/nickmask/node_modules/babel-helper-builder-react-jsx/package.json
-47 verbose installManyTop reading scoped package data from /Users/nick/workspace/projects/nickmask/node_modules/babel-helper-call-delegate/package.json
-48 verbose installManyTop reading scoped package data from /Users/nick/workspace/projects/nickmask/node_modules/babel-helper-define-map/package.json
-49 verbose installManyTop reading scoped package data from /Users/nick/workspace/projects/nickmask/node_modules/babel-helper-explode-assignable-expression/package.json
-50 verbose installManyTop reading scoped package data from /Users/nick/workspace/projects/nickmask/node_modules/babel-helper-explode-class/package.json
-51 verbose installManyTop reading scoped package data from /Users/nick/workspace/projects/nickmask/node_modules/babel-helper-function-name/package.json
-52 verbose installManyTop reading scoped package data from /Users/nick/workspace/projects/nickmask/node_modules/babel-helper-get-function-arity/package.json
-53 verbose installManyTop reading scoped package data from /Users/nick/workspace/projects/nickmask/node_modules/babel-helper-hoist-variables/package.json
-54 verbose installManyTop reading scoped package data from /Users/nick/workspace/projects/nickmask/node_modules/babel-helper-optimise-call-expression/package.json
-55 verbose installManyTop reading scoped package data from /Users/nick/workspace/projects/nickmask/node_modules/babel-helper-regex/package.json
-56 verbose installManyTop reading scoped package data from /Users/nick/workspace/projects/nickmask/node_modules/babel-helper-remap-async-to-generator/package.json
-57 verbose installManyTop reading scoped package data from /Users/nick/workspace/projects/nickmask/node_modules/babel-helper-replace-supers/package.json
-58 verbose installManyTop reading scoped package data from /Users/nick/workspace/projects/nickmask/node_modules/babel-helpers/package.json
-59 verbose installManyTop reading scoped package data from /Users/nick/workspace/projects/nickmask/node_modules/babel-loader/package.json
-60 verbose installManyTop reading scoped package data from /Users/nick/workspace/projects/nickmask/node_modules/babel-messages/package.json
-61 verbose installManyTop reading scoped package data from /Users/nick/workspace/projects/nickmask/node_modules/babel-plugin-check-es2015-constants/package.json
-62 verbose installManyTop reading scoped package data from /Users/nick/workspace/projects/nickmask/node_modules/babel-plugin-syntax-async-functions/package.json
-63 verbose installManyTop reading scoped package data from /Users/nick/workspace/projects/nickmask/node_modules/babel-plugin-syntax-class-constructor-call/package.json
-64 verbose installManyTop reading scoped package data from /Users/nick/workspace/projects/nickmask/node_modules/babel-plugin-syntax-class-properties/package.json
-65 verbose installManyTop reading scoped package data from /Users/nick/workspace/projects/nickmask/node_modules/babel-plugin-syntax-decorators/package.json
-66 verbose installManyTop reading scoped package data from /Users/nick/workspace/projects/nickmask/node_modules/babel-plugin-syntax-do-expressions/package.json
-67 verbose installManyTop reading scoped package data from /Users/nick/workspace/projects/nickmask/node_modules/babel-plugin-syntax-exponentiation-operator/package.json
-68 verbose installManyTop reading scoped package data from /Users/nick/workspace/projects/nickmask/node_modules/babel-plugin-syntax-export-extensions/package.json
-69 verbose installManyTop reading scoped package data from /Users/nick/workspace/projects/nickmask/node_modules/babel-plugin-syntax-flow/package.json
-70 verbose installManyTop reading scoped package data from /Users/nick/workspace/projects/nickmask/node_modules/babel-plugin-syntax-function-bind/package.json
-71 verbose installManyTop reading scoped package data from /Users/nick/workspace/projects/nickmask/node_modules/babel-plugin-syntax-jsx/package.json
-72 verbose installManyTop reading scoped package data from /Users/nick/workspace/projects/nickmask/node_modules/babel-plugin-syntax-object-rest-spread/package.json
-73 verbose installManyTop reading scoped package data from /Users/nick/workspace/projects/nickmask/node_modules/babel-plugin-syntax-trailing-function-commas/package.json
-74 verbose installManyTop reading scoped package data from /Users/nick/workspace/projects/nickmask/node_modules/babel-plugin-transform-async-to-generator/package.json
-75 verbose installManyTop reading scoped package data from /Users/nick/workspace/projects/nickmask/node_modules/babel-plugin-transform-class-constructor-call/package.json
-76 verbose installManyTop reading scoped package data from /Users/nick/workspace/projects/nickmask/node_modules/babel-plugin-transform-class-properties/package.json
-77 verbose installManyTop reading scoped package data from /Users/nick/workspace/projects/nickmask/node_modules/babel-plugin-transform-decorators/package.json
-78 verbose installManyTop reading scoped package data from /Users/nick/workspace/projects/nickmask/node_modules/babel-plugin-transform-do-expressions/package.json
-79 verbose installManyTop reading scoped package data from /Users/nick/workspace/projects/nickmask/node_modules/babel-plugin-transform-es2015-arrow-functions/package.json
-80 verbose installManyTop reading scoped package data from /Users/nick/workspace/projects/nickmask/node_modules/babel-plugin-transform-es2015-block-scoped-functions/package.json
-81 verbose installManyTop reading scoped package data from /Users/nick/workspace/projects/nickmask/node_modules/babel-plugin-transform-es2015-block-scoping/package.json
-82 verbose installManyTop reading scoped package data from /Users/nick/workspace/projects/nickmask/node_modules/babel-plugin-transform-es2015-classes/package.json
-83 verbose installManyTop reading scoped package data from /Users/nick/workspace/projects/nickmask/node_modules/babel-plugin-transform-es2015-computed-properties/package.json
-84 verbose installManyTop reading scoped package data from /Users/nick/workspace/projects/nickmask/node_modules/babel-plugin-transform-es2015-destructuring/package.json
-85 verbose installManyTop reading scoped package data from /Users/nick/workspace/projects/nickmask/node_modules/babel-plugin-transform-es2015-duplicate-keys/package.json
-86 verbose installManyTop reading scoped package data from /Users/nick/workspace/projects/nickmask/node_modules/babel-plugin-transform-es2015-for-of/package.json
-87 verbose installManyTop reading scoped package data from /Users/nick/workspace/projects/nickmask/node_modules/babel-plugin-transform-es2015-function-name/package.json
-88 verbose installManyTop reading scoped package data from /Users/nick/workspace/projects/nickmask/node_modules/babel-plugin-transform-es2015-literals/package.json
-89 verbose installManyTop reading scoped package data from /Users/nick/workspace/projects/nickmask/node_modules/babel-plugin-transform-es2015-modules-commonjs/package.json
-90 verbose installManyTop reading scoped package data from /Users/nick/workspace/projects/nickmask/node_modules/babel-plugin-transform-es2015-object-super/package.json
-91 verbose installManyTop reading scoped package data from /Users/nick/workspace/projects/nickmask/node_modules/babel-plugin-transform-es2015-parameters/package.json
-92 verbose installManyTop reading scoped package data from /Users/nick/workspace/projects/nickmask/node_modules/babel-plugin-transform-es2015-shorthand-properties/package.json
-93 verbose installManyTop reading scoped package data from /Users/nick/workspace/projects/nickmask/node_modules/babel-plugin-transform-es2015-spread/package.json
-94 verbose installManyTop reading scoped package data from /Users/nick/workspace/projects/nickmask/node_modules/babel-plugin-transform-es2015-sticky-regex/package.json
-95 verbose installManyTop reading scoped package data from /Users/nick/workspace/projects/nickmask/node_modules/babel-plugin-transform-es2015-template-literals/package.json
-96 verbose installManyTop reading scoped package data from /Users/nick/workspace/projects/nickmask/node_modules/babel-plugin-transform-es2015-typeof-symbol/package.json
-97 verbose installManyTop reading scoped package data from /Users/nick/workspace/projects/nickmask/node_modules/babel-plugin-transform-es2015-unicode-regex/package.json
-98 verbose installManyTop reading scoped package data from /Users/nick/workspace/projects/nickmask/node_modules/babel-plugin-transform-exponentiation-operator/package.json
-99 verbose installManyTop reading scoped package data from /Users/nick/workspace/projects/nickmask/node_modules/babel-plugin-transform-export-extensions/package.json
-100 verbose installManyTop reading scoped package data from /Users/nick/workspace/projects/nickmask/node_modules/babel-plugin-transform-flow-strip-types/package.json
-101 verbose installManyTop reading scoped package data from /Users/nick/workspace/projects/nickmask/node_modules/babel-plugin-transform-function-bind/package.json
-102 verbose installManyTop reading scoped package data from /Users/nick/workspace/projects/nickmask/node_modules/babel-plugin-transform-object-rest-spread/package.json
-103 verbose installManyTop reading scoped package data from /Users/nick/workspace/projects/nickmask/node_modules/babel-plugin-transform-react-display-name/package.json
-104 verbose installManyTop reading scoped package data from /Users/nick/workspace/projects/nickmask/node_modules/babel-plugin-transform-react-jsx/package.json
-105 verbose installManyTop reading scoped package data from /Users/nick/workspace/projects/nickmask/node_modules/babel-plugin-transform-react-jsx-source/package.json
-106 verbose installManyTop reading scoped package data from /Users/nick/workspace/projects/nickmask/node_modules/babel-plugin-transform-regenerator/package.json
-107 verbose installManyTop reading scoped package data from /Users/nick/workspace/projects/nickmask/node_modules/babel-plugin-transform-strict-mode/package.json
-108 verbose installManyTop reading scoped package data from /Users/nick/workspace/projects/nickmask/node_modules/babel-polyfill/package.json
-109 verbose installManyTop reading scoped package data from /Users/nick/workspace/projects/nickmask/node_modules/babel-preset-es2015/package.json
-110 verbose installManyTop reading scoped package data from /Users/nick/workspace/projects/nickmask/node_modules/babel-preset-react/package.json
-111 verbose installManyTop reading scoped package data from /Users/nick/workspace/projects/nickmask/node_modules/babel-preset-stage-0/package.json
-112 verbose installManyTop reading scoped package data from /Users/nick/workspace/projects/nickmask/node_modules/babel-preset-stage-1/package.json
-113 verbose installManyTop reading scoped package data from /Users/nick/workspace/projects/nickmask/node_modules/babel-preset-stage-2/package.json
-114 verbose installManyTop reading scoped package data from /Users/nick/workspace/projects/nickmask/node_modules/babel-preset-stage-3/package.json
-115 verbose installManyTop reading scoped package data from /Users/nick/workspace/projects/nickmask/node_modules/babel-regenerator-runtime/package.json
-116 verbose installManyTop reading scoped package data from /Users/nick/workspace/projects/nickmask/node_modules/babel-register/package.json
-117 verbose installManyTop reading scoped package data from /Users/nick/workspace/projects/nickmask/node_modules/babel-runtime/package.json
-118 verbose installManyTop reading scoped package data from /Users/nick/workspace/projects/nickmask/node_modules/babel-template/package.json
-119 verbose installManyTop reading scoped package data from /Users/nick/workspace/projects/nickmask/node_modules/babel-traverse/package.json
-120 verbose installManyTop reading scoped package data from /Users/nick/workspace/projects/nickmask/node_modules/babel-types/package.json
-121 verbose installManyTop reading scoped package data from /Users/nick/workspace/projects/nickmask/node_modules/babylon/package.json
-122 verbose installManyTop reading scoped package data from /Users/nick/workspace/projects/nickmask/node_modules/balanced-match/package.json
-123 verbose installManyTop reading scoped package data from /Users/nick/workspace/projects/nickmask/node_modules/base62/package.json
-124 verbose installManyTop reading scoped package data from /Users/nick/workspace/projects/nickmask/node_modules/base64-js/package.json
-125 verbose installManyTop reading scoped package data from /Users/nick/workspace/projects/nickmask/node_modules/batch/package.json
-126 verbose installManyTop reading scoped package data from /Users/nick/workspace/projects/nickmask/node_modules/big.js/package.json
-127 verbose installManyTop reading scoped package data from /Users/nick/workspace/projects/nickmask/node_modules/bin-version/package.json
-128 verbose installManyTop reading scoped package data from /Users/nick/workspace/projects/nickmask/node_modules/bin-version-check/package.json
-129 verbose installManyTop reading scoped package data from /Users/nick/workspace/projects/nickmask/node_modules/binary-extensions/package.json
-130 verbose installManyTop reading scoped package data from /Users/nick/workspace/projects/nickmask/node_modules/bl/package.json
-131 verbose installManyTop reading scoped package data from /Users/nick/workspace/projects/nickmask/node_modules/block-stream/package.json
-132 verbose installManyTop reading scoped package data from /Users/nick/workspace/projects/nickmask/node_modules/bluebird/package.json
-133 verbose installManyTop reading scoped package data from /Users/nick/workspace/projects/nickmask/node_modules/boolbase/package.json
-134 verbose installManyTop reading scoped package data from /Users/nick/workspace/projects/nickmask/node_modules/boom/package.json
-135 verbose installManyTop reading scoped package data from /Users/nick/workspace/projects/nickmask/node_modules/bowser/package.json
-136 verbose installManyTop reading scoped package data from /Users/nick/workspace/projects/nickmask/node_modules/brace-expansion/package.json
-137 verbose installManyTop reading scoped package data from /Users/nick/workspace/projects/nickmask/node_modules/braces/package.json
-138 verbose installManyTop reading scoped package data from /Users/nick/workspace/projects/nickmask/node_modules/browserify-zlib/package.json
-139 verbose installManyTop reading scoped package data from /Users/nick/workspace/projects/nickmask/node_modules/browserslist/package.json
-140 verbose installManyTop reading scoped package data from /Users/nick/workspace/projects/nickmask/node_modules/buffer/package.json
-141 verbose installManyTop reading scoped package data from /Users/nick/workspace/projects/nickmask/node_modules/builtin-modules/package.json
-142 verbose installManyTop reading scoped package data from /Users/nick/workspace/projects/nickmask/node_modules/bytes/package.json
-143 verbose installManyTop reading scoped package data from /Users/nick/workspace/projects/nickmask/node_modules/caller-path/package.json
-144 verbose installManyTop reading scoped package data from /Users/nick/workspace/projects/nickmask/node_modules/callsites/package.json
-145 verbose installManyTop reading scoped package data from /Users/nick/workspace/projects/nickmask/node_modules/camel-case/package.json
-146 verbose installManyTop reading scoped package data from /Users/nick/workspace/projects/nickmask/node_modules/camelcase/package.json
-147 verbose installManyTop reading scoped package data from /Users/nick/workspace/projects/nickmask/node_modules/camelcase-keys/package.json
-148 verbose installManyTop reading scoped package data from /Users/nick/workspace/projects/nickmask/node_modules/can-use-dom/package.json
-149 verbose installManyTop reading scoped package data from /Users/nick/workspace/projects/nickmask/node_modules/caniuse-db/package.json
-150 verbose installManyTop reading scoped package data from /Users/nick/workspace/projects/nickmask/node_modules/caseless/package.json
-151 verbose installManyTop reading scoped package data from /Users/nick/workspace/projects/nickmask/node_modules/center-align/package.json
-152 verbose installManyTop reading scoped package data from /Users/nick/workspace/projects/nickmask/node_modules/chalk/package.json
-153 verbose installManyTop reading scoped package data from /Users/nick/workspace/projects/nickmask/node_modules/change-case/package.json
-154 verbose installManyTop reading scoped package data from /Users/nick/workspace/projects/nickmask/node_modules/chokidar/package.json
-155 verbose installManyTop reading scoped package data from /Users/nick/workspace/projects/nickmask/node_modules/clap/package.json
-156 verbose installManyTop reading scoped package data from /Users/nick/workspace/projects/nickmask/node_modules/classnames/package.json
-157 verbose installManyTop reading scoped package data from /Users/nick/workspace/projects/nickmask/node_modules/clean-css/package.json
-158 verbose installManyTop reading scoped package data from /Users/nick/workspace/projects/nickmask/node_modules/cli/package.json
-159 verbose installManyTop reading scoped package data from /Users/nick/workspace/projects/nickmask/node_modules/cli-cursor/package.json
-160 verbose installManyTop reading scoped package data from /Users/nick/workspace/projects/nickmask/node_modules/cli-width/package.json
-161 verbose installManyTop reading scoped package data from /Users/nick/workspace/projects/nickmask/node_modules/cliui/package.json
-162 verbose installManyTop reading scoped package data from /Users/nick/workspace/projects/nickmask/node_modules/clone/package.json
-163 verbose installManyTop reading scoped package data from /Users/nick/workspace/projects/nickmask/node_modules/coa/package.json
-164 verbose installManyTop reading scoped package data from /Users/nick/workspace/projects/nickmask/node_modules/code-point-at/package.json
-165 verbose installManyTop reading scoped package data from /Users/nick/workspace/projects/nickmask/node_modules/color/package.json
-166 verbose installManyTop reading scoped package data from /Users/nick/workspace/projects/nickmask/node_modules/color-convert/package.json
-167 verbose installManyTop reading scoped package data from /Users/nick/workspace/projects/nickmask/node_modules/color-name/package.json
-168 verbose installManyTop reading scoped package data from /Users/nick/workspace/projects/nickmask/node_modules/color-string/package.json
-169 verbose installManyTop reading scoped package data from /Users/nick/workspace/projects/nickmask/node_modules/colormin/package.json
-170 verbose installManyTop reading scoped package data from /Users/nick/workspace/projects/nickmask/node_modules/colors/package.json
-171 verbose installManyTop reading scoped package data from /Users/nick/workspace/projects/nickmask/node_modules/combined-stream/package.json
-172 verbose installManyTop reading scoped package data from /Users/nick/workspace/projects/nickmask/node_modules/commander/package.json
-173 verbose installManyTop reading scoped package data from /Users/nick/workspace/projects/nickmask/node_modules/component-emitter/package.json
-174 verbose installManyTop reading scoped package data from /Users/nick/workspace/projects/nickmask/node_modules/compressible/package.json
-175 verbose installManyTop reading scoped package data from /Users/nick/workspace/projects/nickmask/node_modules/compression/package.json
-176 verbose installManyTop reading scoped package data from /Users/nick/workspace/projects/nickmask/node_modules/concat-map/package.json
-177 verbose installManyTop reading scoped package data from /Users/nick/workspace/projects/nickmask/node_modules/concat-stream/package.json
-178 verbose installManyTop reading scoped package data from /Users/nick/workspace/projects/nickmask/node_modules/config-chain/package.json
-179 verbose installManyTop reading scoped package data from /Users/nick/workspace/projects/nickmask/node_modules/connect-history-api-fallback/package.json
-180 verbose installManyTop reading scoped package data from /Users/nick/workspace/projects/nickmask/node_modules/console-browserify/package.json
-181 verbose installManyTop reading scoped package data from /Users/nick/workspace/projects/nickmask/node_modules/constant-case/package.json
-182 verbose installManyTop reading scoped package data from /Users/nick/workspace/projects/nickmask/node_modules/constants-browserify/package.json
-183 verbose installManyTop reading scoped package data from /Users/nick/workspace/projects/nickmask/node_modules/content-disposition/package.json
-184 verbose installManyTop reading scoped package data from /Users/nick/workspace/projects/nickmask/node_modules/content-type/package.json
-185 verbose installManyTop reading scoped package data from /Users/nick/workspace/projects/nickmask/node_modules/convert-source-map/package.json
-186 verbose installManyTop reading scoped package data from /Users/nick/workspace/projects/nickmask/node_modules/cookie/package.json
-187 verbose installManyTop reading scoped package data from /Users/nick/workspace/projects/nickmask/node_modules/cookie-signature/package.json
-188 verbose installManyTop reading scoped package data from /Users/nick/workspace/projects/nickmask/node_modules/cookiejar/package.json
-189 verbose installManyTop reading scoped package data from /Users/nick/workspace/projects/nickmask/node_modules/core-js/package.json
-190 verbose installManyTop reading scoped package data from /Users/nick/workspace/projects/nickmask/node_modules/core-util-is/package.json
-191 verbose installManyTop reading scoped package data from /Users/nick/workspace/projects/nickmask/node_modules/cross-spawn/package.json
-192 verbose installManyTop reading scoped package data from /Users/nick/workspace/projects/nickmask/node_modules/cross-spawn-async/package.json
-193 verbose installManyTop reading scoped package data from /Users/nick/workspace/projects/nickmask/node_modules/cryptiles/package.json
-194 verbose installManyTop reading scoped package data from /Users/nick/workspace/projects/nickmask/node_modules/crypto-browserify/package.json
-195 verbose installManyTop reading scoped package data from /Users/nick/workspace/projects/nickmask/node_modules/css-color-names/package.json
-196 verbose installManyTop reading scoped package data from /Users/nick/workspace/projects/nickmask/node_modules/css-loader/package.json
-197 verbose installManyTop reading scoped package data from /Users/nick/workspace/projects/nickmask/node_modules/css-select/package.json
-198 verbose installManyTop reading scoped package data from /Users/nick/workspace/projects/nickmask/node_modules/css-selector-tokenizer/package.json
-199 verbose installManyTop reading scoped package data from /Users/nick/workspace/projects/nickmask/node_modules/css-what/package.json
-200 verbose installManyTop reading scoped package data from /Users/nick/workspace/projects/nickmask/node_modules/cssesc/package.json
-201 verbose installManyTop reading scoped package data from /Users/nick/workspace/projects/nickmask/node_modules/cssnano/package.json
-202 verbose installManyTop reading scoped package data from /Users/nick/workspace/projects/nickmask/node_modules/csso/package.json
-203 verbose installManyTop reading scoped package data from /Users/nick/workspace/projects/nickmask/node_modules/d/package.json
-204 verbose installManyTop reading scoped package data from /Users/nick/workspace/projects/nickmask/node_modules/dashdash/package.json
-205 verbose installManyTop reading scoped package data from /Users/nick/workspace/projects/nickmask/node_modules/date-now/package.json
-206 verbose installManyTop reading scoped package data from /Users/nick/workspace/projects/nickmask/node_modules/debug/package.json
-207 verbose installManyTop reading scoped package data from /Users/nick/workspace/projects/nickmask/node_modules/decamelize/package.json
-208 verbose installManyTop reading scoped package data from /Users/nick/workspace/projects/nickmask/node_modules/deep-equal/package.json
-209 verbose installManyTop reading scoped package data from /Users/nick/workspace/projects/nickmask/node_modules/deep-is/package.json
-210 verbose installManyTop reading scoped package data from /Users/nick/workspace/projects/nickmask/node_modules/defined/package.json
-211 verbose installManyTop reading scoped package data from /Users/nick/workspace/projects/nickmask/node_modules/del/package.json
-212 verbose installManyTop reading scoped package data from /Users/nick/workspace/projects/nickmask/node_modules/delayed-stream/package.json
-213 verbose installManyTop reading scoped package data from /Users/nick/workspace/projects/nickmask/node_modules/delegates/package.json
-214 verbose installManyTop reading scoped package data from /Users/nick/workspace/projects/nickmask/node_modules/depd/package.json
-215 verbose installManyTop reading scoped package data from /Users/nick/workspace/projects/nickmask/node_modules/destroy/package.json
-216 verbose installManyTop reading scoped package data from /Users/nick/workspace/projects/nickmask/node_modules/detect-indent/package.json
-217 verbose installManyTop reading scoped package data from /Users/nick/workspace/projects/nickmask/node_modules/doctrine/package.json
-218 verbose installManyTop reading scoped package data from /Users/nick/workspace/projects/nickmask/node_modules/dom-converter/package.json
-219 verbose installManyTop reading scoped package data from /Users/nick/workspace/projects/nickmask/node_modules/dom-helpers/package.json
-220 verbose installManyTop reading scoped package data from /Users/nick/workspace/projects/nickmask/node_modules/dom-serializer/package.json
-221 verbose installManyTop reading scoped package data from /Users/nick/workspace/projects/nickmask/node_modules/domain-browser/package.json
-222 verbose installManyTop reading scoped package data from /Users/nick/workspace/projects/nickmask/node_modules/domelementtype/package.json
-223 verbose installManyTop reading scoped package data from /Users/nick/workspace/projects/nickmask/node_modules/domhandler/package.json
-224 verbose installManyTop reading scoped package data from /Users/nick/workspace/projects/nickmask/node_modules/domutils/package.json
-225 verbose installManyTop reading scoped package data from /Users/nick/workspace/projects/nickmask/node_modules/dot-case/package.json
-226 verbose installManyTop reading scoped package data from /Users/nick/workspace/projects/nickmask/node_modules/ecc-jsbn/package.json
-227 verbose installManyTop reading scoped package data from /Users/nick/workspace/projects/nickmask/node_modules/ee-first/package.json
-228 verbose installManyTop reading scoped package data from /Users/nick/workspace/projects/nickmask/node_modules/enhanced-resolve/package.json
-229 verbose installManyTop reading scoped package data from /Users/nick/workspace/projects/nickmask/node_modules/enquire.js/package.json
-230 verbose installManyTop reading scoped package data from /Users/nick/workspace/projects/nickmask/node_modules/entities/package.json
-231 verbose installManyTop reading scoped package data from /Users/nick/workspace/projects/nickmask/node_modules/envify/package.json
-232 verbose installManyTop reading scoped package data from /Users/nick/workspace/projects/nickmask/node_modules/errno/package.json
-233 verbose installManyTop reading scoped package data from /Users/nick/workspace/projects/nickmask/node_modules/error-ex/package.json
-234 verbose installManyTop reading scoped package data from /Users/nick/workspace/projects/nickmask/node_modules/es5-ext/package.json
-235 verbose installManyTop reading scoped package data from /Users/nick/workspace/projects/nickmask/node_modules/es6-iterator/package.json
-236 verbose installManyTop reading scoped package data from /Users/nick/workspace/projects/nickmask/node_modules/es6-map/package.json
-237 verbose installManyTop reading scoped package data from /Users/nick/workspace/projects/nickmask/node_modules/es6-set/package.json
-238 verbose installManyTop reading scoped package data from /Users/nick/workspace/projects/nickmask/node_modules/es6-symbol/package.json
-239 verbose installManyTop reading scoped package data from /Users/nick/workspace/projects/nickmask/node_modules/es6-weak-map/package.json
-240 verbose installManyTop reading scoped package data from /Users/nick/workspace/projects/nickmask/node_modules/escape-html/package.json
-241 verbose installManyTop reading scoped package data from /Users/nick/workspace/projects/nickmask/node_modules/escape-string-regexp/package.json
-242 verbose installManyTop reading scoped package data from /Users/nick/workspace/projects/nickmask/node_modules/escope/package.json
-243 verbose installManyTop reading scoped package data from /Users/nick/workspace/projects/nickmask/node_modules/eslint/package.json
-244 verbose installManyTop reading scoped package data from /Users/nick/workspace/projects/nickmask/node_modules/eslint-plugin-react/package.json
-245 verbose installManyTop reading scoped package data from /Users/nick/workspace/projects/nickmask/node_modules/espree/package.json
-246 verbose installManyTop reading scoped package data from /Users/nick/workspace/projects/nickmask/node_modules/esprima/package.json
-247 verbose installManyTop reading scoped package data from /Users/nick/workspace/projects/nickmask/node_modules/esrecurse/package.json
-248 verbose installManyTop reading scoped package data from /Users/nick/workspace/projects/nickmask/node_modules/estraverse/package.json
-249 verbose installManyTop reading scoped package data from /Users/nick/workspace/projects/nickmask/node_modules/esutils/package.json
-250 verbose installManyTop reading scoped package data from /Users/nick/workspace/projects/nickmask/node_modules/etag/package.json
-251 verbose installManyTop reading scoped package data from /Users/nick/workspace/projects/nickmask/node_modules/event-emitter/package.json
-252 verbose installManyTop reading scoped package data from /Users/nick/workspace/projects/nickmask/node_modules/eventemitter3/package.json
-253 verbose installManyTop reading scoped package data from /Users/nick/workspace/projects/nickmask/node_modules/events/package.json
-254 verbose installManyTop reading scoped package data from /Users/nick/workspace/projects/nickmask/node_modules/eventsource/package.json
-255 verbose installManyTop reading scoped package data from /Users/nick/workspace/projects/nickmask/node_modules/exit/package.json
-256 verbose installManyTop reading scoped package data from /Users/nick/workspace/projects/nickmask/node_modules/exit-hook/package.json
-257 verbose installManyTop reading scoped package data from /Users/nick/workspace/projects/nickmask/node_modules/expand-brackets/package.json
-258 verbose installManyTop reading scoped package data from /Users/nick/workspace/projects/nickmask/node_modules/expand-range/package.json
-259 verbose installManyTop reading scoped package data from /Users/nick/workspace/projects/nickmask/node_modules/express/package.json
-260 verbose installManyTop reading scoped package data from /Users/nick/workspace/projects/nickmask/node_modules/extend/package.json
-261 verbose installManyTop reading scoped package data from /Users/nick/workspace/projects/nickmask/node_modules/extglob/package.json
-262 verbose installManyTop reading scoped package data from /Users/nick/workspace/projects/nickmask/node_modules/extract-text-webpack-plugin/package.json
-263 verbose installManyTop reading scoped package data from /Users/nick/workspace/projects/nickmask/node_modules/extsprintf/package.json
-264 verbose installManyTop reading scoped package data from /Users/nick/workspace/projects/nickmask/node_modules/fast-levenshtein/package.json
-265 verbose installManyTop reading scoped package data from /Users/nick/workspace/projects/nickmask/node_modules/fastparse/package.json
-266 verbose installManyTop reading scoped package data from /Users/nick/workspace/projects/nickmask/node_modules/faye-websocket/package.json
-267 verbose installManyTop reading scoped package data from /Users/nick/workspace/projects/nickmask/node_modules/fbjs/package.json
-268 verbose installManyTop reading scoped package data from /Users/nick/workspace/projects/nickmask/node_modules/figures/package.json
-269 verbose installManyTop reading scoped package data from /Users/nick/workspace/projects/nickmask/node_modules/file-entry-cache/package.json
-270 verbose installManyTop reading scoped package data from /Users/nick/workspace/projects/nickmask/node_modules/filename-regex/package.json
-271 verbose installManyTop reading scoped package data from /Users/nick/workspace/projects/nickmask/node_modules/fill-range/package.json
-272 verbose installManyTop reading scoped package data from /Users/nick/workspace/projects/nickmask/node_modules/finalhandler/package.json
-273 verbose installManyTop reading scoped package data from /Users/nick/workspace/projects/nickmask/node_modules/find-up/package.json
-274 verbose installManyTop reading scoped package data from /Users/nick/workspace/projects/nickmask/node_modules/find-versions/package.json
-275 verbose installManyTop reading scoped package data from /Users/nick/workspace/projects/nickmask/node_modules/firebase/package.json
-276 verbose installManyTop reading scoped package data from /Users/nick/workspace/projects/nickmask/node_modules/flat-cache/package.json
-277 verbose installManyTop reading scoped package data from /Users/nick/workspace/projects/nickmask/node_modules/flatten/package.json
-278 verbose installManyTop reading scoped package data from /Users/nick/workspace/projects/nickmask/node_modules/for-in/package.json
-279 verbose installManyTop reading scoped package data from /Users/nick/workspace/projects/nickmask/node_modules/for-own/package.json
-280 verbose installManyTop reading scoped package data from /Users/nick/workspace/projects/nickmask/node_modules/forever-agent/package.json
-281 verbose installManyTop reading scoped package data from /Users/nick/workspace/projects/nickmask/node_modules/form-data/package.json
-282 verbose installManyTop reading scoped package data from /Users/nick/workspace/projects/nickmask/node_modules/formidable/package.json
-283 verbose installManyTop reading scoped package data from /Users/nick/workspace/projects/nickmask/node_modules/forwarded/package.json
-284 verbose installManyTop reading scoped package data from /Users/nick/workspace/projects/nickmask/node_modules/fresh/package.json
-285 verbose installManyTop reading scoped package data from /Users/nick/workspace/projects/nickmask/node_modules/fs-readdir-recursive/package.json
-286 verbose installManyTop reading scoped package data from /Users/nick/workspace/projects/nickmask/node_modules/fsevents/package.json
-287 verbose installManyTop reading scoped package data from /Users/nick/workspace/projects/nickmask/node_modules/fstream/package.json
-288 verbose installManyTop reading scoped package data from /Users/nick/workspace/projects/nickmask/node_modules/gauge/package.json
-289 verbose installManyTop reading scoped package data from /Users/nick/workspace/projects/nickmask/node_modules/gaze/package.json
-290 verbose installManyTop reading scoped package data from /Users/nick/workspace/projects/nickmask/node_modules/generate-function/package.json
-291 verbose installManyTop reading scoped package data from /Users/nick/workspace/projects/nickmask/node_modules/generate-object-property/package.json
-292 verbose installManyTop reading scoped package data from /Users/nick/workspace/projects/nickmask/node_modules/get-stdin/package.json
-293 verbose installManyTop reading scoped package data from /Users/nick/workspace/projects/nickmask/node_modules/glob/package.json
-294 verbose installManyTop reading scoped package data from /Users/nick/workspace/projects/nickmask/node_modules/glob-base/package.json
-295 verbose installManyTop reading scoped package data from /Users/nick/workspace/projects/nickmask/node_modules/glob-parent/package.json
-296 verbose installManyTop reading scoped package data from /Users/nick/workspace/projects/nickmask/node_modules/globals/package.json
-297 verbose installManyTop reading scoped package data from /Users/nick/workspace/projects/nickmask/node_modules/globby/package.json
-298 verbose installManyTop reading scoped package data from /Users/nick/workspace/projects/nickmask/node_modules/globule/package.json
-299 verbose installManyTop reading scoped package data from /Users/nick/workspace/projects/nickmask/node_modules/graceful-fs/package.json
-300 verbose installManyTop reading scoped package data from /Users/nick/workspace/projects/nickmask/node_modules/graceful-readlink/package.json
-301 verbose installManyTop reading scoped package data from /Users/nick/workspace/projects/nickmask/node_modules/har-validator/package.json
-302 verbose installManyTop reading scoped package data from /Users/nick/workspace/projects/nickmask/node_modules/has-ansi/package.json
-303 verbose installManyTop reading scoped package data from /Users/nick/workspace/projects/nickmask/node_modules/has-flag/package.json
-304 verbose installManyTop reading scoped package data from /Users/nick/workspace/projects/nickmask/node_modules/has-own/package.json
-305 verbose installManyTop reading scoped package data from /Users/nick/workspace/projects/nickmask/node_modules/has-unicode/package.json
-306 verbose installManyTop reading scoped package data from /Users/nick/workspace/projects/nickmask/node_modules/hawk/package.json
-307 verbose installManyTop reading scoped package data from /Users/nick/workspace/projects/nickmask/node_modules/history/package.json
-308 verbose installManyTop reading scoped package data from /Users/nick/workspace/projects/nickmask/node_modules/hoek/package.json
-309 verbose installManyTop reading scoped package data from /Users/nick/workspace/projects/nickmask/node_modules/hoist-non-react-statics/package.json
-310 verbose installManyTop reading scoped package data from /Users/nick/workspace/projects/nickmask/node_modules/home-or-tmp/package.json
-311 verbose installManyTop reading scoped package data from /Users/nick/workspace/projects/nickmask/node_modules/hosted-git-info/package.json
-312 verbose installManyTop reading scoped package data from /Users/nick/workspace/projects/nickmask/node_modules/html-minifier/package.json
-313 verbose installManyTop reading scoped package data from /Users/nick/workspace/projects/nickmask/node_modules/html-webpack-plugin/package.json
-314 verbose installManyTop reading scoped package data from /Users/nick/workspace/projects/nickmask/node_modules/htmlparser2/package.json
-315 verbose installManyTop reading scoped package data from /Users/nick/workspace/projects/nickmask/node_modules/http-browserify/package.json
-316 verbose installManyTop reading scoped package data from /Users/nick/workspace/projects/nickmask/node_modules/http-errors/package.json
-317 verbose installManyTop reading scoped package data from /Users/nick/workspace/projects/nickmask/node_modules/http-proxy/package.json
-318 verbose installManyTop reading scoped package data from /Users/nick/workspace/projects/nickmask/node_modules/http-signature/package.json
-319 verbose installManyTop reading scoped package data from /Users/nick/workspace/projects/nickmask/node_modules/https-browserify/package.json
-320 verbose installManyTop reading scoped package data from /Users/nick/workspace/projects/nickmask/node_modules/icss-replace-symbols/package.json
-321 verbose installManyTop reading scoped package data from /Users/nick/workspace/projects/nickmask/node_modules/ieee754/package.json
-322 verbose installManyTop reading scoped package data from /Users/nick/workspace/projects/nickmask/node_modules/ignore/package.json
-323 verbose installManyTop reading scoped package data from /Users/nick/workspace/projects/nickmask/node_modules/imurmurhash/package.json
-324 verbose installManyTop reading scoped package data from /Users/nick/workspace/projects/nickmask/node_modules/indent-string/package.json
-325 verbose installManyTop reading scoped package data from /Users/nick/workspace/projects/nickmask/node_modules/indexes-of/package.json
-326 verbose installManyTop reading scoped package data from /Users/nick/workspace/projects/nickmask/node_modules/indexof/package.json
-327 verbose installManyTop reading scoped package data from /Users/nick/workspace/projects/nickmask/node_modules/inflight/package.json
-328 verbose installManyTop reading scoped package data from /Users/nick/workspace/projects/nickmask/node_modules/inherits/package.json
-329 verbose installManyTop reading scoped package data from /Users/nick/workspace/projects/nickmask/node_modules/ini/package.json
-330 verbose installManyTop reading scoped package data from /Users/nick/workspace/projects/nickmask/node_modules/inline-style-prefix-all/package.json
-331 verbose installManyTop reading scoped package data from /Users/nick/workspace/projects/nickmask/node_modules/inline-style-prefixer/package.json
-332 verbose installManyTop reading scoped package data from /Users/nick/workspace/projects/nickmask/node_modules/inquirer/package.json
-333 verbose installManyTop reading scoped package data from /Users/nick/workspace/projects/nickmask/node_modules/install/package.json
-334 verbose installManyTop reading scoped package data from /Users/nick/workspace/projects/nickmask/node_modules/interpret/package.json
-335 verbose installManyTop reading scoped package data from /Users/nick/workspace/projects/nickmask/node_modules/invariant/package.json
-336 verbose installManyTop reading scoped package data from /Users/nick/workspace/projects/nickmask/node_modules/ipaddr.js/package.json
-337 verbose installManyTop reading scoped package data from /Users/nick/workspace/projects/nickmask/node_modules/is-absolute/package.json
-338 verbose installManyTop reading scoped package data from /Users/nick/workspace/projects/nickmask/node_modules/is-absolute-url/package.json
-339 verbose installManyTop reading scoped package data from /Users/nick/workspace/projects/nickmask/node_modules/is-arrayish/package.json
-340 verbose installManyTop reading scoped package data from /Users/nick/workspace/projects/nickmask/node_modules/is-binary-path/package.json
-341 verbose installManyTop reading scoped package data from /Users/nick/workspace/projects/nickmask/node_modules/is-buffer/package.json
-342 verbose installManyTop reading scoped package data from /Users/nick/workspace/projects/nickmask/node_modules/is-builtin-module/package.json
-343 verbose installManyTop reading scoped package data from /Users/nick/workspace/projects/nickmask/node_modules/is-dotfile/package.json
-344 verbose installManyTop reading scoped package data from /Users/nick/workspace/projects/nickmask/node_modules/is-equal-shallow/package.json
-345 verbose installManyTop reading scoped package data from /Users/nick/workspace/projects/nickmask/node_modules/is-extendable/package.json
-346 verbose installManyTop reading scoped package data from /Users/nick/workspace/projects/nickmask/node_modules/is-extglob/package.json
-347 verbose installManyTop reading scoped package data from /Users/nick/workspace/projects/nickmask/node_modules/is-finite/package.json
-348 verbose installManyTop reading scoped package data from /Users/nick/workspace/projects/nickmask/node_modules/is-fullwidth-code-point/package.json
-349 verbose installManyTop reading scoped package data from /Users/nick/workspace/projects/nickmask/node_modules/is-glob/package.json
-350 verbose installManyTop reading scoped package data from /Users/nick/workspace/projects/nickmask/node_modules/is-integer/package.json
-351 verbose installManyTop reading scoped package data from /Users/nick/workspace/projects/nickmask/node_modules/is-lower-case/package.json
-352 verbose installManyTop reading scoped package data from /Users/nick/workspace/projects/nickmask/node_modules/is-my-json-valid/package.json
-353 verbose installManyTop reading scoped package data from /Users/nick/workspace/projects/nickmask/node_modules/is-number/package.json
-354 verbose installManyTop reading scoped package data from /Users/nick/workspace/projects/nickmask/node_modules/is-path-cwd/package.json
-355 verbose installManyTop reading scoped package data from /Users/nick/workspace/projects/nickmask/node_modules/is-path-in-cwd/package.json
-356 verbose installManyTop reading scoped package data from /Users/nick/workspace/projects/nickmask/node_modules/is-path-inside/package.json
-357 verbose installManyTop reading scoped package data from /Users/nick/workspace/projects/nickmask/node_modules/is-plain-obj/package.json
-358 verbose installManyTop reading scoped package data from /Users/nick/workspace/projects/nickmask/node_modules/is-posix-bracket/package.json
-359 verbose installManyTop reading scoped package data from /Users/nick/workspace/projects/nickmask/node_modules/is-primitive/package.json
-360 verbose installManyTop reading scoped package data from /Users/nick/workspace/projects/nickmask/node_modules/is-property/package.json
-361 verbose installManyTop reading scoped package data from /Users/nick/workspace/projects/nickmask/node_modules/is-relative/package.json
-362 verbose installManyTop reading scoped package data from /Users/nick/workspace/projects/nickmask/node_modules/is-resolvable/package.json
-363 verbose installManyTop reading scoped package data from /Users/nick/workspace/projects/nickmask/node_modules/is-svg/package.json
-364 verbose installManyTop reading scoped package data from /Users/nick/workspace/projects/nickmask/node_modules/is-typedarray/package.json
-365 verbose installManyTop reading scoped package data from /Users/nick/workspace/projects/nickmask/node_modules/is-upper-case/package.json
-366 verbose installManyTop reading scoped package data from /Users/nick/workspace/projects/nickmask/node_modules/is-utf8/package.json
-367 verbose installManyTop reading scoped package data from /Users/nick/workspace/projects/nickmask/node_modules/isarray/package.json
-368 verbose installManyTop reading scoped package data from /Users/nick/workspace/projects/nickmask/node_modules/isexe/package.json
-369 verbose installManyTop reading scoped package data from /Users/nick/workspace/projects/nickmask/node_modules/isobject/package.json
-370 verbose installManyTop reading scoped package data from /Users/nick/workspace/projects/nickmask/node_modules/isstream/package.json
-371 verbose installManyTop reading scoped package data from /Users/nick/workspace/projects/nickmask/node_modules/jodid25519/package.json
-372 verbose installManyTop reading scoped package data from /Users/nick/workspace/projects/nickmask/node_modules/jquery/package.json
-373 verbose installManyTop reading scoped package data from /Users/nick/workspace/projects/nickmask/node_modules/js-base64/package.json
-374 verbose installManyTop reading scoped package data from /Users/nick/workspace/projects/nickmask/node_modules/js-tokens/package.json
-375 verbose installManyTop reading scoped package data from /Users/nick/workspace/projects/nickmask/node_modules/js-yaml/package.json
-376 verbose installManyTop reading scoped package data from /Users/nick/workspace/projects/nickmask/node_modules/jsbn/package.json
-377 verbose installManyTop reading scoped package data from /Users/nick/workspace/projects/nickmask/node_modules/jsesc/package.json
-378 verbose installManyTop reading scoped package data from /Users/nick/workspace/projects/nickmask/node_modules/json-schema/package.json
-379 verbose installManyTop reading scoped package data from /Users/nick/workspace/projects/nickmask/node_modules/json-stable-stringify/package.json
-380 verbose installManyTop reading scoped package data from /Users/nick/workspace/projects/nickmask/node_modules/json-stringify-safe/package.json
-381 verbose installManyTop reading scoped package data from /Users/nick/workspace/projects/nickmask/node_modules/json2mq/package.json
-382 verbose installManyTop reading scoped package data from /Users/nick/workspace/projects/nickmask/node_modules/json3/package.json
-383 verbose installManyTop reading scoped package data from /Users/nick/workspace/projects/nickmask/node_modules/json5/package.json
-384 verbose installManyTop reading scoped package data from /Users/nick/workspace/projects/nickmask/node_modules/jsonify/package.json
-385 verbose installManyTop reading scoped package data from /Users/nick/workspace/projects/nickmask/node_modules/jsonpointer/package.json
-386 verbose installManyTop reading scoped package data from /Users/nick/workspace/projects/nickmask/node_modules/jsprim/package.json
-387 verbose installManyTop reading scoped package data from /Users/nick/workspace/projects/nickmask/node_modules/jstransform/package.json
-388 verbose installManyTop reading scoped package data from /Users/nick/workspace/projects/nickmask/node_modules/keycode/package.json
-389 verbose installManyTop reading scoped package data from /Users/nick/workspace/projects/nickmask/node_modules/kind-of/package.json
-390 verbose installManyTop reading scoped package data from /Users/nick/workspace/projects/nickmask/node_modules/lazy-cache/package.json
-391 verbose installManyTop reading scoped package data from /Users/nick/workspace/projects/nickmask/node_modules/levn/package.json
-392 verbose installManyTop reading scoped package data from /Users/nick/workspace/projects/nickmask/node_modules/load-json-file/package.json
-393 verbose installManyTop reading scoped package data from /Users/nick/workspace/projects/nickmask/node_modules/loader-utils/package.json
-394 verbose installManyTop reading scoped package data from /Users/nick/workspace/projects/nickmask/node_modules/lodash/package.json
-395 verbose installManyTop reading scoped package data from /Users/nick/workspace/projects/nickmask/node_modules/lodash-compat/package.json
-396 verbose installManyTop reading scoped package data from /Users/nick/workspace/projects/nickmask/node_modules/lodash._baseassign/package.json
-397 verbose installManyTop reading scoped package data from /Users/nick/workspace/projects/nickmask/node_modules/lodash._baseclone/package.json
-398 verbose installManyTop reading scoped package data from /Users/nick/workspace/projects/nickmask/node_modules/lodash._basecopy/package.json
-399 verbose installManyTop reading scoped package data from /Users/nick/workspace/projects/nickmask/node_modules/lodash._baseflatten/package.json
-400 verbose installManyTop reading scoped package data from /Users/nick/workspace/projects/nickmask/node_modules/lodash._basefor/package.json
-401 verbose installManyTop reading scoped package data from /Users/nick/workspace/projects/nickmask/node_modules/lodash._bindcallback/package.json
-402 verbose installManyTop reading scoped package data from /Users/nick/workspace/projects/nickmask/node_modules/lodash._createassigner/package.json
-403 verbose installManyTop reading scoped package data from /Users/nick/workspace/projects/nickmask/node_modules/lodash._createcompounder/package.json
-404 verbose installManyTop reading scoped package data from /Users/nick/workspace/projects/nickmask/node_modules/lodash._getnative/package.json
-405 verbose installManyTop reading scoped package data from /Users/nick/workspace/projects/nickmask/node_modules/lodash._isiterateecall/package.json
-406 verbose installManyTop reading scoped package data from /Users/nick/workspace/projects/nickmask/node_modules/lodash._pickbyarray/package.json
-407 verbose installManyTop reading scoped package data from /Users/nick/workspace/projects/nickmask/node_modules/lodash._pickbycallback/package.json
-408 verbose installManyTop reading scoped package data from /Users/nick/workspace/projects/nickmask/node_modules/lodash._root/package.json
-409 verbose installManyTop reading scoped package data from /Users/nick/workspace/projects/nickmask/node_modules/lodash._stack/package.json
-410 verbose installManyTop reading scoped package data from /Users/nick/workspace/projects/nickmask/node_modules/lodash.assign/package.json
-411 verbose installManyTop reading scoped package data from /Users/nick/workspace/projects/nickmask/node_modules/lodash.camelcase/package.json
-412 verbose installManyTop reading scoped package data from /Users/nick/workspace/projects/nickmask/node_modules/lodash.debounce/package.json
-413 verbose installManyTop reading scoped package data from /Users/nick/workspace/projects/nickmask/node_modules/lodash.deburr/package.json
-414 verbose installManyTop reading scoped package data from /Users/nick/workspace/projects/nickmask/node_modules/lodash.flowright/package.json
-415 verbose installManyTop reading scoped package data from /Users/nick/workspace/projects/nickmask/node_modules/lodash.isarguments/package.json
-416 verbose installManyTop reading scoped package data from /Users/nick/workspace/projects/nickmask/node_modules/lodash.isarray/package.json
-417 verbose installManyTop reading scoped package data from /Users/nick/workspace/projects/nickmask/node_modules/lodash.isplainobject/package.json
-418 verbose installManyTop reading scoped package data from /Users/nick/workspace/projects/nickmask/node_modules/lodash.keys/package.json
-419 verbose installManyTop reading scoped package data from /Users/nick/workspace/projects/nickmask/node_modules/lodash.keysin/package.json
-420 verbose installManyTop reading scoped package data from /Users/nick/workspace/projects/nickmask/node_modules/lodash.merge/package.json
-421 verbose installManyTop reading scoped package data from /Users/nick/workspace/projects/nickmask/node_modules/lodash.pad/package.json
-422 verbose installManyTop reading scoped package data from /Users/nick/workspace/projects/nickmask/node_modules/lodash.padend/package.json
-423 verbose installManyTop reading scoped package data from /Users/nick/workspace/projects/nickmask/node_modules/lodash.padstart/package.json
-424 verbose installManyTop reading scoped package data from /Users/nick/workspace/projects/nickmask/node_modules/lodash.pick/package.json
-425 verbose installManyTop reading scoped package data from /Users/nick/workspace/projects/nickmask/node_modules/lodash.rest/package.json
-426 verbose installManyTop reading scoped package data from /Users/nick/workspace/projects/nickmask/node_modules/lodash.restparam/package.json
-427 verbose installManyTop reading scoped package data from /Users/nick/workspace/projects/nickmask/node_modules/lodash.throttle/package.json
-428 verbose installManyTop reading scoped package data from /Users/nick/workspace/projects/nickmask/node_modules/lodash.tostring/package.json
-429 verbose installManyTop reading scoped package data from /Users/nick/workspace/projects/nickmask/node_modules/lodash.words/package.json
-430 verbose installManyTop reading scoped package data from /Users/nick/workspace/projects/nickmask/node_modules/log-symbols/package.json
-431 verbose installManyTop reading scoped package data from /Users/nick/workspace/projects/nickmask/node_modules/longest/package.json
-432 verbose installManyTop reading scoped package data from /Users/nick/workspace/projects/nickmask/node_modules/loose-envify/package.json
-433 verbose installManyTop reading scoped package data from /Users/nick/workspace/projects/nickmask/node_modules/loud-rejection/package.json
-434 verbose installManyTop reading scoped package data from /Users/nick/workspace/projects/nickmask/node_modules/lower-case/package.json
-435 verbose installManyTop reading scoped package data from /Users/nick/workspace/projects/nickmask/node_modules/lower-case-first/package.json
-436 verbose installManyTop reading scoped package data from /Users/nick/workspace/projects/nickmask/node_modules/lru-cache/package.json
-437 verbose installManyTop reading scoped package data from /Users/nick/workspace/projects/nickmask/node_modules/map-obj/package.json
-438 verbose installManyTop reading scoped package data from /Users/nick/workspace/projects/nickmask/node_modules/material-ui/package.json
-439 verbose installManyTop reading scoped package data from /Users/nick/workspace/projects/nickmask/node_modules/media-typer/package.json
-440 verbose installManyTop reading scoped package data from /Users/nick/workspace/projects/nickmask/node_modules/memory-fs/package.json
-441 verbose installManyTop reading scoped package data from /Users/nick/workspace/projects/nickmask/node_modules/meow/package.json
-442 verbose installManyTop reading scoped package data from /Users/nick/workspace/projects/nickmask/node_modules/merge-descriptors/package.json
-443 verbose installManyTop reading scoped package data from /Users/nick/workspace/projects/nickmask/node_modules/methods/package.json
-444 verbose installManyTop reading scoped package data from /Users/nick/workspace/projects/nickmask/node_modules/micromatch/package.json
-445 verbose installManyTop reading scoped package data from /Users/nick/workspace/projects/nickmask/node_modules/mime/package.json
-446 verbose installManyTop reading scoped package data from /Users/nick/workspace/projects/nickmask/node_modules/mime-db/package.json
-447 verbose installManyTop reading scoped package data from /Users/nick/workspace/projects/nickmask/node_modules/mime-types/package.json
-448 verbose installManyTop reading scoped package data from /Users/nick/workspace/projects/nickmask/node_modules/minimatch/package.json
-449 verbose installManyTop reading scoped package data from /Users/nick/workspace/projects/nickmask/node_modules/minimist/package.json
-450 verbose installManyTop reading scoped package data from /Users/nick/workspace/projects/nickmask/node_modules/mkdirp/package.json
-451 verbose installManyTop reading scoped package data from /Users/nick/workspace/projects/nickmask/node_modules/ms/package.json
-452 verbose installManyTop reading scoped package data from /Users/nick/workspace/projects/nickmask/node_modules/mute-stream/package.json
-453 verbose installManyTop reading scoped package data from /Users/nick/workspace/projects/nickmask/node_modules/nan/package.json
-454 verbose installManyTop reading scoped package data from /Users/nick/workspace/projects/nickmask/node_modules/ncname/package.json
-455 verbose installManyTop reading scoped package data from /Users/nick/workspace/projects/nickmask/node_modules/negotiator/package.json
-456 verbose installManyTop reading scoped package data from /Users/nick/workspace/projects/nickmask/node_modules/node-dir/package.json
-457 verbose installManyTop reading scoped package data from /Users/nick/workspace/projects/nickmask/node_modules/node-gyp/package.json
-458 verbose installManyTop reading scoped package data from /Users/nick/workspace/projects/nickmask/node_modules/node-libs-browser/package.json
-459 verbose installManyTop reading scoped package data from /Users/nick/workspace/projects/nickmask/node_modules/node-sass/package.json
-460 verbose installManyTop reading scoped package data from /Users/nick/workspace/projects/nickmask/node_modules/node-uuid/package.json
-461 verbose installManyTop reading scoped package data from /Users/nick/workspace/projects/nickmask/node_modules/nopt/package.json
-462 verbose installManyTop reading scoped package data from /Users/nick/workspace/projects/nickmask/node_modules/normalize-package-data/package.json
-463 verbose installManyTop reading scoped package data from /Users/nick/workspace/projects/nickmask/node_modules/normalize-path/package.json
-464 verbose installManyTop reading scoped package data from /Users/nick/workspace/projects/nickmask/node_modules/normalize-range/package.json
-465 verbose installManyTop reading scoped package data from /Users/nick/workspace/projects/nickmask/node_modules/normalize-url/package.json
-466 verbose installManyTop reading scoped package data from /Users/nick/workspace/projects/nickmask/node_modules/npm/package.json
-467 verbose installManyTop reading scoped package data from /Users/nick/workspace/projects/nickmask/node_modules/npmconf/package.json
-468 verbose installManyTop reading scoped package data from /Users/nick/workspace/projects/nickmask/node_modules/npmlog/package.json
-469 verbose installManyTop reading scoped package data from /Users/nick/workspace/projects/nickmask/node_modules/nth-check/package.json
-470 verbose installManyTop reading scoped package data from /Users/nick/workspace/projects/nickmask/node_modules/num2fraction/package.json
-471 verbose installManyTop reading scoped package data from /Users/nick/workspace/projects/nickmask/node_modules/number-is-nan/package.json
-472 verbose installManyTop reading scoped package data from /Users/nick/workspace/projects/nickmask/node_modules/oauth-sign/package.json
-473 verbose installManyTop reading scoped package data from /Users/nick/workspace/projects/nickmask/node_modules/object-assign/package.json
-474 verbose installManyTop reading scoped package data from /Users/nick/workspace/projects/nickmask/node_modules/object.omit/package.json
-475 verbose installManyTop reading scoped package data from /Users/nick/workspace/projects/nickmask/node_modules/on-finished/package.json
-476 verbose installManyTop reading scoped package data from /Users/nick/workspace/projects/nickmask/node_modules/on-headers/package.json
-477 verbose installManyTop reading scoped package data from /Users/nick/workspace/projects/nickmask/node_modules/once/package.json
-478 verbose installManyTop reading scoped package data from /Users/nick/workspace/projects/nickmask/node_modules/onetime/package.json
-479 verbose installManyTop reading scoped package data from /Users/nick/workspace/projects/nickmask/node_modules/optimist/package.json
-480 verbose installManyTop reading scoped package data from /Users/nick/workspace/projects/nickmask/node_modules/optionator/package.json
-481 verbose installManyTop reading scoped package data from /Users/nick/workspace/projects/nickmask/node_modules/original/package.json
-482 verbose installManyTop reading scoped package data from /Users/nick/workspace/projects/nickmask/node_modules/os-browserify/package.json
-483 verbose installManyTop reading scoped package data from /Users/nick/workspace/projects/nickmask/node_modules/os-homedir/package.json
-484 verbose installManyTop reading scoped package data from /Users/nick/workspace/projects/nickmask/node_modules/os-shim/package.json
-485 verbose installManyTop reading scoped package data from /Users/nick/workspace/projects/nickmask/node_modules/os-tmpdir/package.json
-486 verbose installManyTop reading scoped package data from /Users/nick/workspace/projects/nickmask/node_modules/osenv/package.json
-487 verbose installManyTop reading scoped package data from /Users/nick/workspace/projects/nickmask/node_modules/output-file-sync/package.json
-488 verbose installManyTop reading scoped package data from /Users/nick/workspace/projects/nickmask/node_modules/pako/package.json
-489 verbose installManyTop reading scoped package data from /Users/nick/workspace/projects/nickmask/node_modules/param-case/package.json
-490 verbose installManyTop reading scoped package data from /Users/nick/workspace/projects/nickmask/node_modules/parse-glob/package.json
-491 verbose installManyTop reading scoped package data from /Users/nick/workspace/projects/nickmask/node_modules/parse-json/package.json
-492 verbose installManyTop reading scoped package data from /Users/nick/workspace/projects/nickmask/node_modules/parseurl/package.json
-493 verbose installManyTop reading scoped package data from /Users/nick/workspace/projects/nickmask/node_modules/pascal-case/package.json
-494 verbose installManyTop reading scoped package data from /Users/nick/workspace/projects/nickmask/node_modules/path-array/package.json
-495 verbose installManyTop reading scoped package data from /Users/nick/workspace/projects/nickmask/node_modules/path-browserify/package.json
-496 verbose installManyTop reading scoped package data from /Users/nick/workspace/projects/nickmask/node_modules/path-case/package.json
-497 verbose installManyTop reading scoped package data from /Users/nick/workspace/projects/nickmask/node_modules/path-exists/package.json
-498 verbose installManyTop reading scoped package data from /Users/nick/workspace/projects/nickmask/node_modules/path-is-absolute/package.json
-499 verbose installManyTop reading scoped package data from /Users/nick/workspace/projects/nickmask/node_modules/path-is-inside/package.json
-500 verbose installManyTop reading scoped package data from /Users/nick/workspace/projects/nickmask/node_modules/path-to-regexp/package.json
-501 verbose installManyTop reading scoped package data from /Users/nick/workspace/projects/nickmask/node_modules/path-type/package.json
-502 verbose installManyTop reading scoped package data from /Users/nick/workspace/projects/nickmask/node_modules/pbkdf2-compat/package.json
-503 verbose installManyTop reading scoped package data from /Users/nick/workspace/projects/nickmask/node_modules/pify/package.json
-504 verbose installManyTop reading scoped package data from /Users/nick/workspace/projects/nickmask/node_modules/pinkie/package.json
-505 verbose installManyTop reading scoped package data from /Users/nick/workspace/projects/nickmask/node_modules/pinkie-promise/package.json
-506 verbose installManyTop reading scoped package data from /Users/nick/workspace/projects/nickmask/node_modules/pluralize/package.json
-507 verbose installManyTop reading scoped package data from /Users/nick/workspace/projects/nickmask/node_modules/postcss/package.json
-508 verbose installManyTop reading scoped package data from /Users/nick/workspace/projects/nickmask/node_modules/postcss-calc/package.json
-509 verbose installManyTop reading scoped package data from /Users/nick/workspace/projects/nickmask/node_modules/postcss-colormin/package.json
-510 verbose installManyTop reading scoped package data from /Users/nick/workspace/projects/nickmask/node_modules/postcss-convert-values/package.json
-511 verbose installManyTop reading scoped package data from /Users/nick/workspace/projects/nickmask/node_modules/postcss-discard-comments/package.json
-512 verbose installManyTop reading scoped package data from /Users/nick/workspace/projects/nickmask/node_modules/postcss-discard-duplicates/package.json
-513 verbose installManyTop reading scoped package data from /Users/nick/workspace/projects/nickmask/node_modules/postcss-discard-empty/package.json
-514 verbose installManyTop reading scoped package data from /Users/nick/workspace/projects/nickmask/node_modules/postcss-discard-unused/package.json
-515 verbose installManyTop reading scoped package data from /Users/nick/workspace/projects/nickmask/node_modules/postcss-filter-plugins/package.json
-516 verbose installManyTop reading scoped package data from /Users/nick/workspace/projects/nickmask/node_modules/postcss-loader/package.json
-517 verbose installManyTop reading scoped package data from /Users/nick/workspace/projects/nickmask/node_modules/postcss-merge-idents/package.json
-518 verbose installManyTop reading scoped package data from /Users/nick/workspace/projects/nickmask/node_modules/postcss-merge-longhand/package.json
-519 verbose installManyTop reading scoped package data from /Users/nick/workspace/projects/nickmask/node_modules/postcss-merge-rules/package.json
-520 verbose installManyTop reading scoped package data from /Users/nick/workspace/projects/nickmask/node_modules/postcss-message-helpers/package.json
-521 verbose installManyTop reading scoped package data from /Users/nick/workspace/projects/nickmask/node_modules/postcss-minify-font-values/package.json
-522 verbose installManyTop reading scoped package data from /Users/nick/workspace/projects/nickmask/node_modules/postcss-minify-gradients/package.json
-523 verbose installManyTop reading scoped package data from /Users/nick/workspace/projects/nickmask/node_modules/postcss-minify-params/package.json
-524 verbose installManyTop reading scoped package data from /Users/nick/workspace/projects/nickmask/node_modules/postcss-minify-selectors/package.json
-525 verbose installManyTop reading scoped package data from /Users/nick/workspace/projects/nickmask/node_modules/postcss-modules-extract-imports/package.json
-526 verbose installManyTop reading scoped package data from /Users/nick/workspace/projects/nickmask/node_modules/postcss-modules-local-by-default/package.json
-527 verbose installManyTop reading scoped package data from /Users/nick/workspace/projects/nickmask/node_modules/postcss-modules-scope/package.json
-528 verbose installManyTop reading scoped package data from /Users/nick/workspace/projects/nickmask/node_modules/postcss-modules-values/package.json
-529 verbose installManyTop reading scoped package data from /Users/nick/workspace/projects/nickmask/node_modules/postcss-normalize-charset/package.json
-530 verbose installManyTop reading scoped package data from /Users/nick/workspace/projects/nickmask/node_modules/postcss-normalize-url/package.json
-531 verbose installManyTop reading scoped package data from /Users/nick/workspace/projects/nickmask/node_modules/postcss-ordered-values/package.json
-532 verbose installManyTop reading scoped package data from /Users/nick/workspace/projects/nickmask/node_modules/postcss-reduce-idents/package.json
-533 verbose installManyTop reading scoped package data from /Users/nick/workspace/projects/nickmask/node_modules/postcss-reduce-transforms/package.json
-534 verbose installManyTop reading scoped package data from /Users/nick/workspace/projects/nickmask/node_modules/postcss-selector-parser/package.json
-535 verbose installManyTop reading scoped package data from /Users/nick/workspace/projects/nickmask/node_modules/postcss-svgo/package.json
-536 verbose installManyTop reading scoped package data from /Users/nick/workspace/projects/nickmask/node_modules/postcss-unique-selectors/package.json
-537 verbose installManyTop reading scoped package data from /Users/nick/workspace/projects/nickmask/node_modules/postcss-value-parser/package.json
-538 verbose installManyTop reading scoped package data from /Users/nick/workspace/projects/nickmask/node_modules/postcss-zindex/package.json
-539 verbose installManyTop reading scoped package data from /Users/nick/workspace/projects/nickmask/node_modules/prelude-ls/package.json
-540 verbose installManyTop reading scoped package data from /Users/nick/workspace/projects/nickmask/node_modules/prepend-http/package.json
-541 verbose installManyTop reading scoped package data from /Users/nick/workspace/projects/nickmask/node_modules/preserve/package.json
-542 verbose installManyTop reading scoped package data from /Users/nick/workspace/projects/nickmask/node_modules/pretty-error/package.json
-543 verbose installManyTop reading scoped package data from /Users/nick/workspace/projects/nickmask/node_modules/private/package.json
-544 verbose installManyTop reading scoped package data from /Users/nick/workspace/projects/nickmask/node_modules/process/package.json
-545 verbose installManyTop reading scoped package data from /Users/nick/workspace/projects/nickmask/node_modules/process-nextick-args/package.json
-546 verbose installManyTop reading scoped package data from /Users/nick/workspace/projects/nickmask/node_modules/progress/package.json
-547 verbose installManyTop reading scoped package data from /Users/nick/workspace/projects/nickmask/node_modules/promise/package.json
-548 verbose installManyTop reading scoped package data from /Users/nick/workspace/projects/nickmask/node_modules/proto-list/package.json
-549 verbose installManyTop reading scoped package data from /Users/nick/workspace/projects/nickmask/node_modules/proxy-addr/package.json
-550 verbose installManyTop reading scoped package data from /Users/nick/workspace/projects/nickmask/node_modules/prr/package.json
-551 verbose installManyTop reading scoped package data from /Users/nick/workspace/projects/nickmask/node_modules/pseudomap/package.json
-552 verbose installManyTop reading scoped package data from /Users/nick/workspace/projects/nickmask/node_modules/punycode/package.json
-553 verbose installManyTop reading scoped package data from /Users/nick/workspace/projects/nickmask/node_modules/q/package.json
-554 verbose installManyTop reading scoped package data from /Users/nick/workspace/projects/nickmask/node_modules/qs/package.json
-555 verbose installManyTop reading scoped package data from /Users/nick/workspace/projects/nickmask/node_modules/query-string/package.json
-556 verbose installManyTop reading scoped package data from /Users/nick/workspace/projects/nickmask/node_modules/querystring/package.json
-557 verbose installManyTop reading scoped package data from /Users/nick/workspace/projects/nickmask/node_modules/querystring-es3/package.json
-558 verbose installManyTop reading scoped package data from /Users/nick/workspace/projects/nickmask/node_modules/querystringify/package.json
-559 verbose installManyTop reading scoped package data from /Users/nick/workspace/projects/nickmask/node_modules/randomatic/package.json
-560 verbose installManyTop reading scoped package data from /Users/nick/workspace/projects/nickmask/node_modules/range-parser/package.json
-561 verbose installManyTop reading scoped package data from /Users/nick/workspace/projects/nickmask/node_modules/react/package.json
-562 verbose installManyTop reading scoped package data from /Users/nick/workspace/projects/nickmask/node_modules/react-addons-create-fragment/package.json
-563 verbose installManyTop reading scoped package data from /Users/nick/workspace/projects/nickmask/node_modules/react-addons-pure-render-mixin/package.json
-564 verbose installManyTop reading scoped package data from /Users/nick/workspace/projects/nickmask/node_modules/react-addons-transition-group/package.json
-565 verbose installManyTop reading scoped package data from /Users/nick/workspace/projects/nickmask/node_modules/react-addons-update/package.json
-566 verbose installManyTop reading scoped package data from /Users/nick/workspace/projects/nickmask/node_modules/react-bootstrap/package.json
-567 verbose installManyTop reading scoped package data from /Users/nick/workspace/projects/nickmask/node_modules/react-dom/package.json
-568 verbose installManyTop reading scoped package data from /Users/nick/workspace/projects/nickmask/node_modules/react-event-listener/package.json
-569 verbose installManyTop reading scoped package data from /Users/nick/workspace/projects/nickmask/node_modules/react-hot-api/package.json
-570 verbose installManyTop reading scoped package data from /Users/nick/workspace/projects/nickmask/node_modules/react-hot-loader/package.json
-571 verbose installManyTop reading scoped package data from /Users/nick/workspace/projects/nickmask/node_modules/react-overlays/package.json
-572 verbose installManyTop reading scoped package data from /Users/nick/workspace/projects/nickmask/node_modules/react-prop-types/package.json
-573 verbose installManyTop reading scoped package data from /Users/nick/workspace/projects/nickmask/node_modules/react-responsive-mixin/package.json
-574 verbose installManyTop reading scoped package data from /Users/nick/workspace/projects/nickmask/node_modules/react-router/package.json
-575 verbose installManyTop reading scoped package data from /Users/nick/workspace/projects/nickmask/node_modules/react-slick/package.json
-576 verbose installManyTop reading scoped package data from /Users/nick/workspace/projects/nickmask/node_modules/react-tap-event-plugin/package.json
-577 verbose installManyTop reading scoped package data from /Users/nick/workspace/projects/nickmask/node_modules/reactfire/package.json
-578 verbose installManyTop reading scoped package data from /Users/nick/workspace/projects/nickmask/node_modules/read-json-sync/package.json
-579 verbose installManyTop reading scoped package data from /Users/nick/workspace/projects/nickmask/node_modules/read-pkg/package.json
-580 verbose installManyTop reading scoped package data from /Users/nick/workspace/projects/nickmask/node_modules/read-pkg-up/package.json
-581 verbose installManyTop reading scoped package data from /Users/nick/workspace/projects/nickmask/node_modules/readable-stream/package.json
-582 verbose installManyTop reading scoped package data from /Users/nick/workspace/projects/nickmask/node_modules/readdirp/package.json
-583 verbose installManyTop reading scoped package data from /Users/nick/workspace/projects/nickmask/node_modules/readline2/package.json
-584 verbose installManyTop reading scoped package data from /Users/nick/workspace/projects/nickmask/node_modules/recompose/package.json
-585 verbose installManyTop reading scoped package data from /Users/nick/workspace/projects/nickmask/node_modules/redent/package.json
-586 verbose installManyTop reading scoped package data from /Users/nick/workspace/projects/nickmask/node_modules/reduce-component/package.json
-587 verbose installManyTop reading scoped package data from /Users/nick/workspace/projects/nickmask/node_modules/reduce-css-calc/package.json
-588 verbose installManyTop reading scoped package data from /Users/nick/workspace/projects/nickmask/node_modules/reduce-function-call/package.json
-589 verbose installManyTop reading scoped package data from /Users/nick/workspace/projects/nickmask/node_modules/regenerate/package.json
-590 verbose installManyTop reading scoped package data from /Users/nick/workspace/projects/nickmask/node_modules/regex-cache/package.json
-591 verbose installManyTop reading scoped package data from /Users/nick/workspace/projects/nickmask/node_modules/regexpu-core/package.json
-592 verbose installManyTop reading scoped package data from /Users/nick/workspace/projects/nickmask/node_modules/regjsgen/package.json
-593 verbose installManyTop reading scoped package data from /Users/nick/workspace/projects/nickmask/node_modules/regjsparser/package.json
-594 verbose installManyTop reading scoped package data from /Users/nick/workspace/projects/nickmask/node_modules/relateurl/package.json
-595 verbose installManyTop reading scoped package data from /Users/nick/workspace/projects/nickmask/node_modules/renderkid/package.json
-596 verbose installManyTop reading scoped package data from /Users/nick/workspace/projects/nickmask/node_modules/repeat-element/package.json
-597 verbose installManyTop reading scoped package data from /Users/nick/workspace/projects/nickmask/node_modules/repeat-string/package.json
-598 verbose installManyTop reading scoped package data from /Users/nick/workspace/projects/nickmask/node_modules/repeating/package.json
-599 verbose installManyTop reading scoped package data from /Users/nick/workspace/projects/nickmask/node_modules/request/package.json
-600 verbose installManyTop reading scoped package data from /Users/nick/workspace/projects/nickmask/node_modules/require-uncached/package.json
-601 verbose installManyTop reading scoped package data from /Users/nick/workspace/projects/nickmask/node_modules/requires-port/package.json
-602 verbose installManyTop reading scoped package data from /Users/nick/workspace/projects/nickmask/node_modules/resolve-from/package.json
-603 verbose installManyTop reading scoped package data from /Users/nick/workspace/projects/nickmask/node_modules/restore-cursor/package.json
-604 verbose installManyTop reading scoped package data from /Users/nick/workspace/projects/nickmask/node_modules/right-align/package.json
-605 verbose installManyTop reading scoped package data from /Users/nick/workspace/projects/nickmask/node_modules/rimraf/package.json
-606 verbose installManyTop reading scoped package data from /Users/nick/workspace/projects/nickmask/node_modules/ripemd160/package.json
-607 verbose installManyTop reading scoped package data from /Users/nick/workspace/projects/nickmask/node_modules/run-async/package.json
-608 verbose installManyTop reading scoped package data from /Users/nick/workspace/projects/nickmask/node_modules/rx-lite/package.json
-609 verbose installManyTop reading scoped package data from /Users/nick/workspace/projects/nickmask/node_modules/sass-graph/package.json
-610 verbose installManyTop reading scoped package data from /Users/nick/workspace/projects/nickmask/node_modules/sass-loader/package.json
-611 verbose installManyTop reading scoped package data from /Users/nick/workspace/projects/nickmask/node_modules/sax/package.json
-612 verbose installManyTop reading scoped package data from /Users/nick/workspace/projects/nickmask/node_modules/semver/package.json
-613 verbose installManyTop reading scoped package data from /Users/nick/workspace/projects/nickmask/node_modules/semver-regex/package.json
-614 verbose installManyTop reading scoped package data from /Users/nick/workspace/projects/nickmask/node_modules/semver-truncate/package.json
-615 verbose installManyTop reading scoped package data from /Users/nick/workspace/projects/nickmask/node_modules/send/package.json
-616 verbose installManyTop reading scoped package data from /Users/nick/workspace/projects/nickmask/node_modules/sentence-case/package.json
-617 verbose installManyTop reading scoped package data from /Users/nick/workspace/projects/nickmask/node_modules/serve-index/package.json
-618 verbose installManyTop reading scoped package data from /Users/nick/workspace/projects/nickmask/node_modules/serve-static/package.json
-619 verbose installManyTop reading scoped package data from /Users/nick/workspace/projects/nickmask/node_modules/sha.js/package.json
-620 verbose installManyTop reading scoped package data from /Users/nick/workspace/projects/nickmask/node_modules/shebang-regex/package.json
-621 verbose installManyTop reading scoped package data from /Users/nick/workspace/projects/nickmask/node_modules/shelljs/package.json
-622 verbose installManyTop reading scoped package data from /Users/nick/workspace/projects/nickmask/node_modules/sigmund/package.json
-623 verbose installManyTop reading scoped package data from /Users/nick/workspace/projects/nickmask/node_modules/signal-exit/package.json
-624 verbose installManyTop reading scoped package data from /Users/nick/workspace/projects/nickmask/node_modules/simple-assign/package.json
-625 verbose installManyTop reading scoped package data from /Users/nick/workspace/projects/nickmask/node_modules/slash/package.json
-626 verbose installManyTop reading scoped package data from /Users/nick/workspace/projects/nickmask/node_modules/slice-ansi/package.json
-627 verbose installManyTop reading scoped package data from /Users/nick/workspace/projects/nickmask/node_modules/slick-carousel/package.json
-628 verbose installManyTop reading scoped package data from /Users/nick/workspace/projects/nickmask/node_modules/snake-case/package.json
-629 verbose installManyTop reading scoped package data from /Users/nick/workspace/projects/nickmask/node_modules/sntp/package.json
-630 verbose installManyTop reading scoped package data from /Users/nick/workspace/projects/nickmask/node_modules/sockjs/package.json
-631 verbose installManyTop reading scoped package data from /Users/nick/workspace/projects/nickmask/node_modules/sockjs-client/package.json
-632 verbose installManyTop reading scoped package data from /Users/nick/workspace/projects/nickmask/node_modules/sort-keys/package.json
-633 verbose installManyTop reading scoped package data from /Users/nick/workspace/projects/nickmask/node_modules/source-list-map/package.json
-634 verbose installManyTop reading scoped package data from /Users/nick/workspace/projects/nickmask/node_modules/source-map/package.json
-635 verbose installManyTop reading scoped package data from /Users/nick/workspace/projects/nickmask/node_modules/source-map-support/package.json
-636 verbose installManyTop reading scoped package data from /Users/nick/workspace/projects/nickmask/node_modules/spawn-sync/package.json
-637 verbose installManyTop reading scoped package data from /Users/nick/workspace/projects/nickmask/node_modules/spdx-correct/package.json
-638 verbose installManyTop reading scoped package data from /Users/nick/workspace/projects/nickmask/node_modules/spdx-exceptions/package.json
-639 verbose installManyTop reading scoped package data from /Users/nick/workspace/projects/nickmask/node_modules/spdx-expression-parse/package.json
-640 verbose installManyTop reading scoped package data from /Users/nick/workspace/projects/nickmask/node_modules/spdx-license-ids/package.json
-641 verbose installManyTop reading scoped package data from /Users/nick/workspace/projects/nickmask/node_modules/sprintf-js/package.json
-642 verbose installManyTop reading scoped package data from /Users/nick/workspace/projects/nickmask/node_modules/sshpk/package.json
-643 verbose installManyTop reading scoped package data from /Users/nick/workspace/projects/nickmask/node_modules/statuses/package.json
-644 verbose installManyTop reading scoped package data from /Users/nick/workspace/projects/nickmask/node_modules/stream-browserify/package.json
-645 verbose installManyTop reading scoped package data from /Users/nick/workspace/projects/nickmask/node_modules/stream-cache/package.json
-646 verbose installManyTop reading scoped package data from /Users/nick/workspace/projects/nickmask/node_modules/strict-uri-encode/package.json
-647 verbose installManyTop reading scoped package data from /Users/nick/workspace/projects/nickmask/node_modules/string-convert/package.json
-648 verbose installManyTop reading scoped package data from /Users/nick/workspace/projects/nickmask/node_modules/string-width/package.json
-649 verbose installManyTop reading scoped package data from /Users/nick/workspace/projects/nickmask/node_modules/string_decoder/package.json
-650 verbose installManyTop reading scoped package data from /Users/nick/workspace/projects/nickmask/node_modules/stringstream/package.json
-651 verbose installManyTop reading scoped package data from /Users/nick/workspace/projects/nickmask/node_modules/strip-ansi/package.json
-652 verbose installManyTop reading scoped package data from /Users/nick/workspace/projects/nickmask/node_modules/strip-bom/package.json
-653 verbose installManyTop reading scoped package data from /Users/nick/workspace/projects/nickmask/node_modules/strip-indent/package.json
-654 verbose installManyTop reading scoped package data from /Users/nick/workspace/projects/nickmask/node_modules/strip-json-comments/package.json
-655 verbose installManyTop reading scoped package data from /Users/nick/workspace/projects/nickmask/node_modules/style-loader/package.json
-656 verbose installManyTop reading scoped package data from /Users/nick/workspace/projects/nickmask/node_modules/superagent/package.json
-657 verbose installManyTop reading scoped package data from /Users/nick/workspace/projects/nickmask/node_modules/supports-color/package.json
-658 verbose installManyTop reading scoped package data from /Users/nick/workspace/projects/nickmask/node_modules/svg-loader/package.json
-659 verbose installManyTop reading scoped package data from /Users/nick/workspace/projects/nickmask/node_modules/svgo/package.json
-660 verbose installManyTop reading scoped package data from /Users/nick/workspace/projects/nickmask/node_modules/swap-case/package.json
-661 verbose installManyTop reading scoped package data from /Users/nick/workspace/projects/nickmask/node_modules/table/package.json
-662 verbose installManyTop reading scoped package data from /Users/nick/workspace/projects/nickmask/node_modules/tapable/package.json
-663 verbose installManyTop reading scoped package data from /Users/nick/workspace/projects/nickmask/node_modules/tar/package.json
-664 verbose installManyTop reading scoped package data from /Users/nick/workspace/projects/nickmask/node_modules/text-table/package.json
-665 verbose installManyTop reading scoped package data from /Users/nick/workspace/projects/nickmask/node_modules/through/package.json
-666 verbose installManyTop reading scoped package data from /Users/nick/workspace/projects/nickmask/node_modules/timers-browserify/package.json
-667 verbose installManyTop reading scoped package data from /Users/nick/workspace/projects/nickmask/node_modules/title-case/package.json
-668 verbose installManyTop reading scoped package data from /Users/nick/workspace/projects/nickmask/node_modules/to-fast-properties/package.json
-669 verbose installManyTop reading scoped package data from /Users/nick/workspace/projects/nickmask/node_modules/toposort/package.json
-670 verbose installManyTop reading scoped package data from /Users/nick/workspace/projects/nickmask/node_modules/tough-cookie/package.json
-671 verbose installManyTop reading scoped package data from /Users/nick/workspace/projects/nickmask/node_modules/transfer-webpack-plugin/package.json
-672 verbose installManyTop reading scoped package data from /Users/nick/workspace/projects/nickmask/node_modules/trim-newlines/package.json
-673 verbose installManyTop reading scoped package data from /Users/nick/workspace/projects/nickmask/node_modules/trim-right/package.json
-674 verbose installManyTop reading scoped package data from /Users/nick/workspace/projects/nickmask/node_modules/tryit/package.json
-675 verbose installManyTop reading scoped package data from /Users/nick/workspace/projects/nickmask/node_modules/tty-browserify/package.json
-676 verbose installManyTop reading scoped package data from /Users/nick/workspace/projects/nickmask/node_modules/tunnel-agent/package.json
-677 verbose installManyTop reading scoped package data from /Users/nick/workspace/projects/nickmask/node_modules/tv4/package.json
-678 verbose installManyTop reading scoped package data from /Users/nick/workspace/projects/nickmask/node_modules/tweetnacl/package.json
-679 verbose installManyTop reading scoped package data from /Users/nick/workspace/projects/nickmask/node_modules/type-check/package.json
-680 verbose installManyTop reading scoped package data from /Users/nick/workspace/projects/nickmask/node_modules/type-is/package.json
-681 verbose installManyTop reading scoped package data from /Users/nick/workspace/projects/nickmask/node_modules/typedarray/package.json
-682 verbose installManyTop reading scoped package data from /Users/nick/workspace/projects/nickmask/node_modules/ua-parser-js/package.json
-683 verbose installManyTop reading scoped package data from /Users/nick/workspace/projects/nickmask/node_modules/uglify-js/package.json
-684 verbose installManyTop reading scoped package data from /Users/nick/workspace/projects/nickmask/node_modules/uglify-to-browserify/package.json
-685 verbose installManyTop reading scoped package data from /Users/nick/workspace/projects/nickmask/node_modules/uid-number/package.json
-686 verbose installManyTop reading scoped package data from /Users/nick/workspace/projects/nickmask/node_modules/uncontrollable/package.json
-687 verbose installManyTop reading scoped package data from /Users/nick/workspace/projects/nickmask/node_modules/uniq/package.json
-688 verbose installManyTop reading scoped package data from /Users/nick/workspace/projects/nickmask/node_modules/uniqid/package.json
-689 verbose installManyTop reading scoped package data from /Users/nick/workspace/projects/nickmask/node_modules/uniqs/package.json
-690 verbose installManyTop reading scoped package data from /Users/nick/workspace/projects/nickmask/node_modules/unpipe/package.json
-691 verbose installManyTop reading scoped package data from /Users/nick/workspace/projects/nickmask/node_modules/upper-case/package.json
-692 verbose installManyTop reading scoped package data from /Users/nick/workspace/projects/nickmask/node_modules/upper-case-first/package.json
-693 verbose installManyTop reading scoped package data from /Users/nick/workspace/projects/nickmask/node_modules/url/package.json
-694 verbose installManyTop reading scoped package data from /Users/nick/workspace/projects/nickmask/node_modules/url-loader/package.json
-695 verbose installManyTop reading scoped package data from /Users/nick/workspace/projects/nickmask/node_modules/url-parse/package.json
-696 verbose installManyTop reading scoped package data from /Users/nick/workspace/projects/nickmask/node_modules/user-home/package.json
-697 verbose installManyTop reading scoped package data from /Users/nick/workspace/projects/nickmask/node_modules/util/package.json
-698 verbose installManyTop reading scoped package data from /Users/nick/workspace/projects/nickmask/node_modules/util-deprecate/package.json
-699 verbose installManyTop reading scoped package data from /Users/nick/workspace/projects/nickmask/node_modules/utila/package.json
-700 verbose installManyTop reading scoped package data from /Users/nick/workspace/projects/nickmask/node_modules/utils-merge/package.json
-701 verbose installManyTop reading scoped package data from /Users/nick/workspace/projects/nickmask/node_modules/v8flags/package.json
-702 verbose installManyTop reading scoped package data from /Users/nick/workspace/projects/nickmask/node_modules/validate-npm-package-license/package.json
-703 verbose installManyTop reading scoped package data from /Users/nick/workspace/projects/nickmask/node_modules/vary/package.json
-704 verbose installManyTop reading scoped package data from /Users/nick/workspace/projects/nickmask/node_modules/verror/package.json
-705 verbose installManyTop reading scoped package data from /Users/nick/workspace/projects/nickmask/node_modules/vm-browserify/package.json
-706 verbose installManyTop reading scoped package data from /Users/nick/workspace/projects/nickmask/node_modules/vow/package.json
-707 verbose installManyTop reading scoped package data from /Users/nick/workspace/projects/nickmask/node_modules/warning/package.json
-708 verbose installManyTop reading scoped package data from /Users/nick/workspace/projects/nickmask/node_modules/watchpack/package.json
-709 verbose installManyTop reading scoped package data from /Users/nick/workspace/projects/nickmask/node_modules/webpack/package.json
-710 verbose installManyTop reading scoped package data from /Users/nick/workspace/projects/nickmask/node_modules/webpack-core/package.json
-711 verbose installManyTop reading scoped package data from /Users/nick/workspace/projects/nickmask/node_modules/webpack-dev-middleware/package.json
-712 verbose installManyTop reading scoped package data from /Users/nick/workspace/projects/nickmask/node_modules/webpack-dev-server/package.json
-713 verbose installManyTop reading scoped package data from /Users/nick/workspace/projects/nickmask/node_modules/webpack-sources/package.json
-714 verbose installManyTop reading scoped package data from /Users/nick/workspace/projects/nickmask/node_modules/websocket-driver/package.json
-715 verbose installManyTop reading scoped package data from /Users/nick/workspace/projects/nickmask/node_modules/websocket-extensions/package.json
-716 verbose installManyTop reading scoped package data from /Users/nick/workspace/projects/nickmask/node_modules/whatwg-fetch/package.json
-717 verbose installManyTop reading scoped package data from /Users/nick/workspace/projects/nickmask/node_modules/whet.extend/package.json
-718 verbose installManyTop reading scoped package data from /Users/nick/workspace/projects/nickmask/node_modules/which/package.json
-719 verbose installManyTop reading scoped package data from /Users/nick/workspace/projects/nickmask/node_modules/window-size/package.json
-720 verbose installManyTop reading scoped package data from /Users/nick/workspace/projects/nickmask/node_modules/wordwrap/package.json
-721 verbose installManyTop reading scoped package data from /Users/nick/workspace/projects/nickmask/node_modules/wrappy/package.json
-722 verbose installManyTop reading scoped package data from /Users/nick/workspace/projects/nickmask/node_modules/write/package.json
-723 verbose installManyTop reading scoped package data from /Users/nick/workspace/projects/nickmask/node_modules/xml-char-classes/package.json
-724 verbose installManyTop reading scoped package data from /Users/nick/workspace/projects/nickmask/node_modules/xregexp/package.json
-725 verbose installManyTop reading scoped package data from /Users/nick/workspace/projects/nickmask/node_modules/xtend/package.json
-726 verbose installManyTop reading scoped package data from /Users/nick/workspace/projects/nickmask/node_modules/yallist/package.json
-727 verbose installManyTop reading scoped package data from /Users/nick/workspace/projects/nickmask/node_modules/yargs/package.json
-728 info package.json Base64@0.2.1 No license field.
-729 info package.json acorn-jsx@2.0.1 No license field.
-730 info package.json arr-flatten@1.0.1 license should be a valid SPDX license expression
-731 info package.json array-unique@0.2.1 license should be a valid SPDX license expression
-732 info package.json asap@2.0.3 license should be a valid SPDX license expression
-733 info package.json assert@1.3.0 assert is also the name of a node core module.
-734 info package.json async-foreach@0.1.3 No license field.
-735 info package.json babel-plugin-syntax-flow@6.5.0 No description
-736 info package.json babel-plugin-syntax-jsx@6.5.0 No description
-737 info package.json babel-plugin-transform-regenerator@6.6.5 license should be a valid SPDX license expression
-738 info package.json babel-polyfill@6.7.4 No description
-739 info package.json babel-regenerator-runtime@6.5.0 No description
-740 info package.json babel-regenerator-runtime@6.5.0 No repository field.
-741 info package.json babel-regenerator-runtime@6.5.0 license should be a valid SPDX license expression
-742 info package.json babel-traverse@6.7.4 No description
-743 info package.json base62@0.1.1 No license field.
-744 info package.json batch@0.5.3 No license field.
-745 info package.json buffer@3.6.0 buffer is also the name of a node core module.
-746 info package.json coa@1.0.1 No license field.
-747 info package.json color-convert@0.5.3 No license field.
-748 info package.json config-chain@1.1.10 No license field.
-749 info package.json console-browserify@1.1.0 No license field.
-750 info package.json css-select@1.2.0 license should be a valid SPDX license expression
-751 info package.json css-what@2.1.0 license should be a valid SPDX license expression
-752 info package.json cssesc@0.1.0 No license field.
-753 info package.json date-now@0.1.4 No license field.
-754 info package.json deep-is@0.1.3 license should be a valid SPDX license expression
-755 info package.json doctrine@1.2.1 No license field.
-756 info package.json domelementtype@1.3.0 No license field.
-757 info package.json domhandler@2.1.0 No license field.
-758 info package.json domutils@1.5.1 No license field.
-759 info package.json enhanced-resolve@0.9.1 No license field.
-760 info package.json enquire.js@2.1.1 No license field.
-761 info package.json entities@1.1.1 license should be a valid SPDX license expression
-762 info package.json esutils@2.0.2 No license field.
-763 info package.json events@1.1.0 events is also the name of a node core module.
-764 info package.json eventsource@0.1.6 No license field.
-765 info package.json exit@0.1.2 No license field.
-766 info package.json expand-range@1.8.1 license should be a valid SPDX license expression
-767 info package.json extsprintf@1.0.2 No license field.
-768 info package.json filename-regex@2.0.0 license should be a valid SPDX license expression
-769 info package.json firebase@2.4.2 No license field.
-770 info package.json formidable@1.0.17 No license field.
-771 info package.json gaze@0.5.2 No license field.
-772 info package.json glob-base@0.3.0 license should be a valid SPDX license expression
-773 info package.json globule@0.1.0 No license field.
-774 info package.json hoist-non-react-statics@1.0.5 No license field.
-775 info package.json htmlparser2@3.3.0 No license field.
-776 info package.json http-browserify@1.7.0 license should be a valid SPDX license expression
-777 info package.json indexof@0.0.1 No repository field.
-778 info package.json indexof@0.0.1 No license field.
-779 info package.json is-absolute@0.1.7 license should be a valid SPDX license expression
-780 info package.json is-primitive@2.0.0 license should be a valid SPDX license expression
-781 info package.json is-relative@0.1.3 No license field.
-782 info package.json js-base64@2.1.9 license should be a valid SPDX license expression
-783 info package.json jsbn@0.1.0 license should be a valid SPDX license expression
-784 info package.json jsesc@0.5.0 No license field.
-785 info package.json json-schema@0.2.2 No license field.
-786 info package.json json3@3.3.2 No license field.
-787 info package.json jsonify@0.0.0 license should be a valid SPDX license expression
-788 info package.json jstransform@10.1.0 No license field.
-789 info package.json longest@1.0.1 license should be a valid SPDX license expression
-790 info package.json mime@1.2.11 No license field.
-791 info package.json ms@0.7.1 No license field.
-792 info package.json node-uuid@1.4.7 No license field.
-793 info package.json nth-check@1.0.1 license should be a valid SPDX license expression
-794 info package.json optimist@0.6.1 license should be a valid SPDX license expression
-795 info package.json os-shim@0.1.3 No license field.
-796 info package.json pako@0.2.8 license should be a valid SPDX license expression
-797 info package.json prelude-ls@1.1.2 No license field.
-798 info package.json preserve@0.2.0 license should be a valid SPDX license expression
-799 info package.json process@0.11.2 process is also the name of a node core module.
-800 info package.json progress@1.1.8 No license field.
-801 info package.json punycode@1.4.1 punycode is also the name of a node core module.
-802 info package.json q@1.4.1 license should be a valid SPDX license expression
-803 info package.json querystring@0.2.0 querystring is also the name of a node core module.
-804 info package.json querystring@0.2.0 No license field.
-805 info package.json querystring-es3@0.2.1 No license field.
-806 info package.json react-tap-event-plugin@0.2.2 No license field.
-807 info package.json reduce-component@1.0.1 license should be a valid SPDX license expression
-808 info package.json regjsparser@0.1.5 license should be a valid SPDX license expression
-809 info package.json relateurl@0.2.6 No license field.
-810 info package.json repeat-element@1.1.2 license should be a valid SPDX license expression
-811 info package.json ripemd160@0.2.0 No license field.
-812 info package.json rx-lite@3.1.2 No license field.
-813 info package.json sntp@1.0.9 No license field.
-814 info package.json source-map-support@0.2.10 No license field.
-815 info package.json stream-cache@0.0.2 No license field.
-816 info package.json string_decoder@0.10.31 string_decoder is also the name of a node core module.
-817 info package.json svg-loader@0.0.2 No license field.
-818 info package.json timers-browserify@1.4.2 No license field.
-819 info package.json tv4@1.2.7 No license field.
-820 info package.json ua-parser-js@0.7.10 No license field.
-821 info package.json url@0.10.3 url is also the name of a node core module.
-822 info package.json util@0.10.3 util is also the name of a node core module.
-823 info package.json utils-merge@1.0.0 No license field.
-824 info package.json v8flags@2.0.11 No license field.
-825 info package.json verror@1.3.6 No license field.
-826 info package.json vow@0.4.12 No license field.
-827 info package.json webpack-core@0.6.8 No license field.
-828 info package.json webpack-dev-middleware@1.6.1 No license field.
-829 info package.json whatwg-fetch@0.9.0 No license field.
-830 info package.json window-size@0.1.0 No license field.
-831 verbose readDependencies loading dependencies from /Users/nick/workspace/projects/nickmask/package.json
-832 verbose install reactfire is installed as 0.7.0
-833 silly cache add args [ 'reactfire', null ]
-834 verbose cache add spec reactfire
-835 silly cache add parsed spec Result {
-835 silly cache add   raw: 'reactfire',
-835 silly cache add   scope: null,
-835 silly cache add   name: 'reactfire',
-835 silly cache add   rawSpec: '',
-835 silly cache add   spec: 'latest',
-835 silly cache add   type: 'tag' }
-836 silly addNamed reactfire@latest
-837 verbose addNamed "latest" is being treated as a dist-tag for reactfire
-838 info addNameTag [ 'reactfire', 'latest' ]
-839 silly mapToRegistry name reactfire
-840 silly mapToRegistry using default registry
-841 silly mapToRegistry registry https://registry.npmjs.org/
-842 silly mapToRegistry data Result {
-842 silly mapToRegistry   raw: 'reactfire',
-842 silly mapToRegistry   scope: null,
-842 silly mapToRegistry   name: 'reactfire',
-842 silly mapToRegistry   rawSpec: '',
-842 silly mapToRegistry   spec: 'latest',
-842 silly mapToRegistry   type: 'tag' }
-843 silly mapToRegistry uri https://registry.npmjs.org/reactfire
-844 verbose addNameTag registry:https://registry.npmjs.org/reactfire not in flight; fetching
-845 verbose request uri https://registry.npmjs.org/reactfire
-846 verbose request no auth needed
-847 info attempt registry request try #1 at 12:40:52 PM
-848 verbose request id 1117fcbbca4adec4
-849 verbose etag "EPI9536789RTIFMPSSAMKGGC6"
-850 http request GET https://registry.npmjs.org/reactfire
-851 http 304 https://registry.npmjs.org/reactfire
-852 verbose headers { date: 'Fri, 20 May 2016 00:40:52 GMT',
-852 verbose headers   via: '1.1 varnish',
-852 verbose headers   'cache-control': 'max-age=300',
-852 verbose headers   etag: '"EPI9536789RTIFMPSSAMKGGC6"',
-852 verbose headers   age: '200',
-852 verbose headers   connection: 'keep-alive',
-852 verbose headers   'x-served-by': 'cache-wlg7321-WLG',
-852 verbose headers   'x-cache': 'HIT',
-852 verbose headers   'x-cache-hits': '3',
-852 verbose headers   'x-timer': 'S1463704852.572614,VS0,VE0',
-852 verbose headers   vary: 'Accept-Encoding' }
-853 silly get cb [ 304,
-853 silly get   { date: 'Fri, 20 May 2016 00:40:52 GMT',
-853 silly get     via: '1.1 varnish',
-853 silly get     'cache-control': 'max-age=300',
-853 silly get     etag: '"EPI9536789RTIFMPSSAMKGGC6"',
-853 silly get     age: '200',
-853 silly get     connection: 'keep-alive',
-853 silly get     'x-served-by': 'cache-wlg7321-WLG',
-853 silly get     'x-cache': 'HIT',
-853 silly get     'x-cache-hits': '3',
-853 silly get     'x-timer': 'S1463704852.572614,VS0,VE0',
-853 silly get     vary: 'Accept-Encoding' } ]
-854 verbose etag https://registry.npmjs.org/reactfire from cache
-855 verbose get saving reactfire to /Users/nick/.npm/registry.npmjs.org/reactfire/.cache.json
-856 verbose correctMkdir /Users/nick/.npm correctMkdir not in flight; initializing
-857 silly addNameTag next cb for reactfire with tag latest
-858 silly addNamed reactfire@0.7.0
-859 verbose addNamed "0.7.0" is a plain semver version for reactfire
-860 silly cache afterAdd reactfire@0.7.0
-861 verbose afterAdd /Users/nick/.npm/reactfire/0.7.0/package/package.json not in flight; writing
-862 verbose correctMkdir /Users/nick/.npm correctMkdir not in flight; initializing
-863 verbose afterAdd /Users/nick/.npm/reactfire/0.7.0/package/package.json written
-864 silly install resolved [ { name: 'reactfire',
-864 silly install resolved     description: 'Firebase mixin for ReactJS',
-864 silly install resolved     version: '0.7.0',
-864 silly install resolved     author:
-864 silly install resolved      { name: 'Firebase',
-864 silly install resolved        email: 'support@firebase.com',
-864 silly install resolved        url: 'https://www.firebase.com/' },
-864 silly install resolved     homepage: 'https://github.com/firebase/reactfire/',
-864 silly install resolved     repository:
-864 silly install resolved      { type: 'git',
-864 silly install resolved        url: 'git+https://github.com/firebase/reactfire.git' },
-864 silly install resolved     bugs: { url: 'https://github.com/firebase/reactfire/issues' },
-864 silly install resolved     license: 'MIT',
-864 silly install resolved     keywords: [ 'react', 'mixin', 'firebase', 'realtime', 'react-component' ],
-864 silly install resolved     main: 'dist/reactfire.js',
-864 silly install resolved     files: [ 'dist/**', 'LICENSE', 'README.md', 'package.json' ],
-864 silly install resolved     dependencies: {},
-864 silly install resolved     peerDependencies: { react: '0.13.x || 0.14.x || 15.x.x', firebase: '2.x.x' },
-864 silly install resolved     devDependencies:
-864 silly install resolved      { chai: '^3.0.0',
-864 silly install resolved        coveralls: '^2.11.2',
-864 silly install resolved        firebase: '2.x.x',
-864 silly install resolved        gulp: '^3.9.0',
-864 silly install resolved        'gulp-eslint': '^0.15.0',
-864 silly install resolved        'gulp-exit': '0.0.2',
-864 silly install resolved        'gulp-ext-replace': '^0.2.0',
-864 silly install resolved        'gulp-istanbul': '^0.10.0',
-864 silly install resolved        'gulp-mocha': '^2.1.2',
-864 silly install resolved        'gulp-uglify': '^1.2.0',
-864 silly install resolved        jsdom: '3.x.x',
-864 silly install resolved        'react-addons-test-utils': '15.x.x',
-864 silly install resolved        react: '15.x.x',
-864 silly install resolved        'react-dom': '15.x.x',
-864 silly install resolved        'run-sequence': '^1.1.1',
-864 silly install resolved        sinon: '^1.15.4',
-864 silly install resolved        'sinon-chai': '^2.8.0' },
-864 silly install resolved     scripts: { test: 'gulp test', travis: 'gulp' },
-864 silly install resolved     gitHead: '026075a000082108e6c1c90da9cbf897e4926d8b',
-864 silly install resolved     _id: 'reactfire@0.7.0',
-864 silly install resolved     _shasum: '72c472a7750d706bdcb4e399ddb9b3df58932818',
-864 silly install resolved     _from: 'reactfire@latest',
-864 silly install resolved     _npmVersion: '2.7.5',
-864 silly install resolved     _nodeVersion: '0.10.38',
-864 silly install resolved     _npmUser: { name: 'firebase', email: 'operations@firebase.com' },
-864 silly install resolved     maintainers: [ [Object] ],
-864 silly install resolved     dist:
-864 silly install resolved      { shasum: '72c472a7750d706bdcb4e399ddb9b3df58932818',
-864 silly install resolved        tarball: 'https://registry.npmjs.org/reactfire/-/reactfire-0.7.0.tgz' },
-864 silly install resolved     _npmOperationalInternal:
-864 silly install resolved      { host: 'packages-12-west.internal.npmjs.com',
-864 silly install resolved        tmp: 'tmp/reactfire-0.7.0.tgz_1461345762039_0.1597246762830764' },
-864 silly install resolved     directories: {},
-864 silly install resolved     _resolved: 'https://registry.npmjs.org/reactfire/-/reactfire-0.7.0.tgz',
-864 silly install resolved     readme: 'ERROR: No README data found!' } ]
-865 info install reactfire@0.7.0 into /Users/nick/workspace/projects/nickmask
-866 info installOne reactfire@0.7.0
-867 verbose installOne of reactfire to /Users/nick/workspace/projects/nickmask not in flight; installing
-868 verbose correctMkdir /Users/nick/.npm/_locks correctMkdir not in flight; initializing
-869 verbose lock using /Users/nick/.npm/_locks/reactfire-2e97885b9bd4c8b1.lock for /Users/nick/workspace/projects/nickmask/node_modules/reactfire
-870 silly install write writing reactfire 0.7.0 to /Users/nick/workspace/projects/nickmask/node_modules/reactfire
-871 verbose unbuild node_modules/reactfire
-872 info preuninstall reactfire@0.7.0
-873 info uninstall reactfire@0.7.0
-874 verbose unbuild rmStuff reactfire@0.7.0 from /Users/nick/workspace/projects/nickmask/node_modules
-875 info postuninstall reactfire@0.7.0
-876 silly gentlyRm /Users/nick/workspace/projects/nickmask/node_modules/reactfire is being purged from base /Users/nick/workspace/projects/nickmask
-877 verbose gentlyRm don't care about contents; nuking /Users/nick/workspace/projects/nickmask/node_modules/reactfire
-878 silly vacuum-fs purging /Users/nick/workspace/projects/nickmask/node_modules/reactfire
-879 silly vacuum-fs quitting because other entries in /Users/nick/workspace/projects/nickmask/node_modules
-880 verbose tar unpack /Users/nick/.npm/reactfire/0.7.0/package.tgz
-881 verbose tar unpacking to /Users/nick/workspace/projects/nickmask/node_modules/reactfire
-882 silly gentlyRm /Users/nick/workspace/projects/nickmask/node_modules/reactfire is being purged
-883 verbose gentlyRm don't care about contents; nuking /Users/nick/workspace/projects/nickmask/node_modules/reactfire
-884 silly gunzTarPerm modes [ '755', '644' ]
-885 silly gunzTarPerm extractEntry package.json
-886 silly gunzTarPerm modified mode [ 'package.json', 436, 420 ]
-887 silly gunzTarPerm extractEntry README.md
-888 silly gunzTarPerm modified mode [ 'README.md', 436, 420 ]
-889 silly gunzTarPerm extractEntry LICENSE
-890 silly gunzTarPerm modified mode [ 'LICENSE', 436, 420 ]
-891 silly gunzTarPerm extractEntry changelog.txt
-892 silly gunzTarPerm modified mode [ 'changelog.txt', 436, 420 ]
-893 silly gunzTarPerm extractEntry dist/reactfire.js
-894 silly gunzTarPerm modified mode [ 'dist/reactfire.js', 436, 420 ]
-895 silly gunzTarPerm extractEntry dist/reactfire.min.js
-896 silly gunzTarPerm modified mode [ 'dist/reactfire.min.js', 436, 420 ]
-897 verbose write writing to /Users/nick/workspace/projects/nickmask/node_modules/reactfire/package.json
-898 info preinstall reactfire@0.7.0
-899 verbose readDependencies loading dependencies from /Users/nick/workspace/projects/nickmask/node_modules/reactfire/package.json
-900 verbose readDependencies loading dependencies from /Users/nick/workspace/projects/nickmask/node_modules/reactfire/package.json
-901 silly install resolved []
-902 verbose about to build /Users/nick/workspace/projects/nickmask/node_modules/reactfire
-903 info build /Users/nick/workspace/projects/nickmask/node_modules/reactfire
-904 info linkStuff reactfire@0.7.0
-905 silly linkStuff reactfire@0.7.0 has /Users/nick/workspace/projects/nickmask/node_modules as its parent node_modules
-906 verbose linkBins reactfire@0.7.0
-907 verbose linkMans reactfire@0.7.0
-908 verbose rebuildBundles reactfire@0.7.0
-909 info install reactfire@0.7.0
-910 info postinstall reactfire@0.7.0
-911 verbose unlock done using /Users/nick/.npm/_locks/reactfire-2e97885b9bd4c8b1.lock for /Users/nick/workspace/projects/nickmask/node_modules/reactfire
-912 verbose validateInstall loading /Users/nick/workspace/projects/nickmask/package.json for validation
-913 verbose stack Error: The package react@0.14.8 does not satisfy its siblings' peerDependencies requirements!
-913 verbose stack     at /usr/local/lib/node_modules/npm/lib/install.js:125:32
-913 verbose stack     at /usr/local/lib/node_modules/npm/lib/install.js:268:7
-913 verbose stack     at /usr/local/lib/node_modules/npm/node_modules/read-installed/read-installed.js:142:5
-913 verbose stack     at /usr/local/lib/node_modules/npm/node_modules/read-installed/read-installed.js:263:14
-913 verbose stack     at cb (/usr/local/lib/node_modules/npm/node_modules/slide/lib/async-map.js:47:24)
-913 verbose stack     at /usr/local/lib/node_modules/npm/node_modules/read-installed/read-installed.js:263:14
-913 verbose stack     at cb (/usr/local/lib/node_modules/npm/node_modules/slide/lib/async-map.js:47:24)
-913 verbose stack     at /usr/local/lib/node_modules/npm/node_modules/read-installed/read-installed.js:263:14
-913 verbose stack     at cb (/usr/local/lib/node_modules/npm/node_modules/slide/lib/async-map.js:47:24)
-913 verbose stack     at /usr/local/lib/node_modules/npm/node_modules/read-installed/read-installed.js:263:14
-914 verbose cwd /Users/nick/workspace/projects/nickmask
-915 error Darwin 15.4.0
-916 error argv "/usr/local/bin/node" "/usr/local/bin/npm" "install" "reactfire" "--save"
-917 error node v4.4.4
-918 error npm  v2.15.1
-919 error code EPEERINVALID
-920 error peerinvalid The package react@0.14.8 does not satisfy its siblings' peerDependencies requirements!
-920 error peerinvalid Peer react-addons-create-fragment@15.0.2 wants react@^15.0.2
-920 error peerinvalid Peer react-bootstrap@0.28.5 wants react@>=0.14.0
-920 error peerinvalid Peer react-dom@0.14.8 wants react@^0.14.8
-920 error peerinvalid Peer react-slick@0.12.0 wants react@^0.14.0 || ^15.0.1
-920 error peerinvalid Peer react-tap-event-plugin@0.2.2 wants react@^0.14.0
-920 error peerinvalid Peer react-addons-pure-render-mixin@0.14.8 wants react@^0.14.8
-920 error peerinvalid Peer react-addons-transition-group@0.14.8 wants react@^0.14.8
-920 error peerinvalid Peer react-addons-update@0.14.8 wants react@^0.14.8
-920 error peerinvalid Peer react-hot-api@0.4.7 wants react@>=0.11.0 || ^0.14.0-rc
-920 error peerinvalid Peer reactfire@0.7.0 wants react@0.13.x || 0.14.x || 15.x.x
-920 error peerinvalid Peer uncontrollable@3.2.3 wants react@>=0.11.0
-920 error peerinvalid Peer material-ui@0.15.0-alpha.2 wants react@^0.14.0
-920 error peerinvalid Peer react-overlays@0.6.2 wants react@>=0.14.0
-920 error peerinvalid Peer recompose@0.15.1 wants react@^0.14.0
-921 verbose exit [ 1, true ]
+4 verbose readDependencies loading dependencies from /Users/nick/workspace/projects/nickmask/package.json
+5 verbose install where, deps [ '/Users/nick/workspace/projects/nickmask',
+5 verbose install   [ 'firebase',
+5 verbose install     'react',
+5 verbose install     'react-bootstrap',
+5 verbose install     'react-dom',
+5 verbose install     'react-router',
+5 verbose install     'react-slick',
+5 verbose install     'react-tap-event-plugin',
+5 verbose install     'redux',
+5 verbose install     'superagent',
+5 verbose install     'babel-core',
+5 verbose install     'babel-eslint',
+5 verbose install     'babel-preset-es2015',
+5 verbose install     'babel-cli',
+5 verbose install     'babel-loader',
+5 verbose install     'babel-preset-react',
+5 verbose install     'babel-preset-stage-0',
+5 verbose install     'css-loader',
+5 verbose install     'extract-text-webpack-plugin',
+5 verbose install     'node-sass',
+5 verbose install     'postcss-loader',
+5 verbose install     'html-webpack-plugin',
+5 verbose install     'react-hot-loader',
+5 verbose install     'transfer-webpack-plugin',
+5 verbose install     'webpack',
+5 verbose install     'sass-loader',
+5 verbose install     'style-loader',
+5 verbose install     'svg-loader',
+5 verbose install     'url-loader',
+5 verbose install     'webpack-dev-server' ] ]
+6 verbose install where, peers [ '/Users/nick/workspace/projects/nickmask', [] ]
+7 verbose installManyTop reading for lifecycle /Users/nick/workspace/projects/nickmask/package.json
+8 info preinstall material-ui-example-webpack@0.15.0-alpha.2
+9 verbose installManyTop reading scoped package data from /Users/nick/workspace/projects/nickmask/node_modules/babel-cli/package.json
+10 verbose installManyTop reading scoped package data from /Users/nick/workspace/projects/nickmask/node_modules/babel-core/package.json
+11 verbose installManyTop reading scoped package data from /Users/nick/workspace/projects/nickmask/node_modules/babel-eslint/package.json
+12 verbose installManyTop reading scoped package data from /Users/nick/workspace/projects/nickmask/node_modules/babel-loader/package.json
+13 verbose installManyTop reading scoped package data from /Users/nick/workspace/projects/nickmask/node_modules/babel-preset-es2015/package.json
+14 verbose installManyTop reading scoped package data from /Users/nick/workspace/projects/nickmask/node_modules/babel-preset-react/package.json
+15 verbose installManyTop reading scoped package data from /Users/nick/workspace/projects/nickmask/node_modules/babel-preset-stage-0/package.json
+16 verbose installManyTop reading scoped package data from /Users/nick/workspace/projects/nickmask/node_modules/css-loader/package.json
+17 verbose installManyTop reading scoped package data from /Users/nick/workspace/projects/nickmask/node_modules/extract-text-webpack-plugin/package.json
+18 verbose installManyTop reading scoped package data from /Users/nick/workspace/projects/nickmask/node_modules/file-loader/package.json
+19 verbose installManyTop reading scoped package data from /Users/nick/workspace/projects/nickmask/node_modules/firebase/package.json
+20 verbose installManyTop reading scoped package data from /Users/nick/workspace/projects/nickmask/node_modules/html-webpack-plugin/package.json
+21 verbose installManyTop reading scoped package data from /Users/nick/workspace/projects/nickmask/node_modules/node-sass/package.json
+22 verbose installManyTop reading scoped package data from /Users/nick/workspace/projects/nickmask/node_modules/postcss-loader/package.json
+23 verbose installManyTop reading scoped package data from /Users/nick/workspace/projects/nickmask/node_modules/react/package.json
+24 verbose installManyTop reading scoped package data from /Users/nick/workspace/projects/nickmask/node_modules/react-addons-create-fragment/package.json
+25 verbose installManyTop reading scoped package data from /Users/nick/workspace/projects/nickmask/node_modules/react-bootstrap/package.json
+26 verbose installManyTop reading scoped package data from /Users/nick/workspace/projects/nickmask/node_modules/react-dom/package.json
+27 verbose installManyTop reading scoped package data from /Users/nick/workspace/projects/nickmask/node_modules/react-hot-loader/package.json
+28 verbose installManyTop reading scoped package data from /Users/nick/workspace/projects/nickmask/node_modules/react-router/package.json
+29 verbose installManyTop reading scoped package data from /Users/nick/workspace/projects/nickmask/node_modules/react-slick/package.json
+30 verbose installManyTop reading scoped package data from /Users/nick/workspace/projects/nickmask/node_modules/react-tap-event-plugin/package.json
+31 verbose installManyTop reading scoped package data from /Users/nick/workspace/projects/nickmask/node_modules/redux/package.json
+32 verbose installManyTop reading scoped package data from /Users/nick/workspace/projects/nickmask/node_modules/sass-loader/package.json
+33 verbose installManyTop reading scoped package data from /Users/nick/workspace/projects/nickmask/node_modules/style-loader/package.json
+34 verbose installManyTop reading scoped package data from /Users/nick/workspace/projects/nickmask/node_modules/superagent/package.json
+35 verbose installManyTop reading scoped package data from /Users/nick/workspace/projects/nickmask/node_modules/svg-loader/package.json
+36 verbose installManyTop reading scoped package data from /Users/nick/workspace/projects/nickmask/node_modules/transfer-webpack-plugin/package.json
+37 verbose installManyTop reading scoped package data from /Users/nick/workspace/projects/nickmask/node_modules/url-loader/package.json
+38 verbose installManyTop reading scoped package data from /Users/nick/workspace/projects/nickmask/node_modules/webpack/package.json
+39 verbose installManyTop reading scoped package data from /Users/nick/workspace/projects/nickmask/node_modules/webpack-dev-server/package.json
+40 info package.json firebase@2.4.2 No license field.
+41 info package.json react-tap-event-plugin@0.2.2 No license field.
+42 info package.json svg-loader@0.0.2 No license field.
+43 verbose readDependencies loading dependencies from /Users/nick/workspace/projects/nickmask/package.json
+44 verbose targetResolver reading package data from /Users/nick/workspace/projects/nickmask/node_modules/babel-cli/package.json
+45 verbose targetResolver reading package data from /Users/nick/workspace/projects/nickmask/node_modules/babel-core/package.json
+46 verbose targetResolver reading package data from /Users/nick/workspace/projects/nickmask/node_modules/babel-eslint/package.json
+47 verbose targetResolver reading package data from /Users/nick/workspace/projects/nickmask/node_modules/babel-loader/package.json
+48 verbose targetResolver reading package data from /Users/nick/workspace/projects/nickmask/node_modules/babel-preset-es2015/package.json
+49 verbose targetResolver reading package data from /Users/nick/workspace/projects/nickmask/node_modules/babel-preset-react/package.json
+50 verbose targetResolver reading package data from /Users/nick/workspace/projects/nickmask/node_modules/babel-preset-stage-0/package.json
+51 verbose targetResolver reading package data from /Users/nick/workspace/projects/nickmask/node_modules/css-loader/package.json
+52 verbose targetResolver reading package data from /Users/nick/workspace/projects/nickmask/node_modules/extract-text-webpack-plugin/package.json
+53 verbose targetResolver reading package data from /Users/nick/workspace/projects/nickmask/node_modules/file-loader/package.json
+54 verbose targetResolver reading package data from /Users/nick/workspace/projects/nickmask/node_modules/firebase/package.json
+55 verbose targetResolver reading package data from /Users/nick/workspace/projects/nickmask/node_modules/html-webpack-plugin/package.json
+56 verbose targetResolver reading package data from /Users/nick/workspace/projects/nickmask/node_modules/node-sass/package.json
+57 verbose targetResolver reading package data from /Users/nick/workspace/projects/nickmask/node_modules/postcss-loader/package.json
+58 verbose targetResolver reading package data from /Users/nick/workspace/projects/nickmask/node_modules/react/package.json
+59 verbose targetResolver reading package data from /Users/nick/workspace/projects/nickmask/node_modules/react-addons-create-fragment/package.json
+60 verbose targetResolver reading package data from /Users/nick/workspace/projects/nickmask/node_modules/react-bootstrap/package.json
+61 verbose targetResolver reading package data from /Users/nick/workspace/projects/nickmask/node_modules/react-dom/package.json
+62 verbose targetResolver reading package data from /Users/nick/workspace/projects/nickmask/node_modules/react-hot-loader/package.json
+63 verbose targetResolver reading package data from /Users/nick/workspace/projects/nickmask/node_modules/react-router/package.json
+64 verbose targetResolver reading package data from /Users/nick/workspace/projects/nickmask/node_modules/react-slick/package.json
+65 verbose targetResolver reading package data from /Users/nick/workspace/projects/nickmask/node_modules/react-tap-event-plugin/package.json
+66 verbose targetResolver reading package data from /Users/nick/workspace/projects/nickmask/node_modules/redux/package.json
+67 verbose targetResolver reading package data from /Users/nick/workspace/projects/nickmask/node_modules/sass-loader/package.json
+68 verbose targetResolver reading package data from /Users/nick/workspace/projects/nickmask/node_modules/style-loader/package.json
+69 verbose targetResolver reading package data from /Users/nick/workspace/projects/nickmask/node_modules/superagent/package.json
+70 verbose targetResolver reading package data from /Users/nick/workspace/projects/nickmask/node_modules/svg-loader/package.json
+71 verbose targetResolver reading package data from /Users/nick/workspace/projects/nickmask/node_modules/transfer-webpack-plugin/package.json
+72 verbose targetResolver reading package data from /Users/nick/workspace/projects/nickmask/node_modules/url-loader/package.json
+73 verbose targetResolver reading package data from /Users/nick/workspace/projects/nickmask/node_modules/webpack/package.json
+74 verbose targetResolver reading package data from /Users/nick/workspace/projects/nickmask/node_modules/webpack-dev-server/package.json
+75 verbose targetResolver reading package data from /Users/nick/workspace/projects/nickmask/node_modules/.bin/babel/package.json
+76 verbose targetResolver reading package data from /Users/nick/workspace/projects/nickmask/node_modules/.bin/babel-doctor/package.json
+77 verbose targetResolver reading package data from /Users/nick/workspace/projects/nickmask/node_modules/.bin/babel-external-helpers/package.json
+78 verbose targetResolver reading package data from /Users/nick/workspace/projects/nickmask/node_modules/.bin/babel-node/package.json
+79 verbose targetResolver reading package data from /Users/nick/workspace/projects/nickmask/node_modules/.bin/node-sass/package.json
+80 verbose targetResolver reading package data from /Users/nick/workspace/projects/nickmask/node_modules/.bin/webpack/package.json
+81 verbose targetResolver reading package data from /Users/nick/workspace/projects/nickmask/node_modules/.bin/webpack-dev-server/package.json
+82 verbose already installed skipping react-slick@^0.12.0 /Users/nick/workspace/projects/nickmask
+83 verbose already installed skipping react-tap-event-plugin@^0.2.2 /Users/nick/workspace/projects/nickmask
+84 silly cache add args [ 'redux@latest', null ]
+85 verbose cache add spec redux@latest
+86 verbose already installed skipping superagent@^1.8.3 /Users/nick/workspace/projects/nickmask
+87 verbose already installed skipping babel-core@^6.5.1 /Users/nick/workspace/projects/nickmask
+88 verbose already installed skipping babel-eslint@^6.0.0 /Users/nick/workspace/projects/nickmask
+89 silly cache add parsed spec Result {
+89 silly cache add   raw: 'redux@latest',
+89 silly cache add   scope: null,
+89 silly cache add   name: 'redux',
+89 silly cache add   rawSpec: 'latest',
+89 silly cache add   spec: 'latest',
+89 silly cache add   type: 'tag' }
+90 silly addNamed redux@latest
+91 verbose addNamed "latest" is being treated as a dist-tag for redux
+92 info addNameTag [ 'redux', 'latest' ]
+93 silly mapToRegistry name redux
+94 silly mapToRegistry using default registry
+95 silly mapToRegistry registry https://registry.npmjs.org/
+96 silly mapToRegistry data Result {
+96 silly mapToRegistry   raw: 'redux',
+96 silly mapToRegistry   scope: null,
+96 silly mapToRegistry   name: 'redux',
+96 silly mapToRegistry   rawSpec: '',
+96 silly mapToRegistry   spec: 'latest',
+96 silly mapToRegistry   type: 'tag' }
+97 silly mapToRegistry uri https://registry.npmjs.org/redux
+98 verbose addNameTag registry:https://registry.npmjs.org/redux not in flight; fetching
+99 verbose already installed skipping babel-preset-es2015@^6.3.13 /Users/nick/workspace/projects/nickmask
+100 verbose already installed skipping babel-cli@^6.6.5 /Users/nick/workspace/projects/nickmask
+101 verbose already installed skipping babel-loader@^6.2.2 /Users/nick/workspace/projects/nickmask
+102 verbose already installed skipping babel-preset-react@^6.5.0 /Users/nick/workspace/projects/nickmask
+103 verbose already installed skipping babel-preset-stage-0@^6.5.0 /Users/nick/workspace/projects/nickmask
+104 verbose already installed skipping css-loader@^0.23.1 /Users/nick/workspace/projects/nickmask
+105 verbose request uri https://registry.npmjs.org/redux
+106 verbose request no auth needed
+107 info attempt registry request try #1 at 4:11:25 PM
+108 verbose request id baf2a4671472473e
+109 verbose etag "473MFXH1M136J8RUTTICKVKAL"
+110 http request GET https://registry.npmjs.org/redux
+111 verbose already installed skipping extract-text-webpack-plugin@^1.0.1 /Users/nick/workspace/projects/nickmask
+112 verbose already installed skipping node-sass@^3.4.2 /Users/nick/workspace/projects/nickmask
+113 verbose already installed skipping postcss-loader@^0.8.2 /Users/nick/workspace/projects/nickmask
+114 verbose already installed skipping html-webpack-plugin@^2.7.2 /Users/nick/workspace/projects/nickmask
+115 verbose already installed skipping react-hot-loader@^1.3.0 /Users/nick/workspace/projects/nickmask
+116 verbose already installed skipping transfer-webpack-plugin@^0.1.4 /Users/nick/workspace/projects/nickmask
+117 verbose already installed skipping webpack@^1.12.9 /Users/nick/workspace/projects/nickmask
+118 verbose already installed skipping sass-loader@^3.2.0 /Users/nick/workspace/projects/nickmask
+119 verbose already installed skipping style-loader@^0.13.1 /Users/nick/workspace/projects/nickmask
+120 verbose already installed skipping svg-loader@0.0.2 /Users/nick/workspace/projects/nickmask
+121 verbose already installed skipping url-loader@^0.5.7 /Users/nick/workspace/projects/nickmask
+122 verbose already installed skipping webpack-dev-server@^1.14.0 /Users/nick/workspace/projects/nickmask
+123 verbose already installed skipping firebase@^2.4.2 /Users/nick/workspace/projects/nickmask
+124 verbose already installed skipping react@^0.14.3 /Users/nick/workspace/projects/nickmask
+125 verbose already installed skipping react-bootstrap@^0.28.5 /Users/nick/workspace/projects/nickmask
+126 verbose already installed skipping react-dom@^0.14.8 /Users/nick/workspace/projects/nickmask
+127 verbose already installed skipping react-router@^2.0.1 /Users/nick/workspace/projects/nickmask
+128 http 304 https://registry.npmjs.org/redux
+129 verbose headers { date: 'Fri, 20 May 2016 04:11:26 GMT',
+129 verbose headers   via: '1.1 varnish',
+129 verbose headers   'cache-control': 'max-age=300',
+129 verbose headers   etag: '"473MFXH1M136J8RUTTICKVKAL"',
+129 verbose headers   age: '112',
+129 verbose headers   connection: 'keep-alive',
+129 verbose headers   'x-served-by': 'cache-wlg7320-WLG',
+129 verbose headers   'x-cache': 'HIT',
+129 verbose headers   'x-cache-hits': '2',
+129 verbose headers   'x-timer': 'S1463717486.578661,VS0,VE0',
+129 verbose headers   vary: 'Accept-Encoding' }
+130 silly get cb [ 304,
+130 silly get   { date: 'Fri, 20 May 2016 04:11:26 GMT',
+130 silly get     via: '1.1 varnish',
+130 silly get     'cache-control': 'max-age=300',
+130 silly get     etag: '"473MFXH1M136J8RUTTICKVKAL"',
+130 silly get     age: '112',
+130 silly get     connection: 'keep-alive',
+130 silly get     'x-served-by': 'cache-wlg7320-WLG',
+130 silly get     'x-cache': 'HIT',
+130 silly get     'x-cache-hits': '2',
+130 silly get     'x-timer': 'S1463717486.578661,VS0,VE0',
+130 silly get     vary: 'Accept-Encoding' } ]
+131 verbose etag https://registry.npmjs.org/redux from cache
+132 verbose get saving redux to /Users/nick/.npm/registry.npmjs.org/redux/.cache.json
+133 verbose correctMkdir /Users/nick/.npm correctMkdir not in flight; initializing
+134 silly addNameTag next cb for redux with tag latest
+135 silly addNamed redux@3.5.2
+136 verbose addNamed "3.5.2" is a plain semver version for redux
+137 silly cache afterAdd redux@3.5.2
+138 verbose afterAdd /Users/nick/.npm/redux/3.5.2/package/package.json not in flight; writing
+139 verbose correctMkdir /Users/nick/.npm correctMkdir not in flight; initializing
+140 verbose afterAdd /Users/nick/.npm/redux/3.5.2/package/package.json written
+141 info already installed redux@3.5.2
+142 silly install resolved []
+143 info build /Users/nick/workspace/projects/nickmask
+144 info linkStuff material-ui-example-webpack@0.15.0-alpha.2
+145 silly linkStuff material-ui-example-webpack@0.15.0-alpha.2 has /Users/nick/workspace/projects as its parent node_modules
+146 verbose linkBins material-ui-example-webpack@0.15.0-alpha.2
+147 verbose linkMans material-ui-example-webpack@0.15.0-alpha.2
+148 verbose rebuildBundles material-ui-example-webpack@0.15.0-alpha.2
+149 verbose rebuildBundles [ '.bin',
+149 verbose rebuildBundles   'babel-cli',
+149 verbose rebuildBundles   'babel-core',
+149 verbose rebuildBundles   'babel-eslint',
+149 verbose rebuildBundles   'babel-loader',
+149 verbose rebuildBundles   'babel-preset-es2015',
+149 verbose rebuildBundles   'babel-preset-react',
+149 verbose rebuildBundles   'babel-preset-stage-0',
+149 verbose rebuildBundles   'css-loader',
+149 verbose rebuildBundles   'extract-text-webpack-plugin',
+149 verbose rebuildBundles   'file-loader',
+149 verbose rebuildBundles   'firebase',
+149 verbose rebuildBundles   'html-webpack-plugin',
+149 verbose rebuildBundles   'node-sass',
+149 verbose rebuildBundles   'postcss-loader',
+149 verbose rebuildBundles   'react',
+149 verbose rebuildBundles   'react-addons-create-fragment',
+149 verbose rebuildBundles   'react-bootstrap',
+149 verbose rebuildBundles   'react-dom',
+149 verbose rebuildBundles   'react-hot-loader',
+149 verbose rebuildBundles   'react-router',
+149 verbose rebuildBundles   'react-slick',
+149 verbose rebuildBundles   'react-tap-event-plugin',
+149 verbose rebuildBundles   'redux',
+149 verbose rebuildBundles   'sass-loader',
+149 verbose rebuildBundles   'style-loader',
+149 verbose rebuildBundles   'superagent',
+149 verbose rebuildBundles   'svg-loader',
+149 verbose rebuildBundles   'transfer-webpack-plugin',
+149 verbose rebuildBundles   'url-loader',
+149 verbose rebuildBundles   'webpack',
+149 verbose rebuildBundles   'webpack-dev-server' ]
+150 verbose rebuild bundle /Users/nick/workspace/projects/nickmask/node_modules/file-loader
+151 info build /Users/nick/workspace/projects/nickmask/node_modules/file-loader
+152 info preinstall file-loader@0.8.5
+153 info linkStuff file-loader@0.8.5
+154 silly linkStuff file-loader@0.8.5 has /Users/nick/workspace/projects/nickmask/node_modules as its parent node_modules
+155 verbose linkBins file-loader@0.8.5
+156 verbose linkMans file-loader@0.8.5
+157 verbose rebuildBundles file-loader@0.8.5
+158 verbose rebuildBundles [ 'loader-utils' ]
+159 info install file-loader@0.8.5
+160 info postinstall file-loader@0.8.5
+161 verbose rebuild bundle /Users/nick/workspace/projects/nickmask/node_modules/react-addons-create-fragment
+162 info build /Users/nick/workspace/projects/nickmask/node_modules/react-addons-create-fragment
+163 info preinstall react-addons-create-fragment@15.0.2
+164 info linkStuff react-addons-create-fragment@15.0.2
+165 silly linkStuff react-addons-create-fragment@15.0.2 has /Users/nick/workspace/projects/nickmask/node_modules as its parent node_modules
+166 verbose linkBins react-addons-create-fragment@15.0.2
+167 verbose linkMans react-addons-create-fragment@15.0.2
+168 verbose rebuildBundles react-addons-create-fragment@15.0.2
+169 info install react-addons-create-fragment@15.0.2
+170 info postinstall react-addons-create-fragment@15.0.2
+171 info install material-ui-example-webpack@0.15.0-alpha.2
+172 info postinstall material-ui-example-webpack@0.15.0-alpha.2
+173 info prepublish material-ui-example-webpack@0.15.0-alpha.2
+174 verbose validateInstall loading /Users/nick/workspace/projects/nickmask/package.json for validation
+175 verbose stack Error: The package react@0.14.8 does not satisfy its siblings' peerDependencies requirements!
+175 verbose stack     at /usr/local/lib/node_modules/npm/lib/install.js:125:32
+175 verbose stack     at /usr/local/lib/node_modules/npm/lib/install.js:268:7
+175 verbose stack     at /usr/local/lib/node_modules/npm/node_modules/read-installed/read-installed.js:142:5
+175 verbose stack     at /usr/local/lib/node_modules/npm/node_modules/read-installed/read-installed.js:263:14
+175 verbose stack     at cb (/usr/local/lib/node_modules/npm/node_modules/slide/lib/async-map.js:47:24)
+175 verbose stack     at /usr/local/lib/node_modules/npm/node_modules/read-installed/read-installed.js:263:14
+175 verbose stack     at cb (/usr/local/lib/node_modules/npm/node_modules/slide/lib/async-map.js:47:24)
+175 verbose stack     at /usr/local/lib/node_modules/npm/node_modules/read-installed/read-installed.js:263:14
+175 verbose stack     at cb (/usr/local/lib/node_modules/npm/node_modules/slide/lib/async-map.js:47:24)
+175 verbose stack     at /usr/local/lib/node_modules/npm/node_modules/read-installed/read-installed.js:263:14
+176 verbose cwd /Users/nick/workspace/projects/nickmask
+177 error Darwin 15.4.0
+178 error argv "/usr/local/bin/node" "/usr/local/bin/npm" "i"
+179 error node v4.4.4
+180 error npm  v2.15.1
+181 error code EPEERINVALID
+182 error peerinvalid The package react@0.14.8 does not satisfy its siblings' peerDependencies requirements!
+182 error peerinvalid Peer react-bootstrap@0.28.5 wants react@>=0.14.0
+182 error peerinvalid Peer react-dom@0.14.8 wants react@^0.14.8
+182 error peerinvalid Peer react-router@2.4.1 wants react@^0.14.0 || ^15.0.0
+182 error peerinvalid Peer react-slick@0.12.2 wants react@^0.14.0 || ^15.0.1
+182 error peerinvalid Peer react-tap-event-plugin@0.2.2 wants react@^0.14.0
+182 error peerinvalid Peer react-addons-create-fragment@15.0.2 wants react@^15.0.2
+183 verbose exit [ 1, true ]
