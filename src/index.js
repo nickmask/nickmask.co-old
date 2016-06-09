@@ -1,6 +1,9 @@
 import React from 'react'
 import { render } from 'react-dom'
+import { Provider } from 'react-redux'
+import { createStore } from 'redux'
 import { Router, Route, browserHistory, IndexRoute } from 'react-router'
+import projects from './reducers/index.js'
 
 import App from './modules/App'
 import Home from './modules/Home'
@@ -10,15 +13,19 @@ import Blog from './modules/Blog'
 import Contact from './modules/Contact'
 import Project from './modules/Project'
 
+let store = createStore(projects)
+
 render((
-  <Router history={browserHistory}>
-    <Route path='/' component={App}>
-      <IndexRoute component={Home} />
-      <Route path='/projects' component={Projects} />
-      <Route path='/project/:project' component={Project} />
-      <Route path='/blog' component={Blog} />
-      <Route path='/about' component={About} />
-      <Route path='/contact' component={Contact} />
-    </Route>
-  </Router>
+  <Provider store={store}>
+    <Router history={browserHistory}>
+      <Route path='/' component={App}>
+        <IndexRoute component={Home} />
+        <Route path='/projects' component={Projects} />
+        <Route path='/projects/:project' component={Project} />
+        <Route path='/blog' component={Blog} />
+        <Route path='/about' component={About} />
+        <Route path='/contact' component={Contact} />
+      </Route>
+    </Router>
+  </Provider>
 ), document.getElementById('app'))

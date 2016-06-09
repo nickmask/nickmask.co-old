@@ -66,7 +66,6 @@ class Home extends React.Component {
             </Col>
             <Col className='gridItem' md={3} sm={3} fluid>
               <div className='col2'>
-                <Image src='/images/gb-logo.png'/>
               </div>
             </Col>
             <Col className='gridItem' md={3} sm={3} fluid>
