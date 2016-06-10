@@ -1,14 +1,13 @@
 import React from 'react'
-import { Col, Row, Image, Carousel, Button } from 'react-bootstrap'
-import ProjectSlider from '../components/Project-slider'
-import Slider from 'react-slick'
 import ProjectSingle from '../components/Project-single'
+import { connect } from 'react-redux'
+import { updateProjects } from '../actions/index.js'
 
 require('../www/stylesheets/project-page')
 
 class Project extends React.Component {
   render () {
-    console.log(this.props)
+    console.log('what about this?', this)
     return (
       <div className='projectPage'>
         <ProjectSingle />
@@ -17,4 +16,7 @@ class Project extends React.Component {
   }
 }
 
-export default Project
+export default connect(
+  state => ({ projects: state }),
+  { updateProjects}
+)(Project)

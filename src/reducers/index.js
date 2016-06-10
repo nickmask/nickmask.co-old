@@ -2,7 +2,7 @@ import { combineReducers } from 'redux'
 import projects from './projects'
 
 const nickmask = combineReducers({
-  projects
+  projects,
 })
 
 export default nickmask

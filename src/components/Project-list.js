@@ -7,6 +7,8 @@ import Firebase from 'firebase'
 import _ from 'lodash'
 import Project from '../modules/Project'
 require('../www/stylesheets/projects.sass')
+import { connect } from 'react-redux'
+import { updateProjects } from '../actions/index.js'
 
 class ProjectList extends React.Component {
 
@@ -26,6 +28,7 @@ class ProjectList extends React.Component {
           projectData: childProject.val(),
         })
       })
+      self.props.dispatch(updateProjects({ projects: arr }))
       self.setState({ list: arr })
     })
   }
@@ -44,7 +47,6 @@ class ProjectList extends React.Component {
         <div>
           { _.map(this.state.list, function (project) {
             let divStyle = { backgroundImage: 'url(' + project.projectData.mainImage + ')' };
-            console.log(project)
             return (
               <Col sm={4} key={project.projectName.replace(' ', '')} className='projectItem'>
                 <Link
@@ -65,5 +67,7 @@ class ProjectList extends React.Component {
     }
   }
 }
+
+ProjectList = connect()(ProjectList)
 
 export default ProjectList
