@@ -1,7 +1,6 @@
 import React, { Component, PropTypes } from 'react'
 import ProjectSingle from '../components/Project-single'
 import { connect } from 'react-redux'
-import { updateProjects } from '../actions/index.js'
 
 require('../www/stylesheets/project-page')
 
@@ -10,10 +9,15 @@ class Project extends Component {
     const { projects } = this.props
     return (
       <div className='projectPage'>
-        <ProjectSingle />
+        <ProjectSingle projects={projects}/>
       </div>
     )
   }
+}
+
+Project.propTypes = {
+  projects: PropTypes.array.isRequired,
+  isFetching: PropTypes.boo.isRequired
 }
 
 function mapStateToProps (state) {
