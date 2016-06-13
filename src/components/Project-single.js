@@ -1,29 +1,17 @@
-import React from 'react'
-import { Image } from 'react'
-import { connect } from 'react-redux'
-import { Col, Row, Button } from 'react-bootstrap'
-import Firebase from 'firebase'
-import ProjectSlider from './Project-slider'
+import React, { PropTypes, Component } from 'react'
 require('../www/stylesheets/project-page')
 
-class ProjectSingle extends React.Component {
-
+export default class ProjectSingle extends Component {
   render () {
-      console.log("Fucking store", this.context.store)
       return (
-        <div/>
+        <ul>
+          {this.props.projects.map((posts, i) =>
+            <li key={i}>{project.title}</li>
+          )}
+        </ul>
       )
   }
 }
-
-function mapStateToProps(state) {
-  const { projects } = state
-  return {
-    projects
-  }
-}
-
-export default connect(mapStateToProps)(ProjectSingle)
 
 {/*<div>
   <Row>

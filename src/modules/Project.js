@@ -1,13 +1,13 @@
-import React from 'react'
+import React, { Component, PropTypes } from 'react'
 import ProjectSingle from '../components/Project-single'
 import { connect } from 'react-redux'
 import { updateProjects } from '../actions/index.js'
 
 require('../www/stylesheets/project-page')
 
-class Project extends React.Component {
+class Project extends Component {
   render () {
-    console.log('what about this?', this)
+    const { projects } = this.props
     return (
       <div className='projectPage'>
         <ProjectSingle />
@@ -16,7 +16,12 @@ class Project extends React.Component {
   }
 }
 
-export default connect(
-  state => ({ projects: state }),
-  { updateProjects}
-)(Project)
+function mapStateToProps (state) {
+  const { isFetching, projects: projects } = { isFetching: true, projects: []}
+  return {
+    projects,
+    isFetching
+  }
+}
+
+export default connect(mapStateToProps)(Project)
