@@ -1,9 +1,12 @@
+import 'babel-polyfill'
+import thunkMiddleware from 'redux-thunk'
 import React from 'react'
-import { render } from 'react-dom'
-import { createStore, combineReducers, applyMiddleware } from 'redux'
+import ReactDOM from 'react-dom'
+import createLogger from 'redux-logger'
+import { createStore, applyMiddleware } from 'redux'
+import rootReducer from './reducers/index.js'
 import { Provider } from 'react-redux'
-import { Router, Route, browserHistory, IndexRoute } from 'react-router'
-import { syncHistoryWithStore, routerReducer } from 'react-router-redux'
+import { fetchProjects } from './actions/index'
 
 import App from './modules/App'
 import Home from './modules/Home'
@@ -12,32 +15,39 @@ import About from './modules/About'
 import Blog from './modules/Blog'
 import Contact from './modules/Contact'
 import Project from './modules/Project'
-import { ReduxRouter } from 'redux-router';
 
-import reducers from './reducers/index.js'
+const loggerMiddleware = createLogger()
 
-
-// Add the reducer to your store on the `routing` key
 const store = createStore(
-  combineReducers({
-    ...reducers,
-    routing: routerReducer
-  })
+  rootReducer,
+  applyMiddleware(
+    thunkMiddleware,
+    loggerMiddleware
+  )
 )
 
-const history = syncHistoryWithStore(browserHistory, store)
+store.dispatch(fetchProjects()).then(() =>
+  console.log(store.getState())
+)
 
-render((
-  <Provider store={store}>
-    <Router history={browserHistory}>
-      <Route path='/' component={App}>
-        <IndexRoute component={Home} />
-        <Route path='/projects' component={Projects} />
-        <Route path='/projects/:project' component={Project} />
-        <Route path='/blog' component={Blog} />
-        <Route path='/about' component={About} />
-        <Route path='/contact' component={Contact} />
-      </Route>
-    </Router>
-  </Provider>
-), document.getElementById('app'))
+function render () {
+  ReactDOM.render(
+    <Provider store={store}>
+      <Router history={browserHistory}>
+        <Route path='/' component={App}>
+          <IndexRoute component={Home} />
+          <Route path='/projects' component={Projects} />
+          <Route path='/projects/:project' component={Project} />
+          <Route path='/blog' component={Blog} />
+          <Route path='/about' component={About} />
+          <Route path='/contact' component={Contact} />
+        </Route>
+      </Router>
+    </Provider>,
+    document.getElementById('app')
+  )
+}
+
+store.subscribe(render)
+
+render()
