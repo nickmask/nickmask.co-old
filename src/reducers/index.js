@@ -1,8 +1,7 @@
 import { combineReducers } from 'redux'
-import projects from './projects'
 
-const nickmask = combineReducers({
-  projects,
+const rootReducer = combineReducers({
+
 })
 
-export default nickmask
+export default rootReducer

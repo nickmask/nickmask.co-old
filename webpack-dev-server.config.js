@@ -3,23 +3,26 @@ const path = require('path')
 const buildPath = path.resolve(__dirname, 'build')
 const nodeModulesPath = path.resolve(__dirname, 'node_modules')
 const TransferWebpackPlugin = require('transfer-webpack-plugin')
-const autoprefixer = require('autoprefixer')
 const ExtractTextPlugin = require('extract-text-webpack-plugin')
 
 const sassLoaders = [
   'css-loader',
   'postcss-loader',
-  'sass-loader?indentedSyntax=sass&includePaths[]=' + path.resolve(__dirname, './src'),
+  'sass-loader?indentedSyntax=sass&includePaths[]=' + path.resolve(__dirname, './src')
 ]
 
+const devFlagPlugin = new webpack.DefinePlugin({
+  __DEV__: JSON.stringify(JSON.parse(process.env.DEBUG || 'false'))
+})
+
 const config = {
-  //Entry points to the project
+  //  Entry points to the project
   entry: [
     'webpack/hot/dev-server',
     'webpack/hot/only-dev-server',
     path.join(__dirname, '/src/index.js'),
   ],
-  //Config options on how to interpret requires imports
+  //  Config options on how to interpret requires imports
   resolve: {
     extensions: ['', '.js', '.jsx', '.sass', '.css'],
     //node_modules: ["web_modules", "node_modules"]  (Default Settings)
@@ -47,7 +50,9 @@ const config = {
     new TransferWebpackPlugin([
       {from: 'www'},
     ], path.resolve(__dirname, "src")),
-
+    //redux dev tools
+    devFlagPlugin,
+    
     new ExtractTextPlugin( "bundle.css" ),
   ],
   module: {
