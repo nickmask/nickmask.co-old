@@ -10,7 +10,7 @@ class Projects extends Component {
     return (
       <row>
         {projects.isFetching && projects.list.length === 0 &&
-          <h2>Loading...</h2>
+          <img src='/images/loading.gif'/>
         }
         {!projects.isFetching && projects.list.length === 0 &&
           <h2>Error loading projects.</h2>
