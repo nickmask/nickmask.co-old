@@ -1,13 +1,28 @@
 import React, { PropTypes, Component } from 'react'
-import { Row, Col, Button } from 'react-bootstrap'
-import { Image } from 'react'
+import { Row, Col, Button, Image } from 'react-bootstrap'
 require('../www/stylesheets/project-page')
 
 export default class ProjectSingle extends Component {
 
+  getBuild () {
+    if (typeof this.props.project.built != "undefined") {
+      return this.props.project.built.split(", ")
+    } else {
+      return []
+    }
+  }
+
+  getTesting () {
+    if (typeof this.props.project.testing != "undefined") {
+      return this.props.project.testing.split(", ")
+    } else {
+      return []
+    }
+  }
+
   render () {
     const project = this.props.project
-    const keys = Object.keys(this.props.project.text)
+    const keys = Object.keys(project.text)
     return (
       <div>
         <Row>
@@ -38,9 +53,15 @@ export default class ProjectSingle extends Component {
             <div className='projectSide'>
               <h2>Built with</h2>
               <div className='build'>
+                {built.map((bu, i) =>
+                  <Image src={`/images/${bu}.png`} alt={bu} responsive/>
+                )}
               </div>
               <h2>Testing</h2>
               <div className='testing'>
+                {test.map((tu, i) =>
+                  <Image src={`/images/${tu}.png`} alt={tu} responsive/>
+                )}
               </div>
             </div>
           </Col>
@@ -49,42 +70,3 @@ export default class ProjectSingle extends Component {
     )
   }
 }
-//
-// <div>
-
-//   <Row>
-//     <Col md={8} className='projectMainCol'>
-//       <div className='projectMain'>
-//         <h2>Summary</h2>
-//       </div>
-//     </Col>
-    // <Col md={4} className='projectSideCol'>
-    //   <div className='projectSide'>
-    //     <h2>Built with</h2>
-    //     <div className='build'>
-          // <Image src='/images/node.png' alt='Node.js' responsive/>
-          // <Image src='/images/webpack.png' alt='Webpack' responsive/>
-          // <Image src='/images/eslint.png' alt='eslint' responsive/>
-          // <Image src='/images/babel.png' alt='Babel' responsive/>
-          // <Image src='/images/sass.png' alt='Sass' responsive/>
-          // <Image src='/images/react-router.png' alt='React router' responsive/>
-    //     </div>
-    //     <h2>Testing</h2>
-    //     <div className='testing'>
-    //       <Image src='/images/mocha.png' alt='Mocha' responsive/>
-    //       <Image src='/images/chai.png' alt='Chai' responsive/>
-    //       <Image src='/images/enzyme.png' alt='Enzyme' responsive/>
-    //       <Image src='/images/nightwatch.png' alt='Nightwatch' responsive/>
-    //     </div>
-    //     </div>
-    // </Col>
-//   </Row>
-//   <Row>
-//     <Col sm={12} className='projectImageCol'>
-//       <div className='projectImage'>
-//         <div>
-//         </div>
-//       </div>
-//     </Col>
-//   </Row>
-// </div>

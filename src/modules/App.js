@@ -4,7 +4,6 @@ import Navbar from './Navbar'
 import { fetchProjects } from '../actions/index.js'
 require('../www/stylesheets/main')
 import Home from './Home'
-import Update from '../components/Update-projects.js'
 
 class App extends Component {
 

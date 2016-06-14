@@ -14,7 +14,6 @@ class Project extends Component {
 
   render () {
     const { projects } = this.props
-    console.log('In projects', projects)
     const project = this.getProjectData()
     return (
       <Row className='projectPage'>
