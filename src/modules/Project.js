@@ -1,7 +1,6 @@
 import React, { Component, PropTypes } from 'react'
 import ProjectSingle from '../components/Project-single'
 import { connect } from 'react-redux'
-
 require('../www/stylesheets/project-page')
 
 class Project extends Component {
@@ -16,6 +15,13 @@ class Project extends Component {
 }
 
 function mapStateToProps (state) {
+  return {
+    projects: state.projects,
+    isFetching
+  }
+}
+
+const mapStateToProps = (state) => {
   return {
     projects: state.projects,
     isFetching

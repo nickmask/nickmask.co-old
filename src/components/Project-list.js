@@ -10,7 +10,7 @@ export default class ProjectList extends Component {
       <div>
         {this.props.projects.map((project, i) =>
           <Col sm={4} key={i} className='projectItem'>
-            <Link {`/projects/${user.id}`}>
+            <Link to={`/project/${project.projectName.replace(' ', '-')}`}>
               <div className='project'>
                 <h2 className='projectTitle'>{project.projectName}</h2>
                 <p className='projectInfo'>{project.projectData.tech}</p>
