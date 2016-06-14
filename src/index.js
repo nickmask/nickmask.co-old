@@ -27,9 +27,7 @@ const store = createStore(
   )
 )
 
-store.dispatch(fetchProjects()).then(() =>
-  console.log(store.getState())
-)
+store.dispatch(fetchProjects())
 
 function render () {
   ReactDOM.render(

@@ -1,48 +1,22 @@
-import React from 'react'
-import { Image } from 'react'
+import React, { PropTypes, Component } from 'react'
 import { Link } from 'react-router'
 import { Col } from 'react-bootstrap'
-import request from 'superagent'
-import Firebase from 'firebase'
-import _ from 'lodash'
-import Project from '../modules/Project'
 require('../www/stylesheets/projects.sass')
 import { connect } from 'react-redux'
-import { updateProjects } from '../actions/index.js'
 
-class ProjectList extends React.Component {
-  //
-  // constructor (props) {
-  //   super(props)
-  //   this.state = {list: []}
-  // }
-  //
-  // componentDidMount() {
-  //   let projects = new Firebase('https://nickmask.firebaseio.com/projects')
-  //   const self = this
-  //   let arr = []
-  //   projects.once('value', function (project) {
-  //     project.forEach(function (childProject) {
-  //       arr.push({
-  //         projectName: childProject.key(),
-  //         projectData: childProject.val(),
-  //       })
-  //     })
-  //     self.props.dispatch(updateProjects({ projects: arr }))
-  //     self.setState({ list: arr })
-  //   })
-  // }
-
+export default class ProjectList extends Component {
   render () {
+    console.log('Project list', this.props.projects)
     return (
-      <div>
-
-      </div>
+      <ul>
+        {this.props.projects.map((project, i) =>
+          <li key={i}>{project.title}</li>
+        )}
+      </ul>
     )
   }
 }
 
-export default ProjectList
 //
 // { _.map(this.state.list, function (project) {
 //   let divStyle = { backgroundImage: 'url(' + project.projectData.mainImage + ')' };

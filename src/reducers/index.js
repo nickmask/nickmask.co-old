@@ -5,7 +5,7 @@ const rootReducer = combineReducers({
   projects
 })
 
-function projects (state = { isFetching: false, projects: [] }, action) {
+function projects (state = { isFetching: false, list: [] }, action) {
   switch (action.type) {
     case REQUEST_PROJECTS:
       return Object.assign({}, state, {
@@ -14,7 +14,8 @@ function projects (state = { isFetching: false, projects: [] }, action) {
     case RECEIVE_PROJECTS:
       return Object.assign({}, state, {
         isFetching: false,
-        projects: action.json
+        list: action.list,
+        receivedAt: action.receivedAt
       })
     default:
       return state
