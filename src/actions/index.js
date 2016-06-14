@@ -11,16 +11,29 @@ export function requestProjects () {
 
 export function receiveProjects (json) {
   return {
-    type: RECEIVE_PROJECTS
+    type: RECEIVE_PROJECTS,
+    json
   }
 }
+
+// export function fetchProjects () {
+//   return function (dispatch) {
+//     dispatch(requestProjects())
+//     return fetch('https://nickmask.firebaseio.com/projects.json')
+//       .then(response => response.json())
+//       .then(json =>
+//         dispatch(receiveProjects(json)))
+//   }
+// }
+//
 
 export function fetchProjects () {
   return function (dispatch) {
     dispatch(requestProjects())
-    return fetch('https://nickmask.firebaseio.com/projects.json')
+    return fetch(`https://nickmask.firebaseio.com/projects.json`)
       .then(response => response.json())
       .then(json =>
-        dispatch(receiveProjects(json)))
+        dispatch(receiveProjects(json))
+      )
   }
 }

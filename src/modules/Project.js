@@ -15,15 +15,9 @@ class Project extends Component {
   }
 }
 
-Project.propTypes = {
-  projects: PropTypes.array.isRequired,
-  isFetching: PropTypes.boo.isRequired
-}
-
 function mapStateToProps (state) {
-  const { isFetching, projects: projects } = { isFetching: true, projects: []}
   return {
-    projects,
+    projects: state.projects,
     isFetching
   }
 }
