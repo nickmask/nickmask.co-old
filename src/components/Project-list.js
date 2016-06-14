@@ -6,13 +6,19 @@ import { connect } from 'react-redux'
 
 export default class ProjectList extends Component {
   render () {
-    console.log('Project list', this.props.projects)
     return (
-      <ul>
+      <div>
         {this.props.projects.map((project, i) =>
-          <li key={i}>{project.title}</li>
+          <Col sm={4} key={i} className='projectItem'>
+            <Link {`/projects/${user.id}`}>
+              <div className='project'>
+                <h2 className='projectTitle'>{project.projectName}</h2>
+                <p className='projectInfo'>{project.projectData.tech}</p>
+              </div>
+            </Link>
+          </Col>
         )}
-      </ul>
+      </div>
     )
   }
 }
