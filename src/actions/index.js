@@ -33,7 +33,6 @@ export function fetchProjects () {
   return function (dispatch) {
     dispatch(requestProjects())
     let projects = new Firebase('https://nickmask.firebaseio.com/projects')
-    const self = this
     let arr = []
     projects.once('value', function (project) {
       project.forEach(function (childProject) {
