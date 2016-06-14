@@ -14,7 +14,7 @@ function projects (state = { isFetching: false, projects: [] }, action) {
     case RECEIVE_PROJECTS:
       return Object.assign({}, state, {
         isFetching: false,
-        projects: action.projects
+        projects: action.json
       })
     default:
       return state
