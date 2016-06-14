@@ -22,22 +22,3 @@ export default class ProjectList extends Component {
     )
   }
 }
-
-//
-// { _.map(this.state.list, function (project) {
-//   let divStyle = { backgroundImage: 'url(' + project.projectData.mainImage + ')' };
-//   return (
-//     <Col sm={4} key={project.projectName.replace(' ', '')} className='projectItem'>
-//       <Link
-//       to={`/projects/${project.projectName.replace(' ', '%20')}`}
-//       projectData={project}
-//       >
-//         <div style={divStyle} className='project'>
-//           <h2 className='projectTitle'>{project.projectName}</h2>
-//           <p className='projectInfo'>{project.projectData.tech}</p>
-//         </div>
-//       </Link>
-//     </Col>
-//   )
-// })
-// }

@@ -12,7 +12,8 @@ class Projects extends Component {
           {projects.isFetching && projects.list.length === 0 &&
             <Col sm={12} className='loading'>
               <img src='/images/loading.gif'/>
-            </Col>          }
+            </Col>
+          }
           {!projects.isFetching && projects.list.length === 0 &&
             <h2>Error loading projects.</h2>
           }

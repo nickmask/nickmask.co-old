@@ -1,4 +1,3 @@
-import 'babel-polyfill'
 import thunkMiddleware from 'redux-thunk'
 import React from 'react'
 import ReactDOM from 'react-dom'
