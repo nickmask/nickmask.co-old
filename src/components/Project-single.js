@@ -1,24 +1,28 @@
 import React, { PropTypes, Component } from 'react'
 import { Row, Col, Button, Image } from 'react-bootstrap'
+import Build from './Project-build'
+import Testing from './Project-testing'
+import Text from './Project-text'
 require('../www/stylesheets/project-page')
 
 export default class ProjectSingle extends Component {
 
-  getBuild () {
+  hasBuild () {
     if (typeof this.props.project.built != "undefined") {
-      return this.props.project.built.split(", ")
+      return true
     } else {
-      return []
+      return false
     }
   }
 
-  getTesting () {
+  hasTesting () {
     if (typeof this.props.project.testing != "undefined") {
-      return this.props.project.testing.split(", ")
+      return true
     } else {
-      return []
+      return false
     }
   }
+
 
   render () {
     const project = this.props.project
@@ -39,29 +43,24 @@ export default class ProjectSingle extends Component {
         <Row>
           <Col md={8} className='projectMainCol'>
             <div className='projectMain'>
-              {keys.map((key, i) =>
-                <div>
-                  <h2>{key}</h2>
-                  <p>{project.text.key}</p>
-                </div>
-              )}
+              <Text keys={keys} project={project}/>
               <p>{project.text.summary}</p>
               <p></p>
             </div>
           </Col>
           <Col md={4} className='projectSideCol'>
             <div className='projectSide'>
-              <h2>Built with</h2>
-              <div className='build'>
-                {built.map((bu, i) =>
-                  <Image src={`/images/${bu}.png`} alt={bu} responsive/>
-                )}
+              <div>
+                {!this.hasBuild() && <div></div>
+                }
+                {this.hasBuild() && <Build build={this.props.project.built.split(", ")} />
+                }
               </div>
-              <h2>Testing</h2>
-              <div className='testing'>
-                {test.map((tu, i) =>
-                  <Image src={`/images/${tu}.png`} alt={tu} responsive/>
-                )}
+              <div>
+                {!this.hasTesting() && <div></div>
+                }
+                {this.hasTesting() && <Testing build={this.props.project.testing.split(", ")} />
+                }
               </div>
             </div>
           </Col>
@@ -70,3 +69,19 @@ export default class ProjectSingle extends Component {
     )
   }
 }
+//
+// {this.props.project.testing.split(", ").map((tu, i) =>
+//   <Image src={`/images/${tu}.png`} alt={tu} responsive/>
+// )}
+//
+// {projects.isFetching && projects.list.length === 0 &&
+//   <Col sm={12} className='loading'>
+//     <img src='/images/loading.gif'/>
+//   </Col>
+// }
+// {!projects.isFetching && projects.list.length === 0 &&
+//   <h2>Error loading project.</h2>
+// }
+// {projects.list.length > 0 &&
+//   <ProjectSingle project={project.projectData}/>
+// }
