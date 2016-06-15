@@ -11,7 +11,7 @@ class Navbar extends React.Component {
         <div className='container'>
           <Row>
             <Col sm={5} className='brand'>
-              NICK
+              <h1>NICK</h1>
             </Col>
             <Col sm={7}>
               <div className='navContent'>

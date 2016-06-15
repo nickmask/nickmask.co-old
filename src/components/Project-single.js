@@ -33,8 +33,7 @@ export default class ProjectSingle extends Component {
             <div className='projectTitle'>
               <h1>{project.title}</h1>
               <i>{project.date}</i>
-              <Button bsSize='xsmall'>github</Button>
-              <Button bsSize='xsmall'>live site</Button>
+              <Button href={project.github} bsSize='xsmall'>github</Button>
               <hr/>
             </div>
           </Col>

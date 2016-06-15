@@ -1,9 +1,17 @@
-import React from 'react'
+import React, { PropTypes, Component } from 'react'
+import { Row, Col } from 'react-bootstrap'
+require('../www/stylesheets/blog.sass')
 
-class Blog extends React.Component {
+class Blog extends Component {
   render () {
     return (
-      <h1>Blog</h1>
+      <Row >
+        <Col sm={12} className='blogMainCol'>
+          <div className='blogMain'>
+            <h1>Coming soon...</h1>
+          </div>
+        </Col>
+      </Row>
     )
   }
 }
