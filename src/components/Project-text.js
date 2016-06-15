@@ -6,12 +6,13 @@ require('../www/stylesheets/projects.sass')
 export default class Text extends Component {
   render () {
     const { project, keys } = this.props
+    console.log(project.text)
     return (
       <div>
         {keys.map((key, i) =>
           <div>
-            <h2>{key}</h2>
-            <p>{project.text.key}</p>
+            <h2>{Object.keys(key.i)}</h2>
+            <p>{Object.keys(project.i)}</p>
           </div>
         )}
       </div>
