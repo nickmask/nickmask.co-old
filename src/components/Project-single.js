@@ -23,7 +23,6 @@ export default class ProjectSingle extends Component {
     }
   }
 
-
   render () {
     const project = this.props.project
     const keys = Object.keys(project.text)
@@ -44,8 +43,6 @@ export default class ProjectSingle extends Component {
           <Col md={8} className='projectMainCol'>
             <div className='projectMain'>
               <Text keys={keys} project={project}/>
-              <p>{project.text.summary}</p>
-              <p></p>
             </div>
           </Col>
           <Col md={4} className='projectSideCol'>
@@ -69,19 +66,3 @@ export default class ProjectSingle extends Component {
     )
   }
 }
-//
-// {this.props.project.testing.split(", ").map((tu, i) =>
-//   <Image src={`/images/${tu}.png`} alt={tu} responsive/>
-// )}
-//
-// {projects.isFetching && projects.list.length === 0 &&
-//   <Col sm={12} className='loading'>
-//     <img src='/images/loading.gif'/>
-//   </Col>
-// }
-// {!projects.isFetching && projects.list.length === 0 &&
-//   <h2>Error loading project.</h2>
-// }
-// {projects.list.length > 0 &&
-//   <ProjectSingle project={project.projectData}/>
-// }

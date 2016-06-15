@@ -5,26 +5,16 @@ require('../www/stylesheets/projects.sass')
 
 export default class Text extends Component {
 
-  displayText () {
-    const project = this.props.project.text
-    const projectText = []
-    for(var i = 0; i < project.length; i++) {
-      console.log('Project', project[i])
-      return (
-        <div>
-          <h2>{project[i].text}</h2>
-          <p>{project[i].title}</p>
-        </div>
-      )
-    }
-  }
-
   render () {
-    const { project, keys } = this.props
-    console.log('running')
+    const text = this.props.project.text
     return (
       <div>
-        {this.displayText()}
+        {text.map((te, i) =>
+          <div key={i}>
+            <h2>{te.title}</h2>
+            <p>{te.text}</p>
+          </div>
+        )}
       </div>
     )
   }
