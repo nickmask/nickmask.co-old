@@ -41,20 +41,20 @@ class About extends Component {
           </Col>
         </Row>
         <Row className='careRowContent'>
-          <Col sm={4} className='aboutLeft'>
-            <h2><FontAwesome name='eye'/> Design</h2>
+          <Col sm={4} className='careLeft'>
+            <h2><FontAwesome name='eye'/>Design</h2>
             <p>
               Design, both in terms of asthetics and UX is so essential. You might have the most powerful application in your field, but unless if it isn't attractive and easy to use people will not use it.
             </p>
           </Col>
-          <Col sm={4} className='aboutMiddle'>
-            <h2><FontAwesome name='cogs'/> Functionality</h2>
+          <Col sm={4} className='careMiddle'>
+            <h2><FontAwesome name='cogs'/>Functionality</h2>
             <p>
               Design, both in terms of asthetics and UX is so essential. You might have the most powerful application in your field, but unless if it isn't attractive and easy to use people will not use it.
             </p>
           </Col>
-          <Col sm={4} className='aboutRight'>
-            <h2><FontAwesome name='user'/> User</h2>
+          <Col sm={4} className='careRight'>
+            <h2><FontAwesome name='user'/>User</h2>
             <p>
               Design, both in terms of asthetics and UX is so essential. You might have the most powerful application in your field, but unless if it isn't attractive and easy to use people will not use it.
             </p>
@@ -73,10 +73,12 @@ class About extends Component {
           <Col sm={6} className='aboutMeLeft'>
             <p>
               Design, both in terms of asthetics and UX is so essential. You might have the most powerful application in your field, but unless if it isn't attractive and easy to use people will not use it.
+              Design, both in terms of asthetics and UX is so essential. You might have the most powerful application in your field, but unless if it isn't attractive and easy to use people will not use it.
             </p>
           </Col>
-          <Col sm={6} className='aboutMeLeft'>
+          <Col sm={6} className='aboutMeRight'>
             <p>
+              Design, both in terms of asthetics and UX is so essential. You might have the most powerful application in your field, but unless if it isn't attractive and easy to use people will not use it.
               Design, both in terms of asthetics and UX is so essential. You might have the most powerful application in your field, but unless if it isn't attractive and easy to use people will not use it.
             </p>
           </Col>
