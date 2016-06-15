@@ -24,8 +24,18 @@ class Navbar extends React.Component {
                 </ul>
               </div>
             </Col>
-            <Col sm={12} className='brand mobile'>
+            <Col sm={9} className='brand mobile'>
               <h1>NICKMASK</h1>
+            </Col>
+            <Col sm={3} className='mobile mobileNav'>
+              <button>Toggle</button>
+              <ul>
+                <li><IndexLink activeClassName='active' to='/'>{'HOME'}</IndexLink></li>
+                <li><Link activeClassName='active' to='/projects'>{'PROJECTS'}</Link></li>
+                <li><Link activeClassName='active' to='/blog'>{'BLOG'}</Link></li>
+                <li><Link activeClassName='active' to='/about'>{'ABOUT'}</Link></li>
+                <li><Link activeClassName='active' to='/contact'>{'CONTACT'}</Link></li>
+              </ul>
             </Col>
           </Row>
         </div>
