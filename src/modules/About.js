@@ -41,7 +41,7 @@ class About extends Component {
             </h1>
           </Col>
         </Row>
-        <Row>
+        <Row className='careAboutDets'>
           <Col sm={4} className='care aboutLeft'>
             <h2><FontAwesome name='eye'/> Design</h2>
             <p>
