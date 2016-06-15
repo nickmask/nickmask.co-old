@@ -36,7 +36,7 @@ class About extends Component {
         <Row>
           <Col sm={12} >
           <hr/>
-            <h1 className='care'>
+            <h1 className='careTitle'>
               What I care about
             </h1>
           </Col>
