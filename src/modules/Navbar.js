@@ -10,10 +10,10 @@ class Navbar extends React.Component {
       <div className='nav navbar-fixed-top'>
         <div className='container'>
           <Row>
-            <Col sm={5} className='brand'>
+            <Col sm={5} className='brand desktop'>
               <h1>NICKMASK</h1>
             </Col>
-            <Col sm={7}>
+            <Col sm={7} className='desktop'>
               <div className='navContent'>
                 <ul>
                   <li><IndexLink activeClassName='active' to='/'>{'HOME'}</IndexLink></li>
@@ -23,6 +23,9 @@ class Navbar extends React.Component {
                   <li><Link activeClassName='active' to='/contact'>{'CONTACT'}</Link></li>
                 </ul>
               </div>
+            </Col>
+            <Col sm={12} className='brand mobile'>
+              <h1>NICKMASK</h1>
             </Col>
           </Row>
         </div>
