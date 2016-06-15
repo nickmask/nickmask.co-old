@@ -6,25 +6,25 @@ require('../www/stylesheets/about.sass')
 class About extends Component {
   render () {
     return (
-      <div className='aboutPage'>
-        <Row>
-          <Col sm={8} className='aboutMainCol'>
-            <div className='aboutMain'>
-              <h1 className='intro'>
+      <div className='aboutMain'>
+        <Row className='introRow'>
+          <Col sm={8} className='introCol'>
+            <div>
+              <h1>
                 Hey, I'm Nick.
               </h1>
-              <h1 className='intro'>
+              <h1>
                 I am a web developer
               </h1>
-              <h1 className='introBottom'>
+              <h1>
                 from New Zealand.
               </h1>
-              <p className='introParagraph'>
+              <p>
                 After 5 years in the marketing industry working on everything from NZ wide huge campaigns, startups, to big data analysis and trend spotting I have made the change to become a web developer.
               </p>
             </div>
           </Col>
-          <Col sm={4} className='aboutMainCol'>
+          <Col sm={4} className='introCol'>
             <div className='contactLinks'>
               <h1><FontAwesome name='github'/> github</h1>
               <h1><FontAwesome name='linkedin'/> linkedin</h1>
@@ -34,27 +34,26 @@ class About extends Component {
           </Col>
         </Row>
         <Row>
-          <Col sm={12} className='careRow'>
-          <hr/>
-            <h1 className='careTitle'>
+          <Col sm={12}>
+            <h1 className='aboutTitle'>
               What I care about
             </h1>
           </Col>
         </Row>
-        <Row className='careAboutDets careRow'>
-          <Col sm={4} className='care aboutLeft careRow'>
+        <Row className='careAboutDets'>
+          <Col sm={4} className='aboutLeft'>
             <h2><FontAwesome name='eye'/> Design</h2>
             <p>
               Design, both in terms of asthetics and UX is so essential. You might have the most powerful application in your field, but unless if it isn't attractive and easy to use people will not use it.
             </p>
           </Col>
-          <Col sm={4} className='care aboutMiddle careRow'>
+          <Col sm={4} className='aboutMiddle'>
             <h2><FontAwesome name='cogs'/> Functionality</h2>
             <p>
               Design, both in terms of asthetics and UX is so essential. You might have the most powerful application in your field, but unless if it isn't attractive and easy to use people will not use it.
             </p>
           </Col>
-          <Col sm={4} className='care aboutRight careRow'>
+          <Col sm={4} className='aboutRight'>
             <h2><FontAwesome name='user'/> User</h2>
             <p>
               Design, both in terms of asthetics and UX is so essential. You might have the most powerful application in your field, but unless if it isn't attractive and easy to use people will not use it.
@@ -65,18 +64,18 @@ class About extends Component {
         </Row>
         <Row>
           <Col sm={12} >
-            <h1 className='care careTitle'>
+            <h1 className='aboutTitle'>
               About me
             </h1>
           </Col>
         </Row>
-        <Row className='careAboutDets'>
-          <Col sm={6} className='aboutLeft'>
+        <Row>
+          <Col sm={6} className='aboutMeLeft'>
             <p>
               Design, both in terms of asthetics and UX is so essential. You might have the most powerful application in your field, but unless if it isn't attractive and easy to use people will not use it.
             </p>
           </Col>
-          <Col sm={6} className='aboutRight'>
+          <Col sm={6} className='aboutMeLeft'>
             <p>
               Design, both in terms of asthetics and UX is so essential. You might have the most powerful application in your field, but unless if it isn't attractive and easy to use people will not use it.
             </p>
