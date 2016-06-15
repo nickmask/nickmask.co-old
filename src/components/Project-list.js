@@ -2,7 +2,6 @@ import React, { PropTypes, Component } from 'react'
 import { Link } from 'react-router'
 import { Col } from 'react-bootstrap'
 require('../www/stylesheets/projects.sass')
-import { connect } from 'react-redux'
 
 export default class ProjectList extends Component {
   render () {

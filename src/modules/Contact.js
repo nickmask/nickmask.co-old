@@ -1,9 +1,17 @@
-import React from 'react'
+import React, { PropTypes, Component } from 'react'
+import { Row, Col } from 'react-bootstrap'
+require('../www/stylesheets/contact.sass')
 
-class Contact extends React.Component {
+class Contact extends Component {
   render () {
     return (
-      <h1>Contact</h1>
+      <Row >
+        <Col sm={12} className='contactMainCol'>
+          <div className='contactMain'>
+            <h1>Coming soon...</h1>
+          </div>
+        </Col>
+      </Row>
     )
   }
 }
