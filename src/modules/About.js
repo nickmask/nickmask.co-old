@@ -33,14 +33,14 @@ class About extends Component {
             </div>
           </Col>
         </Row>
-        <Row>
+        <Row className='careRowTitle'>
           <Col sm={12}>
             <h1 className='aboutTitle'>
               What I care about
             </h1>
           </Col>
         </Row>
-        <Row className='careAboutDets'>
+        <Row className='careRowContent'>
           <Col sm={4} className='aboutLeft'>
             <h2><FontAwesome name='eye'/> Design</h2>
             <p>
@@ -62,14 +62,14 @@ class About extends Component {
           <Col sm={12} className='careBottomCol'>
           </Col>
         </Row>
-        <Row>
+        <Row className='aboutRowTitle'>
           <Col sm={12} >
             <h1 className='aboutTitle'>
               About me
             </h1>
           </Col>
         </Row>
-        <Row>
+        <Row className='aboutRowContent'>
           <Col sm={6} className='aboutMeLeft'>
             <p>
               Design, both in terms of asthetics and UX is so essential. You might have the most powerful application in your field, but unless if it isn't attractive and easy to use people will not use it.
