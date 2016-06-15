@@ -34,11 +34,51 @@ class About extends Component {
           </Col>
         </Row>
         <Row>
-          <Col sm={12} className='care'>
+          <Col sm={12} >
           <hr/>
-            <h1>
+            <h1 className='care'>
               What I care about
             </h1>
+          </Col>
+        </Row>
+        <Row>
+          <Col sm={4} className='care aboutLeft'>
+            <h2><FontAwesome name='eye'/> Design</h2>
+            <p>
+              Design, both in terms of asthetics and UX is so essential. You might have the most powerful application in your field, but unless if it isn't attractive and easy to use people will not use it.
+            </p>
+          </Col>
+          <Col sm={4} className='care aboutMiddle'>
+            <h2><FontAwesome name='cogs'/> Functionality</h2>
+            <p>
+              Design, both in terms of asthetics and UX is so essential. You might have the most powerful application in your field, but unless if it isn't attractive and easy to use people will not use it.
+            </p>
+          </Col>
+          <Col sm={4} className='care aboutRight'>
+            <h2><FontAwesome name='user'/> User</h2>
+            <p>
+              Design, both in terms of asthetics and UX is so essential. You might have the most powerful application in your field, but unless if it isn't attractive and easy to use people will not use it.
+            </p>
+          </Col>
+        </Row>
+        <Row>
+          <Col sm={12} >
+          <hr/>
+            <h1 className='care'>
+              About me
+            </h1>
+          </Col>
+        </Row>
+        <Row>
+          <Col sm={6} className='aboutLeft'>
+            <p>
+              Design, both in terms of asthetics and UX is so essential. You might have the most powerful application in your field, but unless if it isn't attractive and easy to use people will not use it.
+            </p>
+          </Col>
+          <Col sm={6} className='aboutRight'>
+            <p>
+              Design, both in terms of asthetics and UX is so essential. You might have the most powerful application in your field, but unless if it isn't attractive and easy to use people will not use it.
+            </p>
           </Col>
         </Row>
       </div>
