@@ -9,7 +9,7 @@ class Home extends Component {
     return (
       <div>
         <Row fluid>
-          <Col className='gridItem homeContact' md={3} fluid>
+          <Col className='homeContact' md={3} fluid>
             <div className='homeContactDiv'>
               <a href='https://github.com/nickmask'><FontAwesome name='github'/></a>
               <a href='https://nz.linkedin.com/in/nickmask'><FontAwesome name='linkedin'/></a>
@@ -29,26 +29,34 @@ class Home extends Component {
               </p>
             </div>
           </Col>
-          <Col  className='gridItem tightropeBackground' sm={9} fluid>
-            <div className='homeTightrope'>
-              <Image src='/images/tightrope-logo.png' responsive />
-            </div>
-          </Col>
-          <Col className='gridItem nickmaskBackground' sm={3} fluid>
-            <div className='homeNickmask'>
-              <Image src='/images/nickmask-logo-home.png' responsive />
-            </div>
-          </Col>
-          <Col className='gridItem solarVBackground' sm={6} fluid>
-            <div>
-              <h1>Solar V</h1>
-            </div>
-          </Col>
-          <Col className='gridItem devAcademyBackground' sm={6} fluid>
-            <div className='homeDevAcademy'>
-              <h1>Enspiral Dev Academy</h1>
-            </div>
-          </Col>
+          <Link to={'/projects/1-tightrope'}>
+            <Col className='gridItem tightropeBackground' sm={9} fluid>
+                <div className='homeTightrope'>
+                  <Image src='/images/tightrope-logo.png' responsive />
+                </div>
+            </Col>
+          </Link>
+          <Link to={'/projects/2-nickmask'}>
+            <Col className='gridItem nickmaskBackground' sm={3} fluid>
+              <div className='homeNickmask'>
+                <Image src='/images/nickmask-logo-home.png' responsive />
+              </div>
+            </Col>
+          </Link>
+          <Link to={'/projects/1-solar-v'}>
+            <Col className='gridItem solarVBackground' sm={6} fluid>
+              <div>
+                <h1>Solar V</h1>
+              </div>
+            </Col>
+          </Link>
+          <Link to={'/projects/3-enspiral-dev-academy'}>
+            <Col className='gridItem devAcademyBackground' sm={6} fluid>
+              <div className='homeDevAcademy'>
+                <h1>Enspiral Dev Academy</h1>
+              </div>
+            </Col>
+          </Link>
         </Row>
       </div>
     )

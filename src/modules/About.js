@@ -26,7 +26,7 @@ class About extends Component {
           </Col>
           <Col sm={4} className='contactLinksRow'>
             <div className='contactLinks'>
-              <Image src='/images/nick-about.png' responsive/>
+              <Image src='/images/nick-about.jpg' responsive/>
             </div>
           </Col>
         </Row>
