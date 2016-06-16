@@ -24,12 +24,9 @@ class About extends Component {
               </p>
             </div>
           </Col>
-          <Col sm={4} className='introCol'>
+          <Col sm={4} className='contactLinksRow'>
             <div className='contactLinks'>
-              <h1><FontAwesome name='github'/> github</h1>
-              <h1><FontAwesome name='linkedin'/> linkedin</h1>
-              <h1><FontAwesome name='twitter'/> twitter</h1>
-              <h1><FontAwesome name='facebook'/> facebook</h1>
+              <Image src='/images/nick-about.png' responsive/>
             </div>
           </Col>
         </Row>
