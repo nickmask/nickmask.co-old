@@ -20,12 +20,15 @@
   border: solid #002938 4px
   display: flex
   align-items: center
+  flex-direction: column
   justify-content: center
+  transition: all 0.5s linear 0s
 
   h1
     font-size: 3.2em
     color: #fff
     text-shadow: 4px 4px 0 rgba(0, 0, 0, 0.1)
+    transition: all 0.5s linear 0s
 
 .gridIntro
   padding: 20px
@@ -43,7 +46,17 @@
     height: 130px
 
 .tightropeBackground
-  background: -webkit-linear-gradient(left, #482f37, #644941)
+  background-color: #644941
+  transition: all 0.5s linear 0s
+
+  p
+    display: none
+
+.tightropeBackground:hover
+
+  p
+    display: inline
+
 
 .nickmaskBackground
   background-color: #FD3D50
@@ -69,6 +82,13 @@
 
 .homeContact
   background-color: #AEA79F
+  padding: 20px
+  height: 250px
+  border: solid #002938 4px
+  display: flex
+  align-items: center
+  justify-content: center
+  transition: all 0.5s linear 0s
 
   .homeContactDiv
     display: flex
@@ -83,3 +103,9 @@
 
     a:hover
       color: grey
+
+.gridItem:hover
+  background-color: #fff
+
+  h1
+    color: black
