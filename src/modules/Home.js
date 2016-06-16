@@ -1,8 +1,8 @@
-import React from 'react'
+import React, { PropTypes, Component } from 'react'
 import { Col, Row, Image, Button } from 'react-bootstrap'
 require('../www/stylesheets/home.sass')
 
-class Home extends React.Component {
+class Home extends Component {
   render () {
     return (
       <div>
@@ -22,21 +22,24 @@ class Home extends React.Component {
               </p>
             </div>
           </Col>
-          <Col  className='gridItem' sm={9} fluid>
-            <div className='projects'>
-              <h1>Latest projects</h1>
+          <Col  className='gridItem tightropeBackground' sm={9} fluid>
+            <div className='homeTightrope'>
+              <Image src='/images/tightrope-logo.png' responsive />
             </div>
           </Col>
           <Col className='gridItem' sm={3} fluid>
-            <div className='col2'>
+            <div>
+              <h1>nickmask.co</h1>
             </div>
           </Col>
           <Col className='gridItem' sm={6} fluid>
-            <div className='col3' >
+            <div>
+              <h1>Solar V</h1>
             </div>
           </Col>
           <Col className='gridItem' sm={6} fluid>
-            <div className='col1' >
+            <div>
+              <h1>Enspiral Dev Academy</h1>
             </div>
           </Col>
         </Row>
