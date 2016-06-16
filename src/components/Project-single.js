@@ -32,7 +32,7 @@ export default class ProjectSingle extends Component {
           <Col sm={12} className='projectTitleCol'>
             <div className='projectTitle'>
               <h1>{project.title}</h1>
-              <i>{project.date}</i>
+              <i>date: {project.date}</i>
               <Button href={project.github} bsSize='xsmall'>github</Button>
               <hr/>
             </div>

@@ -16,19 +16,21 @@ class Project extends Component {
     const { projects } = this.props
     const project = this.getProjectData()
     return (
-      <Row className='projectPage'>
-        {projects.isFetching && projects.list.length === 0 &&
-          <Col sm={12} className='loading'>
-            <img src='/images/loading.gif'/>
-          </Col>
-        }
-        {!projects.isFetching && projects.list.length === 0 &&
-          <h2>Error loading project.</h2>
-        }
-        {projects.list.length > 0 &&
-          <ProjectSingle project={project.projectData}/>
-        }
-      </Row>
+      <div>
+        <Row className='projectPage'>
+          {projects.isFetching && projects.list.length === 0 &&
+            <Col sm={12} className='loading'>
+              <img src='/images/loading.gif'/>
+            </Col>
+          }
+          {!projects.isFetching && projects.list.length === 0 &&
+            <h2>Error loading project.</h2>
+          }
+          {projects.list.length > 0 &&
+            <ProjectSingle project={project.projectData}/>
+          }
+        </Row>
+      </div>
     )
   }
 }
