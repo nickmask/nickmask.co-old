@@ -1,5 +1,6 @@
 import React, { PropTypes, Component } from 'react'
 import { Col, Row, Image, Button } from 'react-bootstrap'
+import { Link } from 'react-router'
 import FontAwesome from 'react-fontawesome'
 require('../www/stylesheets/home.sass')
 
@@ -22,7 +23,9 @@ class Home extends Component {
               <p>
                 I am a web developer with a love and passion for UX, design, marketing and tech. I love making beautiful, intuitive products that help people and business become more efficent.
                 <br/>
-                <Button className='homeBut' bsStyle='primary'>Learn more</Button>
+                <Link to={'/about'}>
+                  <Button className='homeBut' bsStyle='primary'>Learn more</Button>
+                </Link>
               </p>
             </div>
           </Col>
