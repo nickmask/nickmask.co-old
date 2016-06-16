@@ -9,11 +9,11 @@ class Home extends Component {
       <div>
         <Row fluid>
           <Col className='gridItem homeContact' md={3} fluid>
-            <div>
-              <h1><FontAwesome name='github'/></h1>
-              <h1><FontAwesome name='linkedin'/></h1>
-              <h1><FontAwesome name='twitter'/></h1>
-              <h1><FontAwesome name='facebook'/></h1>
+            <div className='homeContactDiv'>
+              <a href='https://github.com/nickmask'><FontAwesome name='github'/></a>
+              <a href='https://nz.linkedin.com/in/nickmask'><FontAwesome name='linkedin'/></a>
+              <a href='https://twitter.com/nickmask'><FontAwesome name='twitter'/></a>
+              <a href='https://www.facebook.com/nrmaskell'><FontAwesome name='facebook'/></a>
             </div>
           </Col>
           <Col className='gridIntro' md={9} fluid>
