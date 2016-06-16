@@ -7,10 +7,10 @@ class Contact extends Component {
   render () {
     return (
       <Row className='contact'>
-        <Col sm={6} className='contactMainColLeft'>
+        <Col sm={12} className='contactMainColLeft'>
           <div className='contactMain'>
             <h1>Wanna get in touch?</h1>
-            <h2>Give me an email or hit me up on social media.</h2>
+            <h2>Send me an email or hit me up on social media.</h2>
             <div className='contactSocial'>
               <a href='mailto:nrmaskell@gmail.com'><FontAwesome name='envelope'/></a>
               <a href='https://github.com/nickmask'><FontAwesome name='github'/></a>
@@ -19,10 +19,6 @@ class Contact extends Component {
               <a href='https://www.facebook.com/nrmaskell'><FontAwesome name='facebook'/></a>
             </div>
 
-          </div>
-        </Col>
-        <Col sm={6} className='contactMainColRight'>
-          <div className='contactMainRight'>
           </div>
         </Col>
       </Row>
