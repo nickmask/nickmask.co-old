@@ -1,5 +1,6 @@
 import React, { PropTypes, Component } from 'react'
 import { Col, Row, Image, Button } from 'react-bootstrap'
+import FontAwesome from 'react-fontawesome'
 require('../www/stylesheets/home.sass')
 
 class Home extends Component {
@@ -7,9 +8,12 @@ class Home extends Component {
     return (
       <div>
         <Row fluid>
-          <Col className='gridItem' md={3} fluid>
+          <Col className='gridItem homeContact' md={3} fluid>
             <div>
-              <h1>About me</h1>
+              <h1><FontAwesome name='github'/></h1>
+              <h1><FontAwesome name='linkedin'/></h1>
+              <h1><FontAwesome name='twitter'/></h1>
+              <h1><FontAwesome name='facebook'/></h1>
             </div>
           </Col>
           <Col className='gridIntro' md={9} fluid>
@@ -27,18 +31,18 @@ class Home extends Component {
               <Image src='/images/tightrope-logo.png' responsive />
             </div>
           </Col>
-          <Col className='gridItem' sm={3} fluid>
-            <div>
-              <h1>nickmask.co</h1>
+          <Col className='gridItem nickmaskBackground' sm={3} fluid>
+            <div className='homeNickmask'>
+              <Image src='/images/nickmask-logo-home.png' responsive />
             </div>
           </Col>
-          <Col className='gridItem' sm={6} fluid>
+          <Col className='gridItem solarVBackground' sm={6} fluid>
             <div>
               <h1>Solar V</h1>
             </div>
           </Col>
-          <Col className='gridItem' sm={6} fluid>
-            <div>
+          <Col className='gridItem devAcademyBackground' sm={6} fluid>
+            <div className='homeDevAcademy'>
               <h1>Enspiral Dev Academy</h1>
             </div>
           </Col>
