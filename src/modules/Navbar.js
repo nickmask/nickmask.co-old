@@ -1,6 +1,7 @@
 import React from 'react'
 import { Link, IndexLink } from 'react-router'
 import { Row, Col } from 'react-bootstrap'
+import NavLink from './NavLinks'
 require('../www/stylesheets/nav.sass')
 
 import NavLink from './NavLink'
@@ -19,10 +20,10 @@ class Navbar extends React.Component {
               <div className='navContent'>
                 <ul>
                   <li><IndexLink activeClassName='active' to='/'>{'HOME'}</IndexLink></li>
-                  <li><NavLink activeClassName='active' to='/projects'>{'PROJECTS'}</NavLink></li>
-                  <li><NavLink activeClassName='active' to='/blog'>{'BLOG'}</NavLink></li>
-                  <li><NavLink activeClassName='active' to='/about'>{'ABOUT'}</NavLink></li>
-                  <li><NavLink activeClassName='active' to='/contact'>{'CONTACT'}</NavLink></li>
+                  <li><NavLink to='/projects'>{'PROJECTS'}</NavLink></li>
+                  <li><NavLink to='/blog'>{'BLOG'}</NavLink></li>
+                  <li><NavLink to='/about'>{'ABOUT'}</NavLink></li>
+                  <li><NavLink to='/contact'>{'CONTACT'}</NavLink></li>
                 </ul>
               </div>
             </Col>

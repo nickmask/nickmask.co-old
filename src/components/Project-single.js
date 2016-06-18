@@ -27,10 +27,10 @@ export default class ProjectSingle extends Component {
     const project = this.props.project
     const keys = Object.keys(project.text)
     return (
-      <div>
-        <Row>
-          <Col sm={12} className='projectTitleCol'>
-            <div className='projectTitle'>
+      <div className='projectSingleMain'>
+        <Row className='projectRow'>
+          <Col sm={12} className='projectTitleCol projectCol'>
+            <div>
               <h1>{project.title}</h1>
               <i>date: {project.date}</i>
               <Button href={project.github} bsSize='xsmall'>github</Button>
@@ -38,13 +38,13 @@ export default class ProjectSingle extends Component {
             </div>
           </Col>
         </Row>
-        <Row>
-          <Col md={8} className='projectMainCol'>
-            <div className='projectMain'>
+        <Row className='projectRow'>
+          <Col md={8} className='projectCol projectContent'>
+            <div>
               <Text keys={keys} project={project}/>
             </div>
           </Col>
-          <Col md={4} className='projectSideCol'>
+          <Col md={4} className='projectCol projectContent'>
             <div className='projectSide'>
               <div>
                 {!this.hasBuild() && <div></div>

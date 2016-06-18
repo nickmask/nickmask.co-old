@@ -10,12 +10,18 @@ class Home extends Component {
       <div>
         <Row fluid>
           <Col className='homeContact' md={3} fluid>
-            <div className='homeContactDiv'>
-              <a href='https://github.com/nickmask'><FontAwesome name='github'/></a>
-              <a href='https://nz.linkedin.com/in/nickmask'><FontAwesome name='linkedin'/></a>
-              <a href='https://twitter.com/nickmask'><FontAwesome name='twitter'/></a>
-              <a href='https://www.facebook.com/nrmaskell'><FontAwesome name='facebook'/></a>
-            </div>
+            <Row>
+              <div className='homeContactDiv'>
+                <a href='https://github.com/nickmask'><FontAwesome name='github'/></a>
+                <a href='https://nz.linkedin.com/in/nickmask'><FontAwesome name='linkedin'/></a>
+              </div>
+            </Row>
+            <Row>
+              <div className='homeContactDiv'>
+                <a href='https://twitter.com/nickmask'><FontAwesome name='twitter'/></a>
+                <a href='https://www.facebook.com/nrmaskell'><FontAwesome name='facebook'/></a>
+              </div>
+            </Row>
           </Col>
           <Col className='gridIntro' md={9} fluid>
             <div fluid className='homeIntro'>
