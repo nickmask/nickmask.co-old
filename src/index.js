@@ -35,11 +35,7 @@ function render () {
         <Route path='/' component={App}>
           <IndexRoute component={Home} />
           <Route path='/projects' component={Projects} />
-<<<<<<< Updated upstream
           <Route path='/projects/:project' component={Project} />
-=======
-            <Route path='/projects/:project' component={Project} />
->>>>>>> Stashed changes
           <Route path='/blog' component={Blog} />
           <Route path='/about' component={About} />
           <Route path='/contact' component={Contact} />
