@@ -5,6 +5,9 @@ import NavLink from './NavLinks'
 require('../www/stylesheets/nav.sass')
 
 class Navbar extends React.Component {
+  
+  mobileMenuExpand() {
+  }
 
   render () {
     return (
@@ -27,11 +30,11 @@ class Navbar extends React.Component {
             </Col>
           </Row>
           <Row className='mobile'>
-            <Col sm={9} className='brand'>
+            <Col xs={9} className='brand'>
               <h1>NICKMASK</h1>
             </Col>
-            <Col sm={3} className='mobileNav'>
-              <button>Toggle</button>
+            <Col xs={3} className='mobileNav'>
+              <button className={this.state.expand} onClick={this.mobileMenuExpand()}>Toggle</button>
               <ul>
                 <li><IndexLink activeClassName='active' to='/'>{'HOME'}</IndexLink></li>
                 <li><Link activeClassName='active' to='/projects'>{'PROJECTS'}</Link></li>
