@@ -4,6 +4,8 @@ import { Row, Col } from 'react-bootstrap'
 import NavLink from './NavLinks'
 require('../www/stylesheets/nav.sass')
 
+import NavLink from './NavLink'
+
 class Navbar extends React.Component {
 
   render () {
@@ -11,10 +13,10 @@ class Navbar extends React.Component {
       <div className='nav navbar-fixed-top'>
         <div className='container'>
           <Row>
-            <Col sm={5} className='brand'>
+            <Col sm={5} className='brand desktop'>
               <h1>NICKMASK</h1>
             </Col>
-            <Col sm={7}>
+            <Col sm={7} className='desktop'>
               <div className='navContent'>
                 <ul>
                   <li><IndexLink activeClassName='active' to='/'>{'HOME'}</IndexLink></li>
@@ -24,6 +26,19 @@ class Navbar extends React.Component {
                   <li><NavLink to='/contact'>{'CONTACT'}</NavLink></li>
                 </ul>
               </div>
+            </Col>
+            <Col sm={9} className='brand mobile'>
+              <h1>NICKMASK</h1>
+            </Col>
+            <Col sm={3} className='mobile mobileNav'>
+              <button>Toggle</button>
+              <ul>
+                <li><IndexLink activeClassName='active' to='/'>{'HOME'}</IndexLink></li>
+                <li><Link activeClassName='active' to='/projects'>{'PROJECTS'}</Link></li>
+                <li><Link activeClassName='active' to='/blog'>{'BLOG'}</Link></li>
+                <li><Link activeClassName='active' to='/about'>{'ABOUT'}</Link></li>
+                <li><Link activeClassName='active' to='/contact'>{'CONTACT'}</Link></li>
+              </ul>
             </Col>
           </Row>
         </div>
