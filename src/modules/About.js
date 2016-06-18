@@ -8,7 +8,7 @@ class About extends Component {
     return (
       <div className='aboutMain'>
         <Row className='introRow'>
-          <Col sm={8} className='introCol'>
+          <Col md={8} className='introCol'>
             <div>
               <h1>
                 Hey, I'm Nick.
@@ -24,9 +24,9 @@ class About extends Component {
               </p>
             </div>
           </Col>
-          <Col sm={4} className='contactLinksRow'>
-            <div className='contactLinks'>
-              <Image src='/images/nick-about.jpg' />
+          <Col md={4} className='profileImageCol'>
+            <div className='profileImage'>
+              <Image src='/images/nick-about.jpg' responsive/>
             </div>
           </Col>
         </Row>

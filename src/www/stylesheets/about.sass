@@ -2,8 +2,7 @@
   padding: 0
 
 .introCol
-  padding: 80px 30px
-  padding-left: 50px
+  padding: 80px 50px
   padding-bottom: 50px
   margin: 0
   height: 100%
@@ -16,16 +15,15 @@
   p
     margin-top: 20px
     font-size: 1.1em
-    padding-right: 40px
 
 .introRow
   background-color: #ffffff
 
-.contactLinksRow
+.profileImageCol
   margin: 0
   padding: 0
 
-.contactLinks
+.profileImage
   margin: 0
   display: flex
   padding: 0
@@ -33,11 +31,8 @@
   justify-content: flex-end
   align-items: center
 
-  h1
-    font-weight: lighter
-    margin-bottom: 0px
-    margin-top: 4px
-
+  img
+    max-height: 400px
 
 .careRowTitle
   background-color: #E4F1F8
@@ -63,15 +58,15 @@
 
 .careLeft
   padding-left: 50px
-  padding-right: 12.5px
+  padding-right: 50px
 
 .careMiddle
-  padding-left: 37.5px
-  padding-right: 37.5px
+  padding-left: 50px
+  padding-right: 50px
 
 .careRight
   padding-right: 50px
-  padding-left: 12.5px
+  padding-left: 50px
 
 .aboutRowTitle
   background-color: #ffffff
@@ -89,8 +84,28 @@
 
   .aboutMeLeft
     padding-left: 50px
-    padding-right: 25px
+    padding-right: 50px
 
   .aboutMeRight
-    padding-left: 25px
+    padding-left: 50px
     padding-right: 50px
+
+@media (min-width: 768px)
+
+  .careLeft
+    padding-right: 12.5px
+
+  .careMiddle
+    padding-left: 37.5px
+    padding-right: 37.5px
+
+  .careRight
+    padding-left: 12.5px
+
+  .aboutRowContent
+
+    .aboutMeLeft
+      padding-right: 25px
+
+    .aboutMeRight
+      padding-left: 25px
