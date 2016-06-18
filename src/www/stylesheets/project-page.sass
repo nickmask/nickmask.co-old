@@ -1,21 +1,41 @@
 .projectSingleMain
   background-color: #fff
 
-.projectCol
-  padding-left: 50px
-  padding-right: 50px
+  .projectColTitle
+    padding-top: 23px
+    padding-left: 50px
+    padding-right: 50px
 
-.projectTitleCol
-  padding-top: 23px
+    .btn
+      padding: inherit, 10px
+      margin-left: 20px
 
-.projectContent
-  padding-bottom: 50px
+  .projectContentLeft
+    padding-right: 50px
+    padding-bottom: 50px
+    padding-left: 50px
 
-.projectSide
+  .projectContentRight
+    padding-left: 50px
+    padding-bottom: 50px
+    padding-right: 50px
 
-  img
-    max-height: 80px
-    padding: 5px 5px
+  .sideImages
+    display: flex
+    flex-wrap: wrap
+    justify-content: center
+
+    img
+      max-height: 80px
+      padding: 5px 5px
+
+@media (min-width: 800px)
+
+  .projectContentLeft
+    padding-right: 25px
+
+  .projectContentRight
+    padding-left: 25px
 
 // .projectMainCol
 //   margin: 0

@@ -10,7 +10,7 @@ export default class Build extends Component {
         <h2>Built with</h2>
         <div className='sideImages'>
           {this.props.build.map((bu, i) =>
-            <Image key={i} src={`/images/${bu}.png`} alt={bu} responsive/>
+            <Image key={i} src={`/images/${bu}.png`} alt={bu}/>
           )}
         </div>
       </div>

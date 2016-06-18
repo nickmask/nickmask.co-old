@@ -28,8 +28,8 @@ export default class ProjectSingle extends Component {
     const keys = Object.keys(project.text)
     return (
       <div className='projectSingleMain'>
-        <Row className='projectRow'>
-          <Col sm={12} className='projectTitleCol projectCol'>
+        <Row>
+          <Col sm={12} className='projectColTitle'>
             <div>
               <h1>{project.title}</h1>
               <i>date: {project.date}</i>
@@ -38,13 +38,13 @@ export default class ProjectSingle extends Component {
             </div>
           </Col>
         </Row>
-        <Row className='projectRow'>
-          <Col md={8} className='projectCol projectContent'>
+        <Row>
+          <Col md={8} className='projectCol projectContentLeft'>
             <div>
               <Text keys={keys} project={project}/>
             </div>
           </Col>
-          <Col md={4} className='projectCol projectContent'>
+          <Col md={4} className='projectCol projectContentRight'>
             <div className='projectSide'>
               <div>
                 {!this.hasBuild() && <div></div>
