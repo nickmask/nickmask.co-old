@@ -4,7 +4,7 @@ import { Row, Col } from 'react-bootstrap'
 import NavLink from './NavLinks'
 require('../www/stylesheets/nav.sass')
 
-import NavLink from './NavLink'
+import NavLink from './NavLinks'
 
 class Navbar extends React.Component {
 
