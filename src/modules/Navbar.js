@@ -1,15 +1,28 @@
-import React from 'react'
+import React, { Component, PropTypes } from 'react'
 import { Link, IndexLink } from 'react-router'
 import { Row, Col } from 'react-bootstrap'
 import NavLink from './NavLinks'
+import classNames from 'classnames'
 require('../www/stylesheets/nav.sass')
 
-class Navbar extends React.Component {
-  
-  mobileMenuExpand() {
+class Navbar extends Component {
+
+  constructor (props) {
+    super(props)
+    this.state = { expanded: 'min' }
+    this.handleClick = this.handleClick.bind(this)
+  }
+
+  handleClick () {
+    if (this.state.expanded === 'min') {
+      this.setState({ expanded: 'expanded' })
+    } else {
+      this.setState({ expanded: 'min' })
+    }
   }
 
   render () {
+    const mobileClasses = classNames('mobileDiv', this.state.expanded)
     return (
       <div className='nav navbar-fixed-top'>
         <div className='container'>
@@ -34,14 +47,18 @@ class Navbar extends React.Component {
               <h1>NICKMASK</h1>
             </Col>
             <Col xs={3} className='mobileNav'>
-              <button className={this.state.expand} onClick={this.mobileMenuExpand()}>Toggle</button>
-              <ul>
-                <li><IndexLink activeClassName='active' to='/'>{'HOME'}</IndexLink></li>
-                <li><Link activeClassName='active' to='/projects'>{'PROJECTS'}</Link></li>
-                <li><Link activeClassName='active' to='/blog'>{'BLOG'}</Link></li>
-                <li><Link activeClassName='active' to='/about'>{'ABOUT'}</Link></li>
-                <li><Link activeClassName='active' to='/contact'>{'CONTACT'}</Link></li>
-              </ul>
+              <button onClick={this.handleClick.bind(this)} className={this.state.expanded}>Toggle</button>
+            </Col>
+          </Row>
+          <Row>
+            <Col sm={12} className='mobileNav mobileLinks'>
+              <div className={mobileClasses}>
+                <IndexLink activeClassName='active' to='/'>{'HOME'}</IndexLink>
+                <Link activeClassName='active' to='/projects'>{'PROJECTS'}</Link>
+                <Link activeClassName='active' to='/blog'>{'BLOG'}</Link>
+                <Link activeClassName='active' to='/about'>{'ABOUT'}</Link>
+                <Link activeClassName='active' to='/contact'>{'CONTACT'}</Link>
+              </div>
             </Col>
           </Row>
         </div>
