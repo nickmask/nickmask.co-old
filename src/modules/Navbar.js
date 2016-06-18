@@ -1,6 +1,7 @@
 import React from 'react'
 import { Link, IndexLink } from 'react-router'
 import { Row, Col } from 'react-bootstrap'
+import NavLink from './NavLinks'
 require('../www/stylesheets/nav.sass')
 
 import NavLink from './NavLinks'
