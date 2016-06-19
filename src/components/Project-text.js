@@ -5,6 +5,13 @@ require('../www/stylesheets/projects.sass')
 
 export default class Text extends Component {
 
+  hasImages (entry) {
+    if (typeof this.props.project.text[entry].images != "undefined") {
+      return true
+    } else {
+      return false
+    }
+  }
   render () {
     const text = this.props.project.text
     return (
