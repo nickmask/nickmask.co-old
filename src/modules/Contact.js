@@ -1,5 +1,5 @@
 import React, { PropTypes, Component } from 'react'
-import { Row, Col, Image } from 'react-bootstrap'
+import { Row, Col } from 'react-bootstrap'
 import FontAwesome from 'react-fontawesome'
 require('../www/stylesheets/contact.sass')
 

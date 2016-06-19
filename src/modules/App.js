@@ -9,14 +9,11 @@ class App extends Component {
 
   render () {
     return (
-      <div>
+      <div className='section'>
         <Navbar/>
         <Grid className='main'>
           {this.props.children || <Home/>}
         </Grid>
-        <footer className='footer' fluid>
-          <p> Copyright 2016 - Nick Maskell </p>
-        </footer>
       </div>
     )
   }
