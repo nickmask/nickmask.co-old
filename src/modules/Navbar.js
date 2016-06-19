@@ -54,10 +54,10 @@ class Navbar extends Component {
             <Col sm={12} className='mobileNav mobileLinks'>
               <div className={mobileClasses}>
                 <IndexLink activeClassName='active' to='/'>{'HOME'}</IndexLink>
-                <Link activeClassName='active' to='/projects'>{'PROJECTS'}</Link>
-                <Link activeClassName='active' to='/blog'>{'BLOG'}</Link>
-                <Link activeClassName='active' to='/about'>{'ABOUT'}</Link>
-                <Link activeClassName='active' to='/contact'>{'CONTACT'}</Link>
+                <NavLink to='/projects'>{'PROJECTS'}</NavLink>
+                <NavLink to='/blog'>{'BLOG'}</NavLink>
+                <NavLink to='/about'>{'ABOUT'}</NavLink>
+                <NavLink to='/contact'>{'CONTACT'}</NavLink>
               </div>
             </Col>
           </Row>
