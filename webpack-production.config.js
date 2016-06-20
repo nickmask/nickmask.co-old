@@ -19,13 +19,18 @@ const config = {
     //node_modules: ["web_modules", "node_modules"]  (Default Settings)
   },
   //Render source-map file for final build
-  devtool: 'source-map',
+  devtool: 'cheap-module-source-map',
   //output config
   output: {
     path: buildPath,    //Path of output file
     filename: 'bundle.js',  //Name of output file
   },
   plugins: [
+    new webpack.DefinePlugin({
+      'process.env': {
+        'NODE_ENV': JSON.stringify('production')
+      }
+    }),
     //Minify the bundle
     new webpack.optimize.UglifyJsPlugin({
       compress: {
@@ -37,7 +42,7 @@ const config = {
     new webpack.NoErrorsPlugin(),
     //Transfer Files
     new ExtractTextPlugin('bundle.css'),
-
+    
     new TransferWebpackPlugin([
       {from: 'www'},
     ], path.resolve(__dirname,"src")),
