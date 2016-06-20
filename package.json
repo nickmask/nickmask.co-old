@@ -7,8 +7,8 @@
     "url": "https://github.com/callemall/material-ui.git"
   },
   "scripts": {
-    "start-dev": "webpack-dev-server --config webpack-dev-server.config.js --progress --inline --colors --history-api-fallback",
     "start": "node ./src/index.js",
+    "start-dev": "webpack-dev-server --config webpack-dev-server.config.js --progress --inline --colors --history-api-fallback",
     "build": "webpack --config webpack-production.config.js --progress --colors",
     "lint": "eslint src && echo \"eslint: no lint errors\""
   },
@@ -52,6 +52,6 @@
     "redux": "latest",
     "redux-logger": "^2.6.1",
     "redux-router": "^1.0.0-beta8",
-    "redux-thunk": "^2.1.0",
+    "redux-thunk": "^2.1.0"
   }
 }
