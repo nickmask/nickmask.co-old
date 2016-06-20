@@ -18,17 +18,6 @@ export function receiveProjects (jsonObj) {
   }
 }
 
-// export function fetchProjects () {
-//   return function (dispatch) {
-//     dispatch(requestProjects())
-//     return fetch(`https://nickmask.firebaseio.com/projects.json`)
-//       .then(response => response.json())
-//       .then(json =>
-//         dispatch(receiveProjects(json))
-//       )
-//   }
-// }
-
 export function fetchProjects () {
   return function (dispatch) {
     dispatch(requestProjects())
@@ -38,7 +27,7 @@ export function fetchProjects () {
       project.forEach(function (childProject) {
         arr.push({
           projectName: childProject.key(),
-          projectData: childProject.val(),
+          projectData: childProject.val()
         })
       })
       dispatch(receiveProjects(arr))
