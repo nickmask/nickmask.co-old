@@ -33,20 +33,20 @@ class Home extends Component {
           </Col>
           <Link to={'/projects/1-tightrope'}>
             <Col className='gridItem tightropeBackground' sm={9} fluid>
-                <div className='homeTightrope'>
+                <div className='homeTightrope homeTitle'>
                   <Image src='/images/tightrope-logo.png' responsive />
                 </div>
             </Col>
           </Link>
           <Link to={'/projects/2-nickmask'}>
             <Col className='gridItem nickmaskBackground' sm={3} fluid>
-              <div className='homeNickmask'>
+              <div className='homeNickmask homeTitle'>
                 <Image src='/images/nickmask-logo-home.png' responsive />
               </div>
             </Col>
           </Link>
           <Link to={'/projects/1-solar-v'}>
-            <Col className='gridItem solarVBackground' sm={6} fluid>
+            <Col className='gridItem solarVBackground homeTitle' sm={6} fluid>
               <div>
                 <h1>Solar V</h1>
               </div>
@@ -54,7 +54,7 @@ class Home extends Component {
           </Link>
           <Link to={'/projects/3-enspiral-dev-academy'}>
             <Col className='gridItem devAcademyBackground' sm={6} fluid>
-              <div className='homeDevAcademy'>
+              <div className='homeDevAcademy homeTitle'>
                 <h1>Enspiral Dev Academy</h1>
               </div>
             </Col>
