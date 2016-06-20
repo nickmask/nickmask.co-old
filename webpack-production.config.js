@@ -19,7 +19,7 @@ const config = {
     //node_modules: ["web_modules", "node_modules"]  (Default Settings)
   },
   //Render source-map file for final build
-  devtool: 'cheap-module-source-map',
+  devtool: 'source-map',
   //output config
   output: {
     path: buildPath,    //Path of output file
@@ -42,7 +42,7 @@ const config = {
     new webpack.NoErrorsPlugin(),
     //Transfer Files
     new ExtractTextPlugin('bundle.css'),
-    
+
     new TransferWebpackPlugin([
       {from: 'www'},
     ], path.resolve(__dirname,"src")),
