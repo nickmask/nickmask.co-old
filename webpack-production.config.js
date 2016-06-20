@@ -24,23 +24,21 @@ const config = {
   output: {
     path: buildPath,    //Path of output file
     filename: 'bundle.js',  //Name of output file
+    publicPath: '/build/'
   },
   plugins: [
+    new webpack.optimize.DedupePlugin(),
+    new webpack.optimize.UglifyJsPlugin({
+      minimize: true,
+      compress: {
+        warnings: false
+      }
+    }),
     new webpack.DefinePlugin({
       'process.env': {
         'NODE_ENV': JSON.stringify('production')
       }
     }),
-    //Minify the bundle
-    new webpack.optimize.UglifyJsPlugin({
-      compress: {
-        //supresses warnings, usually from module minification
-        warnings: false,
-      },
-    }),
-    //Allows error warnings but does not stop compiling. Will remove when eslint is added
-    new webpack.NoErrorsPlugin(),
-    //Transfer Files
     new ExtractTextPlugin('bundle.css'),
 
     new TransferWebpackPlugin([
@@ -49,18 +47,18 @@ const config = {
   ],
   module: {
     loaders: [
-      {
-        test: /\.js$/, // All .js files
-        loaders: ['babel'], //react-hot is like browser sync and babel loads jsx and es6-7
-        exclude: [nodeModulesPath],
-      },
-      { test: /\.(png|jpg)$/,
-        loader: 'url-loader?limit=8192'
-      },
+      { test: /\.js?$/,
+        loader: 'babel',
+        exclude: path.join(__dirname, 'node_modules') },
+
+        { test: /\.png$/,
+          loader: 'file' },
       {
         test: /\.sass$/,
         loader: ExtractTextPlugin.extract('style-loader', sassLoaders.join('!')),
       },
+      { test: /\.(ttf|eot|svg|woff(2)?)(\?[a-z0-9]+)?$/,
+        loader: 'file'}
     ],
   },
 }
