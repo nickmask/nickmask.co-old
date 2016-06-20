@@ -3,7 +3,9 @@ const path = require('path')
 const buildPath = path.resolve(__dirname, 'build')
 const nodeModulesPath = path.resolve(__dirname, 'node_modules')
 const TransferWebpackPlugin = require('transfer-webpack-plugin')
-var ExtractTextPlugin = require('extract-text-webpack-plugin')
+const ExtractTextPlugin = require('extract-text-webpack-plugin')
+const precss = require('precss')
+const autoprefixer = require('autoprefixer')
 
 const sassLoaders = [
   'css-loader',
@@ -55,12 +57,15 @@ const config = {
           loader: 'file' },
       {
         test: /\.sass$/,
-        loader: ExtractTextPlugin.extract('style-loader', sassLoaders.join('!')),
+        loader: ExtractTextPlugin.extract('style-loader', sassLoaders.join('!'))
       },
       { test: /\.(ttf|eot|svg|woff(2)?)(\?[a-z0-9]+)?$/,
         loader: 'file'}
-    ],
+    ]
   },
+  postcss: function () {
+    return [precss, autoprefixer]
+  }
 }
 
 module.exports = config
