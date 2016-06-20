@@ -1,0 +1,131 @@
+.homeBut
+  float: right
+
+.homeIntro
+  margin: 10px 50px
+
+  h1
+    color: #fff
+    font-size: 3em
+    font-weight: lighter
+
+  p
+    color: #E4F1F8
+    font-size: 1.2em
+
+.gridItem
+  background-color: green
+  padding: 20px
+  height: 250px
+  border: solid #002938 4px
+  display: flex
+  align-items: center
+  flex-direction: column
+  justify-content: center
+  transition: all 0.5s linear 0s
+
+  h1
+    font-size: 3.2em
+    color: #fff
+    text-shadow: 4px 4px 0 rgba(0, 0, 0, 0.1)
+    transition: all 0.5s linear 0s
+    text-align: center
+
+.gridIntro
+  padding: 20px
+  height: 250px
+  border: solid #002938 4px
+
+.homeTightrope
+  max-height: 200px
+  display: flex
+  align-items: center
+  justify-content: center
+
+  img
+    width: auto
+    height: 130px
+
+.tightropeBackground
+  background-color: #644941
+  transition: all 0.5s linear 0s
+
+  p
+    display: none
+
+.tightropeBackground:hover
+
+  p
+    display: inline
+
+
+.nickmaskBackground
+  background-color: #FD3D50
+
+.homeNickmask
+  width: 100%
+  display: flex
+  align-items: center
+  justify-content: center
+
+.homeDevAcademy
+  max-height: 200px
+  display: flex
+  align-items: center
+  justify-content: center
+
+  img
+    width: auto
+    height: 130px
+
+.devAcademyBackground
+  background-color: #45D1C0
+
+.solarVBackground
+  background-color: #FDDD60
+
+.homeContact
+  background-color: #2196F3
+  padding: 25px
+  height: 100px
+  border: solid #002938 4px
+  transition: all 0.5s linear 0s
+  display: flex
+  align-items: center
+  justify-content: space-around
+
+  .row
+    width: 100%
+
+  .homeContactDiv
+    width: 100%
+    display: flex
+    justify-content: space-around
+
+    a
+      text-decoration: none
+      font-size: 2.3em
+      margin-top: 2px
+      color: #fff
+      text-shadow: 4px 4px 0 rgba(0, 0, 0, 0.1)
+
+    a:hover
+      color: #808080
+
+.gridItem:hover
+  background-color: #fff
+
+  h1
+    color: black
+
+@media (min-width: 768px)
+
+  .homeContact
+    height: 250px
+
+    .homeContactDiv
+      display: flex
+      flex-wrap: wrap
+      justify-content: space-around
+      align-content: center
+      padding: 20px 20px
