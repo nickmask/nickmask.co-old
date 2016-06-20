@@ -4,7 +4,6 @@ import { Col } from 'react-bootstrap'
 require('../www/stylesheets/projects.sass')
 import NavLink from '../modules/NavLinks'
 
-
 export default class ProjectList extends Component {
   render () {
     return (
