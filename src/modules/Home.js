@@ -23,7 +23,7 @@ class Home extends Component {
             <div fluid className='homeIntro'>
               <h1>Hey, I'm Nick.</h1>
               <p>
-                I am a web developer with a passion for UX, design, marketing and tech. I love making beautiful, apps that help make people's lives easier. 
+                I am a web developer with a passion for UX, design, marketing and tech. I love making beautiful apps that help make people's lives easier. 
                 <br/>
                 <Link to={'/about'}>
                   <Button className='homeBut' bsStyle='primary'>Learn more</Button>
