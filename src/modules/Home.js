@@ -38,14 +38,14 @@ class Home extends Component {
                 </div>
             </Col>
           </Link>
-          <Link to={'/projects/3-nickmask'}>
+          <Link to={'/projects/1-nickmask'}>
             <Col className='gridItem nickmaskBackground' sm={3} fluid>
               <div className='homeNickmask homeTitle'>
                 <Image src='/images/nickmask-logo-home.png' responsive />
               </div>
             </Col>
           </Link>
-          <Link to={'/projects/1-solar-v'}>
+          <Link to={'/projects/3-solar-v'}>
             <Col className='gridItem solarVBackground homeTitle' sm={6} fluid>
               <div>
                 <h1>Solar V</h1>
