@@ -6,10 +6,9 @@ import Images from './Project-images'
 
 export default class Text extends Component {
 
-  hasImagesBetter () {
+  hasImages () {
     return (
       this.props.project.text.map((te, i) => {
-        console.log(i)
         if (typeof this.props.project.text[i].images != 'undefined') {
           return (
             <div key={i}>
@@ -19,7 +18,6 @@ export default class Text extends Component {
             </div>
           )
         } else {
-          console.log('Doesn\'t has images')
           return (
           <div key={i}>
             <h2>{te.title}</h2>
@@ -35,7 +33,7 @@ export default class Text extends Component {
     console.log()
     return (
       <div>
-        {this.hasImagesBetter()}
+        {this.hasImages()}
       </div>
     )
   }
