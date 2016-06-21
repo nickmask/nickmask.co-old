@@ -69,12 +69,12 @@ class About extends Component {
         <Row className='aboutRowContent'>
           <Col sm={6} className='aboutMeLeft'>
             <p>
-              Technology is my life. I love building PC’s, following tech trends and coding late my day away. After studying marketing, I worked at Unilever working on household brands such as Streets, Continental and Dove. In marketing a few things always had my focus; design, consumer behaviour and tech. I was the go-to person for analytics, the interim IT person and always had a keen eye for design.
+              Technology is my life. I love building PC’s, following tech trends and coding my day away. After studying marketing, I worked at Unilever on household brands such as Streets, Continental and Dove. In marketing a few things always had my focus; design, consumer behaviour and tech. I was the go-to person for analytics, the interim IT person and always had a keen eye for design.
             </p>
           </Col>
           <Col sm={6} className='aboutMeRight'>
             <p>
-              I am now a Web Developer and use all the knowledge I gained while a marketer in my work. I love building websites that have clean, intuitive designs that focus on user experience. I am now looking to join a team that share my love for coding, where I can build great apps, learn and develop the skills and have fun!
+              I am now a web developer and use all the knowledge I gained while a marketer in my work. I love building applications that have clean, intuitive designs that focus on user experience. I am now looking to join a team where I can share my love for coding, where I can build great apps, learn and develop my skills and have fun!
             </p>
           </Col>
         </Row>
