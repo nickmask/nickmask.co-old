@@ -26,6 +26,7 @@ export default class ProjectSingle extends Component {
   render () {
     const project = this.props.project
     const keys = Object.keys(project.text)
+    console.log('page', this.params)
     return (
       <div className='projectSingleMain'>
         <Row>
