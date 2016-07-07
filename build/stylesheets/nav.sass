@@ -20,72 +20,42 @@
 .desktop
   display: none
 
+.draw
+  padding-top: 100px
+  display: flex
+  flex-direction: column
+
+  aside
+    display: flex
+    flex-direction: column
+
+.fa-bars
+  color: white
+
 .mobileNav
   display: flex
   justify-content: flex-end
-
-  div
-    display: none
-    &.expanded
-      display: flex
-      flex-direction: row
+  padding: 0
+  padding-top: 12px
 
   button
-    position: absolute
-    top: 15px
-    right: 15px
-    border: 0
-    text-indent: 200%
-    overflow: hidden
-    background: rgba(255,255,255,.8) url(http://i.imgur.com/vKRaKDX.png) center no-repeat
-    border: 1px solid #ddd
-    border-radius: 3px
-    background-size: 80%
-    width: 30px
-    height: 30px
-    outline: none
-    transition: all 400ms ease
-    &.expanded
-      transform: rotate(90deg)
-      background-color: transparent
-      border: 0
+    height: 36px
+    width: 60px
+
+.draw
+  padding-left: 20px
+  background-color: #E4F1F8 !important
 
   a
-    display: block
-
-.mobileNav
-  display: flex
-  justify-content: center
-  align-content: space-around
-
-  a
-    text-align: center
-    padding: 20px 0
+    font-size: 2.2em
+    color: #444444
+    font-weight: lighter
     text-decoration: none
-    color: #222
-    font-weight: bold
-    width: 100%
-    &:hover, &:focus
-      background: darken(#eee, 3%)
-    &.active
-      background-color: #FD3D50
 
-      a:hover
-        background-color: #FD3D50
+  a:hover
 
-  .mobileDiv
-    background: #fff
-    border: 2px solid #00202B
-    width: 100%
-    padding: 0
-    &.expanded
-      display: flex
-      justify-content: space-around
-
-.mobileLinks
-  width: 100%
-  padding: 0
-
+  .active
+    color: #FD3D50
 
 @media (min-width: 768px)
 
