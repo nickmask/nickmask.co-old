@@ -3,22 +3,21 @@ import { Link, IndexLink } from 'react-router'
 import { Row, Col } from 'react-bootstrap'
 import NavLink from './NavLinks'
 import classNames from 'classnames'
+import Drawer from 'react-toolbox/lib/drawer'
+import { IconButton } from 'react-toolbox/lib/button'
+import FontAwesome from 'react-fontawesome'
 require('../www/stylesheets/nav.sass')
 
 class Navbar extends Component {
 
   constructor (props) {
     super(props)
-    this.state = { expanded: 'min' }
-    this.handleClick = this.handleClick.bind(this)
+    this.state = { active: false }
+    this.handleToggle = this.handleToggle.bind(this)
   }
 
-  handleClick () {
-    if (this.state.expanded === 'min') {
-      this.setState({ expanded: 'expanded' })
-    } else {
-      this.setState({ expanded: 'min' })
-    }
+  handleToggle() {
+    this.setState({active: !this.state.active});
   }
 
   render () {
@@ -47,18 +46,20 @@ class Navbar extends Component {
               <h1>NICKMASK</h1>
             </Col>
             <Col xs={3} className='mobileNav'>
-              <button onClick={this.handleClick.bind(this)} className={this.state.expanded}>Toggle</button>
+              <IconButton onClick={this.handleToggle}><FontAwesome name='bars' size='3x'/></IconButton>
             </Col>
           </Row>
           <Row>
-            <Col sm={12} className='mobileNav mobileLinks'>
-              <div className={mobileClasses}>
+          <Col sm={12} className='mobileNav mobileLinks'>
+            <div className={mobileClasses}>
+              <Drawer content active={this.state.active} className='draw' onOverlayClick={this.handleToggle}>
                 <IndexLink activeClassName='active' to='/'>{'HOME'}</IndexLink>
                 <NavLink to='/projects'>{'PROJECTS'}</NavLink>
                 <NavLink to='/blog'>{'BLOG'}</NavLink>
                 <NavLink to='/about'>{'ABOUT'}</NavLink>
                 <NavLink to='/contact'>{'CONTACT'}</NavLink>
-              </div>
+              </Drawer>
+            </div>
             </Col>
           </Row>
         </div>

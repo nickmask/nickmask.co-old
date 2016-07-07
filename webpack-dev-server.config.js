@@ -52,7 +52,7 @@ const config = {
     ], path.resolve(__dirname, "src")),
     //redux dev tools
     devFlagPlugin,
-      
+
     new ExtractTextPlugin( "bundle.css" ),
   ],
   module: {
@@ -67,11 +67,15 @@ const config = {
         test: /\.sass$/,
         loader: ExtractTextPlugin.extract('style-loader', sassLoaders.join('!')),
       },
+      {
+        test: /\.(scss|css)$/,
+        loader: 'style!css?modules&importLoaders=1&localIdentName=[name]__[local]___[hash:base64:5]!postcss!sass',
+      },
       { test: /\.(png|jpg)$/,
-        loader: 'url-loader?limit=8192',
+        loader: 'url-loader?limit=8192'
       },
       { test: /\.svg$/,
-        loader: 'svg-loader',
+        loader: 'svg-loader'
       },
     ],
   },

@@ -1,4 +1,3 @@
-import fetch from 'isomorphic-fetch'
 import Firebase from 'firebase'
 
 export const REQUEST_PROJECTS = 'REQUEST_PROJECTS'
