@@ -46,7 +46,7 @@ class Navbar extends Component {
               <h1>NICKMASK</h1>
             </Col>
             <Col xs={3} className='mobileNav'>
-              <IconButton onClick={this.handleToggle}><FontAwesome name='bars' size='3x'/></IconButton>
+              <IconButton onClick={this.handleToggle}><FontAwesome className={this.state.active} name='bars' size='3x'/></IconButton>
             </Col>
           </Row>
           <Row>
