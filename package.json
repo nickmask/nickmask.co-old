@@ -35,7 +35,6 @@
     "style-loader": "^0.13.1",
     "transfer-webpack-plugin": "^0.1.4",
     "url-loader": "^0.5.7",
-    "webpack": "^1.13.1",
     "webpack-dev-server": "^1.14.0"
   },
   "dependencies": {
@@ -60,6 +59,7 @@
     "react-toolbox": "^1.0.1",
     "redux": "latest",
     "redux-router": "^1.0.0-beta8",
-    "redux-thunk": "^2.1.0"
+    "redux-thunk": "^2.1.0",
+    "webpack": "^1.13.1"
   }
 }
