@@ -33,6 +33,7 @@
     "webpack-dev-server": "^1.14.0"
   },
   "dependencies": {
+    "autoprefixer": "^6.5.3",
     "classnames": "^2.2.5",
     "compression": "^1.6.2",
     "cors": "^2.7.1",
