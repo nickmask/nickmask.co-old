@@ -23,7 +23,7 @@ class Home extends Component {
             <div fluid className='homeIntro'>
               <h1>Hey, I'm Nick.</h1>
               <p>
-                I am a web developer with a passion for UX, design, marketing and tech. I love making beautiful apps that help make people's lives easier.
+                I am a web developer with a passion for UX, design, marketing and tech. I love making beautiful web apps.
                 <br/>
                 <Link to={'/about'}>
                   <Button className='homeBut' bsStyle='primary'>Learn more</Button>
@@ -31,8 +31,15 @@ class Home extends Component {
               </p>
             </div>
           </Col>
+          <Link to={'/projects/4-indepth'}>
+            <Col className='gridItem indepthBackground' sm={5} fluid>
+              <div>
+                <h1>Indepth</h1>
+              </div>
+            </Col>
+          </Link>
           <Link to={'/projects/2-tightrope'}>
-            <Col className='gridItem tightropeBackground' sm={9} fluid>
+            <Col className='gridItem tightropeBackground' sm={4} fluid>
                 <div className='homeTightrope homeTitle'>
                   <Image src='/images/tightrope-logo.png' responsive />
                 </div>
