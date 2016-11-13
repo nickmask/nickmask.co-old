@@ -11,7 +11,7 @@
     "postinstall": "npm run build",
     "start-dev": "webpack-dev-server --config webpack-dev-server.config.js --progress --inline --colors --history-api-fallback",
     "start": "node server/index.js",
-    "build": "NODE_ENV=production webpack --config webpack-production.config.js --progress --colors",
+    "build": "node_modules/.bin/webpack --config webpack-production.config.js",
     "clean": "rm -rf build && mkdir build"
   },
   "private": true,
