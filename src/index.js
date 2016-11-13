@@ -19,7 +19,7 @@ import Project from './modules/Project'
 const loggerMiddleware = createLogger()
 
 const store = createStore(
-  rootReducer,
+  user,
   applyMiddleware(
     thunkMiddleware
   )
