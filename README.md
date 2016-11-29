@@ -8,3 +8,5 @@ A personal site with info, projects and blogs for nickmask.
 - Redux
 - Sass
 - Webpack
+
+Mind the pause on load, currently deployed on Heroku free.
